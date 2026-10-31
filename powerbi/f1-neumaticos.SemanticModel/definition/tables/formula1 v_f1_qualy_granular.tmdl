@@ -1,0 +1,167 @@
+table 'formula1 v_f1_qualy_granular'
+	lineageTag: d1c0ac8c-9626-4535-ab4d-1434559b75ac
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d0192a1-a3e4-4cbd-b841-863157a70357
+		summarizeBy: sum
+		sourceColumn: year
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: 2370ee9c-fae4-4222-8e64-9ddc7d208500
+		summarizeBy: sum
+		sourceColumn: round
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_id
+		dataType: int64
+		formatString: 0
+		lineageTag: ac2d6b89-38e8-4d93-b5d3-f35e671cf2ef
+		summarizeBy: none
+		sourceColumn: race_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column grand_prix
+		dataType: string
+		lineageTag: 1dd1bd78-cf19-48c3-b2f8-212eb9a14650
+		summarizeBy: none
+		sourceColumn: grand_prix
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_type
+		dataType: string
+		lineageTag: f77f235a-807a-4e33-8210-6ca5b48df417
+		summarizeBy: none
+		sourceColumn: circuit_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_id
+		dataType: string
+		lineageTag: 2a76d0bc-2ad2-4f2c-b67d-28fb8dff4ac9
+		summarizeBy: none
+		sourceColumn: driver_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor_id
+		dataType: string
+		lineageTag: 6baf90a8-9572-499b-ab57-30943b322eab
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_manufacturer_id
+		dataType: string
+		lineageTag: 1b761b52-53b4-404c-a60a-2159080fcc54
+		summarizeBy: none
+		sourceColumn: tyre_manufacturer_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column qualy_position
+		dataType: int64
+		formatString: 0
+		lineageTag: 88636f2b-fd0e-4b00-b3cd-117841505a76
+		summarizeBy: sum
+		sourceColumn: qualy_position
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_millis
+		dataType: int64
+		formatString: 0
+		lineageTag: 3befc4f3-480d-4e09-a768-cd35f7d1ceb3
+		summarizeBy: sum
+		sourceColumn: time_millis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column pole_time_millis
+		dataType: int64
+		formatString: 0
+		lineageTag: 142a9c10-6c69-4d59-b9cc-426ce57dde3a
+		summarizeBy: sum
+		sourceColumn: pole_time_millis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column gap_to_pole_sec
+		dataType: double
+		lineageTag: 1c11f10b-ee4e-4e5e-ba3e-eda39ae16892
+		summarizeBy: sum
+		sourceColumn: gap_to_pole_sec
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pct_gap_to_pole
+		dataType: double
+		lineageTag: 8bab669e-12ef-44a2-a9f4-fc9e4df62819
+		summarizeBy: sum
+		sourceColumn: pct_gap_to_pole
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_within_107
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 2c531d00-6173-42ad-9c57-97588fb3d04f
+		summarizeBy: none
+		sourceColumn: is_within_107
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_f1_qualy_granular' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_f1_qualy_granular = Origen{[Schema="formula1",Item="v_f1_qualy_granular"]}[Data]
+				in
+				    formula1_v_f1_qualy_granular
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

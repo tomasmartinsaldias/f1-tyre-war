@@ -1,0 +1,37 @@
+relationship a71fc53a-a3b9-48ff-a4de-4c0ea9a2a84b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'formula1 race'.date
+	toColumn: LocalDateTable_ff685e70-f6e1-4650-a638-082127be5937.Date
+
+relationship abfe4647-3071-1004-3367-50251c243210
+	fromColumn: 'formula1 v_f1_qualy_granular'.race_id
+	toColumn: 'formula1 race'.id
+
+relationship 9973de9f-942d-8b68-97b5-2319e6d94530
+	fromColumn: 'formula1 v_f1_race_granular'.race_id
+	toColumn: 'formula1 race'.id
+
+relationship 02752808-41a2-f402-1552-be723ab3811b
+	fromColumn: 'formula1 v_f1_qualy_granular'.constructor_id
+	toColumn: 'formula1 constructor'.id
+
+relationship c17931ff-39f4-2417-addf-742bc2967590
+	fromColumn: 'formula1 v_f1_race_granular'.constructor_id
+	toColumn: 'formula1 constructor'.id
+
+relationship b2a8a783-e215-9ea8-ad53-2c55530a7270
+	fromColumn: 'formula1 constructor'.id_segmento
+	toColumn: dim_segmento_estrategico.id_segmento
+
+relationship aabd5e60-fed5-fd3b-b91f-ad1bb518ff8c
+	fromColumn: 'formula1 v_analisis_rendimiento_anual'.constructor_id
+	toColumn: 'formula1 constructor'.id
+
+relationship 8e0fdf55-2d33-fccd-295c-158eee7b53fc
+	fromColumn: 'formula1 v_analisis_asimetria_marca'.constructor_id
+	toColumn: 'formula1 constructor'.id
+
+relationship 30167f6c-b4e9-ff5e-04e0-b60426e8d43b
+	fromColumn: 'formula1 v_analisis_fiabilidad_neumaticos'.constructor_id
+	toColumn: 'formula1 constructor'.id
+

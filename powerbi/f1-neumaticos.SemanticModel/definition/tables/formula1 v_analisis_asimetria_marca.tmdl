@@ -1,0 +1,58 @@
+table 'formula1 v_analisis_asimetria_marca'
+	lineageTag: b5c125ae-52d7-4742-a097-6ed075de9f7b
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 85fab584-c0e7-4e2b-8ec5-2c14d2caaa30
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_manufacturer_id
+		dataType: string
+		lineageTag: 7377adec-9b96-4a2d-afb7-e9a5cb0e1660
+		summarizeBy: none
+		sourceColumn: tyre_manufacturer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor_id
+		dataType: string
+		lineageTag: f4156252-3957-4ce9-abd0-c3b9d0153556
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_entries
+		dataType: int64
+		formatString: 0
+		lineageTag: 1434a5f0-e761-49a4-a9f6-a1716f21b00b
+		summarizeBy: sum
+		sourceColumn: total_entries
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_gap_to_brand_leader
+		dataType: double
+		lineageTag: 003e4ee0-a3c2-432c-b36d-14c24f5f269d
+		summarizeBy: sum
+		sourceColumn: avg_gap_to_brand_leader
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'formula1 v_analisis_asimetria_marca' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_analisis_asimetria_marca = Origen{[Schema="formula1",Item="v_analisis_asimetria_marca"]}[Data]
+				in
+				    formula1_v_analisis_asimetria_marca
+
+	annotation PBI_ResultType = Table
+

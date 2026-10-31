@@ -1,0 +1,60 @@
+table 'formula1 constructor'
+	lineageTag: 9c62b124-6771-42a2-b2a8-bcab0da4011b
+
+	column name
+		dataType: string
+		lineageTag: bba47bfc-df5f-4cab-beac-64c1cb5bd290
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: string
+		lineageTag: 1f797404-962d-4339-aab8-4d3cca4b1c48
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column country_id
+		dataType: string
+		lineageTag: ab8c909c-5c5f-4396-8f41-dc41fd119bb2
+		summarizeBy: none
+		sourceColumn: country_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_segmento =
+			
+			SWITCH(
+			    'formula1 constructor'[id],
+			    "ferrari", "top_tier",
+			    "renault", "top_tier",
+			    "mclaren", "top_tier",
+			    "williams", "midfield",
+			    "toyota", "midfield",
+			    "bar", "midfield",
+			    "sauber", "midfield",
+			    "red_bull", "midfield",
+			    "backmarker"
+			)
+		lineageTag: 3d7a1159-09dd-46b1-b1c2-9d3c2e2b4e87
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 constructor' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_constructor = Origen{[Schema="formula1",Item="constructor"]}[Data],
+				    #"Otras columnas quitadas" = Table.SelectColumns(formula1_constructor,{"name", "id", "country_id"})
+				in
+				    #"Otras columnas quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

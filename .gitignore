@@ -1,0 +1,20 @@
+# Power BI - Archivos temporales y de bloqueo
+*.tmp
+*.temp
+*.~*
+msitmp/
+SecurityBindings/
+AutoRecover/
+
+# Si usan .pbip, ignorar cachés de datos locales pesados si los hubiera
+*.cache
+*.bin
+
+# Archivos de configuración de DBeaver y credenciales locales
+.dbeaver/
+*.log
+
+# Archivos de sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini

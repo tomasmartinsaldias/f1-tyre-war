@@ -1,0 +1,73 @@
+table _Medidas
+	lineageTag: f109edcd-bc73-46bb-b6b2-98d97f815e1b
+
+	measure 'Mediana Gap Pole Pct' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        MEDIAN('formula1 v_f1_qualy_granular'[pct_gap_to_pole]),
+			        'formula1 v_f1_qualy_granular'[is_within_107] = TRUE()
+			    ),
+			    100
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 5340a3b0-b39a-4c31-95db-9e0effbb5de5
+
+	measure 'Total Puntos' = SUM('formula1 v_f1_race_granular'[points])
+		lineageTag: 7d2aa055-b1dd-46c5-99d9-557181e1da19
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Posicion Llegada' =
+			
+			CALCULATE(
+			    AVERAGE('formula1 v_f1_race_granular'[finish_position]),
+			    'formula1 v_f1_race_granular'[is_finished] = TRUE()
+			)
+		formatString: 0.00
+		lineageTag: 1f05b90b-404e-401a-85b7-ea5b0a242749
+
+	measure 'Tyre Failures per 1k Laps' =
+			
+			DIVIDE(
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed])
+			) * 1000
+		lineageTag: b272e92b-ec68-4ff7-aad3-486220be700d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Tyre to Accident Ratio' =
+			
+			DIVIDE(
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[accident_dnfs])
+			)
+		lineageTag: e3128af6-9083-4959-8340-502bc1745f5e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Share Puntos Pct' =
+			
+			DIVIDE(
+			    SUM('formula1 v_analisis_rendimiento_anual'[total_points]),
+			    CALCULATE(
+			        SUM('formula1 v_analisis_rendimiento_anual'[total_points]),
+			        ALL('formula1 v_analisis_rendimiento_anual'[tyre_manufacturer_id])
+			    )
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"Columna1", type text}}),
+				    #"Columnas quitadas" = Table.RemoveColumns(#"Tipo cambiado",{"Columna1"})
+				in
+				    #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

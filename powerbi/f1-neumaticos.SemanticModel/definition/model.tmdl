@@ -1,0 +1,29 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["formula1 v_f1_qualy_granular","formula1 v_f1_race_granular","formula1 race","formula1 constructor","_Medidas","dim_segmento_estrategico","formula1 v_analisis_rendimiento_anual","formula1 v_analisis_asimetria_marca","formula1 v_analisis_fiabilidad_neumaticos"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table 'formula1 v_f1_qualy_granular'
+ref table 'formula1 v_f1_race_granular'
+ref table 'formula1 race'
+ref table DateTableTemplate_cf2c21e7-3b58-41f6-9d30-780659587a30
+ref table LocalDateTable_ff685e70-f6e1-4650-a638-082127be5937
+ref table 'formula1 constructor'
+ref table _Medidas
+ref table dim_segmento_estrategico
+ref table 'formula1 v_analisis_rendimiento_anual'
+ref table 'formula1 v_analisis_asimetria_marca'
+ref table 'formula1 v_analisis_fiabilidad_neumaticos'
+
+ref cultureInfo es-ES
+

@@ -1,0 +1,144 @@
+table 'formula1 v_f1_race_granular'
+	lineageTag: 80b69bd6-11ab-4ba5-aed5-4c0c14550a69
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 19b3a876-962e-43f6-a37d-e7f64b98dd76
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: 28989c44-fe23-4da1-b5ec-dd91fadf91b4
+		summarizeBy: sum
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 81eead3d-76e2-46e3-9076-e1c1150a1c11
+		summarizeBy: none
+		sourceColumn: race_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column grand_prix
+		dataType: string
+		lineageTag: 347d0407-096b-449f-a89f-85ba00bd348e
+		summarizeBy: none
+		sourceColumn: grand_prix
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_type
+		dataType: string
+		lineageTag: 2d729a13-2df1-428f-82b4-26b310961060
+		summarizeBy: none
+		sourceColumn: circuit_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column driver_id
+		dataType: string
+		lineageTag: 245eac1f-7d5c-4243-bd7a-f2cb8a4fb1c0
+		summarizeBy: none
+		sourceColumn: driver_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor_id
+		dataType: string
+		lineageTag: 6c84a8a3-7f00-4194-bdeb-15445462a688
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_manufacturer_id
+		dataType: string
+		lineageTag: a860175b-eb23-4db8-9625-4e46780687c0
+		summarizeBy: none
+		sourceColumn: tyre_manufacturer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column grid_position_number
+		dataType: int64
+		formatString: 0
+		lineageTag: c71e8bf0-54e8-43da-a45a-333476f2b962
+		summarizeBy: sum
+		sourceColumn: grid_position_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column finish_position
+		dataType: int64
+		formatString: 0
+		lineageTag: d9065dd2-758f-48eb-8a11-903e2355bcd6
+		summarizeBy: sum
+		sourceColumn: finish_position
+
+		annotation SummarizationSetBy = Automatic
+
+	column position_text
+		dataType: string
+		lineageTag: 4a397a6b-f4d7-4e18-bb08-8225df697d20
+		summarizeBy: none
+		sourceColumn: position_text
+
+		annotation SummarizationSetBy = Automatic
+
+	column positions_gained
+		dataType: int64
+		formatString: 0
+		lineageTag: 5172f796-8c93-4173-a5a3-012538f00360
+		summarizeBy: sum
+		sourceColumn: positions_gained
+
+		annotation SummarizationSetBy = Automatic
+
+	column points
+		dataType: double
+		lineageTag: 33494a9c-26d0-49a1-a6ec-3a21037e97f9
+		summarizeBy: sum
+		sourceColumn: points
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fastest_lap
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5d45e8ae-f83c-4554-ad1d-8f8ac6b03deb
+		summarizeBy: none
+		sourceColumn: fastest_lap
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_finished
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 919435b4-2241-4f46-b025-e060b98989d6
+		summarizeBy: none
+		sourceColumn: is_finished
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_f1_race_granular' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_f1_race_granular = Origen{[Schema="formula1",Item="v_f1_race_granular"]}[Data]
+				in
+				    formula1_v_f1_race_granular
+
+	annotation PBI_ResultType = Table
+

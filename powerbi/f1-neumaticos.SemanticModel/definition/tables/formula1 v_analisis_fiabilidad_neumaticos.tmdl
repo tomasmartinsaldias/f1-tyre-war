@@ -1,0 +1,102 @@
+table 'formula1 v_analisis_fiabilidad_neumaticos'
+	lineageTag: 8419257f-8f5c-4aea-83cf-9f0faf6685b1
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 3289d182-742e-42e9-bc20-cf5650d3f414
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor_id
+		dataType: string
+		lineageTag: dc5fa49d-0b6d-426c-9b50-5a80e0553a6a
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_manufacturer_id
+		dataType: string
+		lineageTag: 49bcd3d8-10e0-4437-ba79-8d750c6bef77
+		summarizeBy: none
+		sourceColumn: tyre_manufacturer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_race_entries
+		dataType: int64
+		formatString: 0
+		lineageTag: c75169f3-babc-4977-b451-45308f57e00a
+		summarizeBy: sum
+		sourceColumn: total_race_entries
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_laps_completed
+		dataType: int64
+		formatString: 0
+		lineageTag: 73cfe38c-6e80-4bc4-84e5-99ffaacdd138
+		summarizeBy: sum
+		sourceColumn: total_laps_completed
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_dnfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 91c8e6f7-124d-4758-9fd8-47b27b5afb40
+		summarizeBy: sum
+		sourceColumn: tyre_dnfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column accident_dnfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 26c91a86-1428-4401-8734-be2bd39605c4
+		summarizeBy: sum
+		sourceColumn: accident_dnfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column withdrawal_dnfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 08715fe3-3aa3-4730-b6f5-c5159c95293a
+		summarizeBy: sum
+		sourceColumn: withdrawal_dnfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column mechanical_dnfs
+		dataType: int64
+		formatString: 0
+		lineageTag: 1063e78f-d8f2-4f61-919e-7ccfd2b7f44a
+		summarizeBy: sum
+		sourceColumn: mechanical_dnfs
+
+		annotation SummarizationSetBy = Automatic
+
+	column finished_races
+		dataType: int64
+		formatString: 0
+		lineageTag: cd0ab456-a79d-4cc0-8f8f-e305642938ed
+		summarizeBy: sum
+		sourceColumn: finished_races
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_analisis_fiabilidad_neumaticos' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_analisis_fiabilidad_neumaticos = Origen{[Schema="formula1",Item="v_analisis_fiabilidad_neumaticos"]}[Data]
+				in
+				    formula1_v_analisis_fiabilidad_neumaticos
+
+	annotation PBI_ResultType = Table
+

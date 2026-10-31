@@ -1,0 +1,53 @@
+### 1. El Rol y Marco de la Presentación
+
+* **Identidad:** Agencia de consultoría técnica externa especializada en motorsport (estilo McKinsey/Deloitte técnico). No representan a un equipo en particular ni a un fabricante.
+* **Momento temporal:** Finales de 2005 / Pretemporada 2006.
+* **Objetivo de negocio:** Ayudar a cualquier Director de Equipo (Team Principal) de la grilla a tomar la decisión contractual y técnica más crítica para 2006: **¿Firmar con Bridgestone o con Michelin?**
+* **Tesis rectora:** La respuesta no es universal ("elegir A o B"), sino que la mejor decisión técnica está condicionada a las restricciones presupuestarias, el peso político y los objetivos deportivos de cada escudería.
+
+---
+
+### 2. Estructura Narrativa en 3 Actos (Storytelling with Data)
+
+#### Acto I: El Conflicto Técnico-Regulatorio (El Shock de 2005)
+
+* **La era dorada (2001-2004):** Dominio absoluto del binomio Ferrari-Bridgestone basado en compuestos hiperblandos y paradas libres en boxes.
+* **El quiebre de 2005:** La FIA prohíbe el cambio de neumáticos (un juego único para clasificación y 300 km de carrera). Bridgestone colapsa en ritmo y durabilidad, cediendo el campeonato a Renault/Michelin.
+* **La paradoja para 2006:**
+1. La FIA reinstaura los cambios de neumáticos en carrera (el terreno natural de Bridgestone).
+2. Michelin anuncia formalmente su retirada definitiva de la F1 al terminar 2006 (dejando a Bridgestone como monopolio de facto para 2007).
+
+
+* **La pregunta consultora:** ¿Conviene contratar la consistencia multichasis probada de Michelin sabiendo que se van en 12 meses, o apostar al desarrollo de Bridgestone tolerando el riesgo del año previo?
+
+#### Acto II: Los Compromisos Técnicos (Trade-offs Analíticos)
+
+* **Ritmo puro (Qualy) vs. Degradación (Carrera):** Quién entrega pico de agarre a una vuelta frente a quién mantiene estabilidad térmica en tandas largas.
+* **El dilema de asimetría de proveedor (Custom vs. Off-the-Shelf):**
+* *Bridgestone:* Desarrollo monolítico enfocado 100% en el chasis de Ferrari; abandono competitivo a sus clientes (Jordan y Minardi).
+* *Michelin:* Distribución equitativa y democrática de datos y especificaciones entre múltiples clientes de punta (Renault, McLaren, Williams, BAR).
+
+
+* **Sensibilidad al entorno:** Comportamiento térmico, respuesta ante lluvia y tolerancia a trazados según su severidad de carga lateral (Indianápolis/Silverstone vs. Mónaco/Monza).
+* **Riesgo operativo y fiabilidad:** Costo en puntos por fallas mecánicas frente al riesgo reputacional y estructural de incidentes de neumáticos (con el antecedente del boicot de Indianápolis 2005).
+
+#### Acto III: La Matriz de Decisión y el Veredicto por Segmento
+
+Recomendación adaptada a tres arquetipos de escudería:
+
+| Arquetipo de Escudería | Perfil y Equipos Típicos | Proveedor Recomendado | Justificación Estratégica |
+| --- | --- | --- | --- |
+| **1. Top Tier (Candidatos al Título)** | Ferrari, Renault, McLaren | **Bridgestone** | Buscan el techo absoluto de rendimiento (*peak performance*). El retorno de los pit stops en 2006 favorece su filosofía; si tenés peso para exigir desarrollo a medida, es la vía para ganar carreras. |
+| **2. Midfield (Puntos Regulares)** | Williams, Toyota, BAR/Honda, Red Bull, Sauber | **Michelin** | Buscan consistencia y paridad técnica. Ir a Bridgestone es suicidio competitivo (quedas relegado detrás de Ferrari con un delta de +2.5%). Michelin garantiza compuesto estándar competitivo. |
+| **3. Backmarker (Fondo de Grilla)** | Midland/Jordan, Minardi, Super Aguri | **Michelin** *(o Bridgestone por subsidio)* | Priorizan fiabilidad mecánica y supervivencia. Michelin ofrece el neumático probado de la flota; Bridgestone solo se justifica si aporta subsidio económico de motor o presupuesto. |
+
+---
+
+### 3. Estrategia de Entrega en Power BI (Dossier Guiado)
+
+* **Separar exploración de presentación:** No navegar a ciegas ni improvisar clics. El dashboard funciona como un dossier interactivo con transiciones lineales.
+* **El Arquetipo como Filtro Maestro:** En lugar de slicers genéricos de pilotos, el usuario selecciona el perfil del equipo ("Top Tier", "Midfield", "Fondo de Grilla") y todos los gráficos, tarjetas de veredicto y métricas críticas reaccionan a ese perfil.
+* **Herramientas técnicas de soporte:**
+* **Bookmarks (Marcadores):** Funcionan como diapositivas para guiar la exposición oral en 15-18 minutos de forma controlada.
+* **Títulos dinámicos en DAX:** Enuncian el insight analítico en lugar de describir el gráfico.
+* **Tooltips enriquecidos:** Ocultan detalles de carreras atípicas (como Indianápolis 2005) para responder preguntas específicas del tribunal sin ensuciar el lienzo principal.
