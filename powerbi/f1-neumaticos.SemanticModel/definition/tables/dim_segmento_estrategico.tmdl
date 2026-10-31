@@ -31,9 +31,13 @@ table dim_segmento_estrategico
 				let
 				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Nc7BagJBDAbgVwlzsiAL1Uco2JMgZW+LSJxJ2+DsZMlkpfpGPfTUR9gXa9zqLQl/vqTrgslwMCYNy/DcQCsDtN7B4gVL4oQmFTBDO/3YmOXJU1v84p6vqGAUPwUSgZJne6ZiAhcYJFMN+2UXek7vTDn51qqB7b2DxW4sN/eNPsaMSvXG7lD9XAKbvmPhiA5FKZWrUYmM4LgSmOIVk/zzR5FTj3qan183sJGS5n9elXNGH24Yj5xn9wJ1HEjPfH54EFGVFKsX06/5TWf3fw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [id_segmento = _t, nombre_arquetipo = _t, descripcion_objetivo = _t]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"id_segmento", type text}, {"nombre_arquetipo", type text}, {"descripcion_objetivo", type text}}),
-				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","bookmarker","backmarker",Replacer.ReplaceText,{"id_segmento"})
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","bookmarker","backmarker",Replacer.ReplaceText,{"id_segmento"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","1. Top Tier (Candidatos al Título)","1. Top Tier",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","2. Midfield","",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2"," (Puntos Regulares)","Midfield",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","Midfield","2. Midfield",Replacer.ReplaceText,{"nombre_arquetipo"})
 				in
-				    #"Valor reemplazado"
+				    #"Valor reemplazado4"
 
 	annotation PBI_ResultType = Table
 

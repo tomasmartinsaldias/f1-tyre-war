@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "49cc509b459ab6b36627",
   "position": {
-    "x": 103.33333333333334,
-    "y": 70,
+    "x": 0,
+    "y": 27.5,
     "z": 1000,
-    "height": 890,
-    "width": 1493,
+    "height": 192.5,
+    "width": 1430,
     "tabOrder": 1000
   },
   "visual": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "formula1 constructor"
+                      "Entity": "dim_segmento_estrategico"
                     }
                   },
-                  "Property": "name"
+                  "Property": "nombre_arquetipo"
                 }
               },
-              "queryRef": "formula1 constructor.name",
-              "nativeQueryRef": "name",
+              "queryRef": "dim_segmento_estrategico.nombre_arquetipo",
+              "nativeQueryRef": "nombre_arquetipo",
               "active": true
             }
           ]
@@ -51,13 +51,20 @@
       "general": [
         {
           "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
             "filter": {
               "filter": {
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "f",
-                    "Entity": "formula1 constructor",
+                    "Name": "d",
+                    "Entity": "dim_segmento_estrategico",
                     "Type": 0
                   }
                 ],
@@ -70,10 +77,10 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "f"
+                                  "Source": "d"
                                 }
                               },
-                              "Property": "name"
+                              "Property": "nombre_arquetipo"
                             }
                           }
                         ],
@@ -81,28 +88,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Ferrari'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Renault'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Williams'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'McLaren'"
+                                "Value": "'1. Top Tier'"
                               }
                             }
                           ]
@@ -115,26 +101,38 @@
             }
           }
         }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "21D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "96cd9bea36e070ae5073",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "formula1 constructor"
-              }
-            },
-            "Property": "name"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "9aad7d3e2c188311264c",
         "field": {
@@ -187,6 +185,20 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "eecc186f1eb9608b4cdb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_segmento_estrategico"
+              }
+            },
+            "Property": "nombre_arquetipo"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

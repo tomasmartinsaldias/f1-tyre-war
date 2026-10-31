@@ -25,25 +25,6 @@ table 'formula1 constructor'
 
 		annotation SummarizationSetBy = Automatic
 
-	column id_segmento =
-			
-			SWITCH(
-			    'formula1 constructor'[id],
-			    "ferrari", "top_tier",
-			    "renault", "top_tier",
-			    "mclaren", "top_tier",
-			    "williams", "midfield",
-			    "toyota", "midfield",
-			    "bar", "midfield",
-			    "sauber", "midfield",
-			    "red_bull", "midfield",
-			    "backmarker"
-			)
-		lineageTag: 3d7a1159-09dd-46b1-b1c2-9d3c2e2b4e87
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
 	partition 'formula1 constructor' = m
 		mode: import
 		source =

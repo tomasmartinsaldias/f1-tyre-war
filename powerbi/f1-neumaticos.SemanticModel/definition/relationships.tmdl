@@ -19,10 +19,6 @@ relationship c17931ff-39f4-2417-addf-742bc2967590
 	fromColumn: 'formula1 v_f1_race_granular'.constructor_id
 	toColumn: 'formula1 constructor'.id
 
-relationship b2a8a783-e215-9ea8-ad53-2c55530a7270
-	fromColumn: 'formula1 constructor'.id_segmento
-	toColumn: dim_segmento_estrategico.id_segmento
-
 relationship aabd5e60-fed5-fd3b-b91f-ad1bb518ff8c
 	fromColumn: 'formula1 v_analisis_rendimiento_anual'.constructor_id
 	toColumn: 'formula1 constructor'.id
@@ -34,4 +30,12 @@ relationship 8e0fdf55-2d33-fccd-295c-158eee7b53fc
 relationship 30167f6c-b4e9-ff5e-04e0-b60426e8d43b
 	fromColumn: 'formula1 v_analisis_fiabilidad_neumaticos'.constructor_id
 	toColumn: 'formula1 constructor'.id
+
+relationship 016415cb-cced-bb7b-adda-95b6a79617ef
+	fromColumn: 'formula1 v_f1_qualy_granular'.id_segmento
+	toColumn: dim_segmento_estrategico.id_segmento
+
+relationship c4d2ba9a-b41c-0c22-ee15-da9674aa517a
+	fromColumn: 'formula1 v_analisis_rendimiento_anual'.id_segmento
+	toColumn: dim_segmento_estrategico.id_segmento
 

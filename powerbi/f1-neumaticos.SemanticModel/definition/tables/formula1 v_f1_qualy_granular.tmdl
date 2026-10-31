@@ -152,6 +152,37 @@ table 'formula1 v_f1_qualy_granular'
 
 		annotation SummarizationSetBy = Automatic
 
+	column id_segmento = ```
+			
+			VAR Anio = 'formula1 v_f1_qualy_granular'[year]
+			VAR ConstructorID = LOWER(TRIM(RELATED('formula1 constructor'[id])))
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    -- TOP TIER (Equipos de fábrica y contendientes al título según año)
+			    ConstructorID = "ferrari", "top_tier",
+			    ConstructorID IN {"mclaren", "renault"}, "top_tier",
+			    ConstructorID = "benetton" && Anio == 2001, "top_tier",
+			    ConstructorID = "williams" && Anio <= 2004, "top_tier",
+			    
+			    -- MIDFIELD (Zona media competitiva)
+			    ConstructorID = "williams" && Anio == 2005, "midfield",
+			    ConstructorID IN {"bar", "toyota", "sauber"}, "midfield",
+			    ConstructorID IN {"jaguar", "red_bull"}, "midfield",
+			    ConstructorID = "jordan" && Anio <= 2003, "midfield",
+			    
+			    -- BACKMARKER (Fondo de grilla / Supervivencia)
+			    ConstructorID = "jordan" && Anio >= 2004, "backmarker",
+			    ConstructorID IN {"minardi", "midland", "arrows", "prost"}, "backmarker",
+			    
+			    "backmarker"
+			)
+			```
+		lineageTag: 2bb44145-42de-4123-b7db-bb8345dbcf8d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_f1_qualy_granular' = m
 		mode: import
 		source =

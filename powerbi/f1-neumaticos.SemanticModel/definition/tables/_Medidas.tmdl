@@ -59,6 +59,37 @@ table _Medidas
 		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
 
+	measure Texto_Insight_Dinamico = ```
+			
+			VAR SegmentoSeleccionado = SELECTEDVALUE('dim_segmento_estrategico'[id_segmento], "todos")
+			RETURN
+			    SWITCH(
+			        SegmentoSeleccionado,
+			        "top_tier", 
+			        "COLAPSO EN LA CIMA (TOP TIER):" & UNICHAR(10) &
+			        "Tras dominar 2001-2004 con brechas al suelo (<0.50%), Ferrari colapsó en 2005 al 1.60% por degradación térmica sin paradas. Michelin (Renault y McLaren) capitalizó el cambio reglamentario cayendo por debajo del 0.50% a la pole.",
+			        
+			        "midfield", 
+			        "ÉXODO Y DISPARADA EN MIDFIELD:" & UNICHAR(10) &
+			        "Michelin optimizó su rendimiento de forma continua hacia el 1.60%. En contrapartida, los clientes de Bridgestone se descolgaron al 2.70% en 2004 antes de abandonar el compuesto o quedar desiertos en 2005.",
+			        
+			        "backmarker", 
+			        "FONDO DE GRILLA (SUPERVIVENCIA):" & UNICHAR(10) &
+			        "Entre 2003 y 2005 Bridgestone se estancó en brechas superiores al 5.00%. En contraste, los equipos de fondo calzados con Michelin mostraron un salto de eficiencia notable en 2005, reduciendo la brecha al 2.50%.",
+			        
+			        /* Texto Global sin botón seleccionado */
+			        "PANORAMA ESTRATÉGICO GLOBAL:" & UNICHAR(10) &
+			        "En 2005, la prohibición de cambios de neumáticos invirtió la jerarquía técnica. Bridgestone perdió competitividad estructural en todos los estratos de la grilla." & UNICHAR(10) & UNICHAR(10) &
+			        "INSTRUCCIÓN: Seleccione un segmento en la cabecera (Top Tier, Midfield o Fondo) para auditar el comportamiento de cada estrato."
+			    )
+			```
+		lineageTag: a543c48c-d150-45cd-adec-5d3428a931f7
+
+	measure Puntos_Segmento_Filtrado = SUM('formula1 v_analisis_rendimiento_anual'[total_points])
+		lineageTag: 297bd041-4314-4eb8-b971-71fa1aff7c30
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition _Medidas = m
 		mode: import
 		source =

@@ -75,6 +75,37 @@ table 'formula1 v_analisis_rendimiento_anual'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column id_segmento = ```
+			
+			VAR Anio = 'formula1 v_analisis_rendimiento_anual'[year]
+			-- Si constructor_id ya tiene el texto ("ferrari", etc.), lo lee directo; si es FK a la dimensión, RELATED lo resuelve:
+			VAR ConstructorID = LOWER(TRIM(COALESCE(RELATED('formula1 constructor'[id]), 'formula1 v_analisis_rendimiento_anual'[constructor_id] & "")))
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    -- TOP TIER
+			    ConstructorID = "ferrari", "top_tier",
+			    ConstructorID IN {"mclaren", "renault"}, "top_tier",
+			    ConstructorID = "benetton" && Anio == 2001, "top_tier",
+			    ConstructorID = "williams" && Anio <= 2004, "top_tier",
+			    
+			    -- MIDFIELD
+			    ConstructorID = "williams" && Anio == 2005, "midfield",
+			    ConstructorID IN {"bar", "toyota", "sauber", "jaguar", "red_bull"}, "midfield",
+			    ConstructorID = "jordan" && Anio <= 2003, "midfield",
+			    
+			    -- FONDO DE GRILLA
+			    ConstructorID = "jordan" && Anio >= 2004, "backmarker",
+			    ConstructorID IN {"minardi", "midland", "arrows", "prost"}, "backmarker",
+			    
+			    "backmarker"
+			)
+			```
+		lineageTag: 65e5e814-6e3d-4988-bd4c-2b1c600c9028
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_analisis_rendimiento_anual' = m
 		mode: import
 		source =
