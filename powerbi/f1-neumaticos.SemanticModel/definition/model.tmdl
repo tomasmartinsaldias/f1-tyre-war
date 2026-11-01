@@ -29,7 +29,6 @@ ref table LocalDateTable_ea1a188e-647f-4aac-9cd1-28743a530a20
 ref table 'formula1 v_temporadas_proveedor_marca'
 ref table 'formula1 v_cuota_parrilla_anual_neumaticos'
 ref table 'formula1 v_analisis_rendimiento_lluvia_carreras'
-ref table Matriz_Decision
 
 ref cultureInfo es-ES
 

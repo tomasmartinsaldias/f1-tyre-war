@@ -608,42 +608,6 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-
-	measure Veredicto_Proveedor = 
-			SELECTEDVALUE(
-			    'Matriz_Decision'[Proveedor_Recomendado], 
-			    "Seleccione un Arquetipo"
-			)
-		lineageTag: c4d8e001-1b2c-4d3e-8f5a-9a01b2c3d401
-
-	measure Color_Veredicto_HEX = 
-			SELECTEDVALUE(
-			    'Matriz_Decision'[Color_HEX], 
-			    "#1A1A1A"
-			)
-		lineageTag: c4d8e002-1b2c-4d3e-8f5a-9a01b2c3d402
-
-	measure Veredicto_Titulo = 
-			SELECTEDVALUE(
-			    'Matriz_Decision'[Titulo_Veredicto], 
-			    "Matriz de Decisión Contractual 2006"
-			)
-		lineageTag: c4d8e003-1b2c-4d3e-8f5a-9a01b2c3d403
-
-	measure Veredicto_Justificacion = 
-			SELECTEDVALUE(
-			    'Matriz_Decision'[Justificacion_Estrategica], 
-			    "Seleccione una categoría de escudería para visualizar el dictamen técnico."
-			)
-		lineageTag: c4d8e004-1b2c-4d3e-8f5a-9a01b2c3d404
-
-	measure Veredicto_Factores = ```
-			"• Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
-			"• Horizonte Regulatorio (2007): " & SELECTEDVALUE('Matriz_Decision'[Horizonte_2007]) & UNICHAR(10) & UNICHAR(10) &
-			"• Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
-		```
-		lineageTag: c4d8e005-1b2c-4d3e-8f5a-9a01b2c3d405
-
 	partition _Medidas = m
 		mode: import
 		source =
