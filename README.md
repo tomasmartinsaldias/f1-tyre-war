@@ -45,7 +45,7 @@ f1-tyre-war/
 Para tener todo el entorno de datos configurado exactamente igual en PostgreSQL y listo para Power BI:
 
 1. **Consulta la guía paso a paso completa:**  
-   👉 [**Guía de Replicación del Modelo y Clima (docs/guia_carga_datos_weather.md)**](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/docs/guia_carga_datos_weather.md)
+   👉 [**Guía de Replicación del Modelo y Clima (docs/guia_carga_datos_weather.md)**](docs/guia_carga_datos_weather.md)
 
 2. **Resumen de comandos esenciales:**
    ```bash

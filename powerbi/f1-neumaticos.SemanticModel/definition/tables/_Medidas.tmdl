@@ -208,133 +208,6 @@ table _Medidas
 		formatString: 0.000
 		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
 
-
-	measure Cuota_Michelin_2005_Pct = 
-			CALCULATE(
-			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_michelin]), 100),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0.0%
-		lineageTag: 71a01101-1b2c-4d3e-8f5a-9a01b2c3d4e1
-
-	measure Cuota_Bridgestone_2005_Pct = 
-			CALCULATE(
-			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_bridgestone]), 100),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0.0%
-		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
-
-	measure Total_Equipos_Grid = 
-			DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
-		formatString: 0
-		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
-
-	measure Equipos_Michelin_2005_Count = 
-			CALCULATE(
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0
-		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
-
-	measure Equipos_Bridgestone_2005_Count = 
-			CALCULATE(
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0
-		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
-
-	measure Total_Poles_Michelin = 
-			CALCULATE(
-			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
-			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "michelin"
-			)
-		formatString: 0
-		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
-
-	measure Total_Poles_Bridgestone = 
-			CALCULATE(
-			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
-			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "bridgestone"
-			)
-		formatString: 0
-		lineageTag: 71a01107-1b2c-4d3e-8f5a-9a01b2c3d4e7
-
-	measure Poles_Win_Ratio_Texto = 
-			VAR M = [Total_Poles_Michelin]
-			VAR B = [Total_Poles_Bridgestone]
-			RETURN
-			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
-		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
-
-	measure Poles_Michelin_Pct = 
-			VAR M = [Total_Poles_Michelin]
-			VAR B = [Total_Poles_Bridgestone]
-			RETURN
-			    DIVIDE(M, M + B)
-		formatString: 0.0%
-		lineageTag: 71a01109-1b2c-4d3e-8f5a-9a01b2c3d4e9
-
-	measure Texto_Insight_Escuderias = ```
-			VAR SelFidelidad = SELECTEDVALUE('formula1 v_temporadas_proveedor_marca'[Tipo_Alianza], "todos")
-			RETURN
-			SWITCH(
-			    SelFidelidad,
-			    "Exclusivo Michelin",
-			    "ALIANZA PURA MICHELIN (CONFIANZA MULTICHASIS):" & UNICHAR(10) &
-			    "Escuderias como Renault y Williams compitieron exclusivamente con Michelin durante todo el periodo. La garantia de reparto democratico de datos y especificacion comun fue determinante para desbancar a Ferrari en los campeonatos 2005.",
-			    
-			    "Exclusivo Bridgestone",
-			    "EL EJE MONOPOLICO FERRARI Y EL AISLAMIENTO:" & UNICHAR(10) &
-			    "Ferrari concentro el 100% de la atencion termomecanica de Bridgestone disenando neumaticos a medida exclusiva de su chasis. Equipos cliente como Minardi sufrieron brechas abismales sin soporte de ingenieria personalizada.",
-			    
-			    "Migró de Proveedor",
-			    "EL EXODO ESTRATEGICO (FUGA A MICHELIN):" & UNICHAR(10) &
-			    "McLaren (2002), Toyota y BAR (2003) y Sauber abandonaron a Bridgestone tras comprobar que era un suicidio competir como clientes de segunda frente a Ferrari. El paso a Michelin les devolvio victorias y regularidad en puntos.",
-			    
-			    /* Global */
-			    "ESTRATEGIA GLOBAL DE PARRILLA (2001-2005):" & UNICHAR(10) &
-			    "En 2001, Bridgestone acaparaba el 70% de los constructores. Para 2005, la situacion se invertio: Michelin controlo el 70% de los equipos (7 de 10) y el 70% de los monoplazas en pista." & UNICHAR(10) & UNICHAR(10) &
-			    "DICTAMEN 2006: Salvo poseer el peso politico para exigir a Bridgestone desarrollo dedicado exclusivo, la alternativa sensata para cualquier equipo independiente es Michelin."
-			)
-			```
-		lineageTag: 71a0110a-1b2c-4d3e-8f5a-9a01b2c3d4ea
-
-	measure Texto_Insight_Poles = ```
-			VAR AnioSel = SELECTEDVALUE('formula1 v_acumulacion_poles_carreras'[year], 0)
-			RETURN
-			SWITCH(
-			    AnioSel,
-			    2001,
-			    "TEMPORADA 2001 (RETORNO DE MICHELIN):" & UNICHAR(10) &
-			    "En su retorno a la categoria reina tras 17 anos, Michelin planto cara de inmediato al binomio dominante Ferrari-Bridgestone gracias a la potencia de Williams-BMW (Ralf Schumacher y Juan Pablo Montoya), sumando 4 poles frente a 13 de Bridgestone.",
-			    
-			    2002,
-			    "TEMPORADA 2002 (HEGEMONIA FERRARI-BRIDGESTONE):" & UNICHAR(10) &
-			    "El legendario Ferrari F2002 impuso un dominio abrumador con 15 poles en 17 carreras (Schumacher y Barrichello). Michelin alcanzo 2 poles con Montoya, confirmando la eficacia de su compuesto blando en Monza.",
-			    
-			    2003,
-			    "TEMPORADA 2003 (EQUILIBRIO TOTAL Y FRACTURA):" & UNICHAR(10) &
-			    "Con McLaren y Toyota uniendose a la flota francesa, la batalla se emparejo por completo (8 poles Michelin vs 8 Bridgestone). Las poles de Fernando Alonso en Malasia y Kimi Raikkonen en Nurburgring sellaron el fin de la invulnerabilidad japonesa.",
-			    
-			    2004,
-			    "TEMPORADA 2004 (EL ULTIMO PICO DE BRIDGESTONE):" & UNICHAR(10) &
-			    "Ferrari volvio a imponerse con 12 poles gracias a la combinacion del F2004 y paradas multiples en boxes. Michelin resistio logrando 6 poles repartidas democraticamente entre Renault, BAR-Honda y Williams.",
-			    
-			    2005,
-			    "TEMPORADA 2005 (EL COLAPSO DEL JUEGO UNICO):" & UNICHAR(10) &
-			    "El shock regulatorio de la FIA que prohibio el cambio de neumaticos desato una catastrofe para Bridgestone: sufrio una sequia historica de poles (1 sola en 19 carreras, Schumacher en Hungria). Michelin acaparo 18 de las 19 poles posibles (94.7%).",
-			    
-			    /* Global */
-			    "TRAYECTORIA HISTORICA DE POLES (2001-2005):" & UNICHAR(10) &
-			    "Bridgestone lidero la contienda de poles hasta mediados de 2005. En el GP de Europa 2005 (Nurburgring, carrera 74), Michelin consumo el 'Sorpasso' definitivo, cerrando el periodo con 54 poles frente a 33 de Bridgestone." & UNICHAR(10) & UNICHAR(10) &
-			    "INSTRUCCION: Seleccione un ano en la cabecera (2001 a 2005) para auditar la distribucion y el equilibrio de poles en cada temporada."
-			)
-			```
-		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
-
 	measure Gap_Lider_Marca_Pos =
 			
 			AVERAGE('formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader])
@@ -533,6 +406,131 @@ table _Medidas
 		lineageTag: 33b3adb1-769b-4870-b586-ebcb2db9dbb4
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Cuota_Michelin_2005_Pct =
+			CALCULATE(
+			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_michelin]), 100),
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			)
+		formatString: 0.0%
+		lineageTag: 71a01101-1b2c-4d3e-8f5a-9a01b2c3d4e1
+
+	measure Cuota_Bridgestone_2005_Pct =
+			CALCULATE(
+			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_bridgestone]), 100),
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			)
+		formatString: 0.0%
+		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
+
+	measure Total_Equipos_Grid = DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
+		formatString: 0
+		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
+
+	measure Equipos_Michelin_2005_Count =
+			CALCULATE(
+			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			)
+		formatString: 0
+		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
+
+	measure Equipos_Bridgestone_2005_Count =
+			CALCULATE(
+			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			)
+		formatString: 0
+		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
+
+	measure Total_Poles_Michelin =
+			CALCULATE(
+			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
+			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "michelin"
+			)
+		formatString: 0
+		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
+
+	measure Total_Poles_Bridgestone =
+			CALCULATE(
+			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
+			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "bridgestone"
+			)
+		formatString: 0
+		lineageTag: 71a01107-1b2c-4d3e-8f5a-9a01b2c3d4e7
+
+	measure Poles_Win_Ratio_Texto =
+			VAR M = [Total_Poles_Michelin]
+			VAR B = [Total_Poles_Bridgestone]
+			RETURN
+			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
+		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
+
+	measure Poles_Michelin_Pct =
+			VAR M = [Total_Poles_Michelin]
+			VAR B = [Total_Poles_Bridgestone]
+			RETURN
+			    DIVIDE(M, M + B)
+		formatString: 0.0%
+		lineageTag: 71a01109-1b2c-4d3e-8f5a-9a01b2c3d4e9
+
+	measure Texto_Insight_Escuderias = ```
+			VAR SelFidelidad = SELECTEDVALUE('formula1 v_temporadas_proveedor_marca'[Tipo_Alianza], "todos")
+			RETURN
+			SWITCH(
+			    SelFidelidad,
+			    "Exclusivo Michelin",
+			    "ALIANZA PURA MICHELIN (CONFIANZA MULTICHASIS):" & UNICHAR(10) &
+			    "Escuderias como Renault y Williams compitieron exclusivamente con Michelin durante todo el periodo. La garantia de reparto democratico de datos y especificacion comun fue determinante para desbancar a Ferrari en los campeonatos 2005.",
+			    
+			    "Exclusivo Bridgestone",
+			    "EL EJE MONOPOLICO FERRARI Y EL AISLAMIENTO:" & UNICHAR(10) &
+			    "Ferrari concentro el 100% de la atencion termomecanica de Bridgestone disenando neumaticos a medida exclusiva de su chasis. Equipos cliente como Minardi sufrieron brechas abismales sin soporte de ingenieria personalizada.",
+			    
+			    "Migró de Proveedor",
+			    "EL EXODO ESTRATEGICO (FUGA A MICHELIN):" & UNICHAR(10) &
+			    "McLaren (2002), Toyota y BAR (2003) y Sauber abandonaron a Bridgestone tras comprobar que era un suicidio competir como clientes de segunda frente a Ferrari. El paso a Michelin les devolvio victorias y regularidad en puntos.",
+			    
+			    /* Global */
+			    "ESTRATEGIA GLOBAL DE PARRILLA (2001-2005):" & UNICHAR(10) &
+			    "En 2001, Bridgestone acaparaba el 70% de los constructores. Para 2005, la situacion se invertio: Michelin controlo el 70% de los equipos (7 de 10) y el 70% de los monoplazas en pista." & UNICHAR(10) & UNICHAR(10) &
+			    "DICTAMEN 2006: Salvo poseer el peso politico para exigir a Bridgestone desarrollo dedicado exclusivo, la alternativa sensata para cualquier equipo independiente es Michelin."
+			)
+			```
+		lineageTag: 71a0110a-1b2c-4d3e-8f5a-9a01b2c3d4ea
+
+	measure Texto_Insight_Poles = ```
+			VAR AnioSel = SELECTEDVALUE('formula1 v_acumulacion_poles_carreras'[year], 0)
+			RETURN
+			SWITCH(
+			    AnioSel,
+			    2001,
+			    "TEMPORADA 2001 (RETORNO DE MICHELIN):" & UNICHAR(10) &
+			    "En su retorno a la categoria reina tras 17 anos, Michelin planto cara de inmediato al binomio dominante Ferrari-Bridgestone gracias a la potencia de Williams-BMW (Ralf Schumacher y Juan Pablo Montoya), sumando 4 poles frente a 13 de Bridgestone.",
+			    
+			    2002,
+			    "TEMPORADA 2002 (HEGEMONIA FERRARI-BRIDGESTONE):" & UNICHAR(10) &
+			    "El legendario Ferrari F2002 impuso un dominio abrumador con 15 poles en 17 carreras (Schumacher y Barrichello). Michelin alcanzo 2 poles con Montoya, confirmando la eficacia de su compuesto blando en Monza.",
+			    
+			    2003,
+			    "TEMPORADA 2003 (EQUILIBRIO TOTAL Y FRACTURA):" & UNICHAR(10) &
+			    "Con McLaren y Toyota uniendose a la flota francesa, la batalla se emparejo por completo (8 poles Michelin vs 8 Bridgestone). Las poles de Fernando Alonso en Malasia y Kimi Raikkonen en Nurburgring sellaron el fin de la invulnerabilidad japonesa.",
+			    
+			    2004,
+			    "TEMPORADA 2004 (EL ULTIMO PICO DE BRIDGESTONE):" & UNICHAR(10) &
+			    "Ferrari volvio a imponerse con 12 poles gracias a la combinacion del F2004 y paradas multiples en boxes. Michelin resistio logrando 6 poles repartidas democraticamente entre Renault, BAR-Honda y Williams.",
+			    
+			    2005,
+			    "TEMPORADA 2005 (EL COLAPSO DEL JUEGO UNICO):" & UNICHAR(10) &
+			    "El shock regulatorio de la FIA que prohibio el cambio de neumaticos desato una catastrofe para Bridgestone: sufrio una sequia historica de poles (1 sola en 19 carreras, Schumacher en Hungria). Michelin acaparo 18 de las 19 poles posibles (94.7%).",
+			    
+			    /* Global */
+			    "TRAYECTORIA HISTORICA DE POLES (2001-2005):" & UNICHAR(10) &
+			    "Bridgestone lidero la contienda de poles hasta mediados de 2005. En el GP de Europa 2005 (Nurburgring, carrera 74), Michelin consumo el 'Sorpasso' definitivo, cerrando el periodo con 54 poles frente a 33 de Bridgestone." & UNICHAR(10) & UNICHAR(10) &
+			    "INSTRUCCION: Seleccione un ano en la cabecera (2001 a 2005) para auditar la distribucion y el equilibrio de poles en cada temporada."
+			)
+			```
+		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
 
 	partition _Medidas = m
 		mode: import

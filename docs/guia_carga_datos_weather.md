@@ -87,15 +87,15 @@ Los scripts del proyecto utilizan la configuración estándar de la cátedra:
 
 | Archivo | Ubicación | Descripción |
 | :--- | :--- | :--- |
-| `script_generador_weather.py` | [scripts/script_generador_weather.py](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/scripts/script_generador_weather.py) | Pipeline Python ETL que consulta Open-Meteo y genera el SQL climático. |
-| `ddl_race_weather.sql` | [sql/ddl_race_weather.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/ddl_race_weather.sql) | DDL para crear la tabla `formula1.race_weather` con claves foráneas e índices. |
-| `45_race_weather.sql` | [sql/45_race_weather.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/45_race_weather.sql) | Datos climáticos precalculados (104 registros de Grandes Premios 2000-2005). |
-| `vistas_rendimiento_lluvia.sql` | [sql/vistas_rendimiento_lluvia.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/vistas_rendimiento_lluvia.sql) | Vistas SQL que cruzan clima con tiempos por vuelta de Michelin y Bridgestone. |
-| `vistas_temporadas_y_acumulacion_poles.sql` | [sql/vistas_temporadas_y_acumulacion_poles.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/vistas_temporadas_y_acumulacion_poles.sql) | Vistas cronológicas de poles, victorias y podios por temporada. |
-| `vistas_qualy.sql` | [sql/vistas_qualy.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/vistas_qualy.sql) | Brechas de ritmo a una vuelta en clasificación. |
-| `vistas_fallas.sql` | [sql/vistas_fallas.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/vistas_fallas.sql) | Análisis de fiabilidad y causas de abandono mecánico vs neumáticos. |
-| `vistas_generalita_o_especializado.sql` | [sql/vistas_generalita_o_especializado.sql](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/sql/vistas_generalita_o_especializado.sql) | Asimetría Ferrari vs clientes en el campamento Bridgestone. |
-| `f1-neumaticos.pbip` | [powerbi/f1-neumaticos.pbip](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/powerbi/f1-neumaticos.pbip) | Proyecto Power BI con el informe y modelo analítico completo. |
+| `script_generador_weather.py` | [scripts/script_generador_weather.py](../scripts/script_generador_weather.py) | Pipeline Python ETL que consulta Open-Meteo y genera el SQL climático. |
+| `ddl_race_weather.sql` | [sql/ddl_race_weather.sql](../sql/ddl_race_weather.sql) | DDL para crear la tabla `formula1.race_weather` con claves foráneas e índices. |
+| `45_race_weather.sql` | [sql/45_race_weather.sql](../sql/45_race_weather.sql) | Datos climáticos precalculados (104 registros de Grandes Premios 2000-2005). |
+| `vistas_rendimiento_lluvia.sql` | [sql/vistas_rendimiento_lluvia.sql](../sql/vistas_rendimiento_lluvia.sql) | Vistas SQL que cruzan clima con tiempos por vuelta de Michelin y Bridgestone. |
+| `vistas_temporadas_y_acumulacion_poles.sql` | [sql/vistas_temporadas_y_acumulacion_poles.sql](../sql/vistas_temporadas_y_acumulacion_poles.sql) | Vistas cronológicas de poles, victorias y podios por temporada. |
+| `vistas_qualy.sql` | [sql/vistas_qualy.sql](../sql/vistas_qualy.sql) | Brechas de ritmo a una vuelta en clasificación. |
+| `vistas_fallas.sql` | [sql/vistas_fallas.sql](../sql/vistas_fallas.sql) | Análisis de fiabilidad y causas de abandono mecánico vs neumáticos. |
+| `vistas_generalita_o_especializado.sql` | [sql/vistas_generalita_o_especializado.sql](../sql/vistas_generalita_o_especializado.sql) | Asimetría Ferrari vs clientes en el campamento Bridgestone. |
+| `f1-neumaticos.pbip` | [powerbi/f1-neumaticos.pbip](../powerbi/f1-neumaticos.pbip) | Proyecto Power BI con el informe y modelo analítico completo. |
 
 ---
 
@@ -204,7 +204,7 @@ FROM formula1.race_weather
 GROUP BY is_wet_race;
 
 -- 3. Verificación de la vista analítica de lluvia (Top 5 carreras con mayor brecha)
-SELECT year, round, grand_prix, id_segmento, proveedor_mas_rapido, delta_ritmo_segundos
+SELECT year, round, grand_prix, id_segmento, proveedor_mas_rapido, diferencia_sec
 FROM formula1.v_analisis_rendimiento_lluvia_carreras
 ORDER BY year, round
 LIMIT 5;
@@ -214,7 +214,7 @@ LIMIT 5;
 
 ### Paso 7: Actualización en Power BI
 1. Abre el archivo de proyecto en Power BI Desktop:
-   [f1-neumaticos.pbip](file:///C:/Users/Franc/Documents/ThinkPad/Github/f1-tyre-war/powerbi/f1-neumaticos.pbip)
+   [f1-neumaticos.pbip](../powerbi/f1-neumaticos.pbip)
 2. En la cinta de opciones superior, ve a la pestaña **Inicio** y haz clic en **Actualizar** (*Refresh*).
 3. Power BI se conectará a `localhost:5432` en PostgreSQL mediante el conector nativo e importará las vistas actualizadas.
 4. Navega por las páginas del informe:
