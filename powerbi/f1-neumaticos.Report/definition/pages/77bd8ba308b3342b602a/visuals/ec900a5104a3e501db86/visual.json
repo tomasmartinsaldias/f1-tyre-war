@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "ec900a5104a3e501db86",
+  "position": {
+    "x": 1347.9244955144775,
+    "y": 859.46868822903321,
+    "z": 3001,
+    "height": 144.134500510459,
+    "width": 509.80906662032714,
+    "tabOrder": 3001
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Michelin redujo la dispersión de flota mediante desarrollo abierto, mientras Bridgestone impuso un déficit estructural constante (+11 puestos) al concentrar sus recursos exclusivamente en Ferrari",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
