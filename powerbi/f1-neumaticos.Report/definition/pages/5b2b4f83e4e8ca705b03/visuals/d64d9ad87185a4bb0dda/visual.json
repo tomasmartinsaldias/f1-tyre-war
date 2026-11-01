@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "d64d9ad87185a4bb0dda",
   "position": {
-    "x": 115,
-    "y": 597.5,
+    "x": 25.588804897857187,
+    "y": 598.7780346098582,
     "z": 1000,
     "height": 362.5,
     "width": 672.5,
@@ -132,6 +132,92 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "formula1 v_f1_race_granular"
+                          }
+                        },
+                        "Property": "tyre_manufacturer_id"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'bridgestone'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "formula1 v_f1_race_granular"
+                          }
+                        },
+                        "Property": "tyre_manufacturer_id"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'michelin'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       ]

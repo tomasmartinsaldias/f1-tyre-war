@@ -83,9 +83,7 @@ table _Medidas
 			        
 			        /* Texto Global sin botón seleccionado */
 			        "PANORAMA ESTRATÉGICO GLOBAL:" & UNICHAR(10) &
-			        "En 2005, la prohibición de cambios de neumáticos invirtió la jerarquía técnica. Bridgestone perdió competitividad estructural en todos los estratos de la grilla." & UNICHAR(10) & UNICHAR(10) &
-			        "INSTRUCCIÓN: Seleccione un segmento en la cabecera (Top Tier, Midfield o Fondo) para auditar el comportamiento de cada estrato."
-			    )
+			        "En 2005, la prohibición de cambios de neumáticos invirtió la jerarquía técnica. Bridgestone perdió competitividad estructural en todos los estratos de la grilla.")
 			```
 		lineageTag: a543c48c-d150-45cd-adec-5d3428a931f7
 
@@ -277,12 +275,12 @@ table _Medidas
 			RETURN 
 			    SWITCH(
 			        Anio,
-			        2001, "2001: Monopolio técnico de Bridgestone; Michelin inicia su desembarco con Williams",
-			        2002, "2002: McLaren abandona Bridgestone; comienza la polarización de flotas",
-			        2003, "2003: La flota Michelin se consolida en la pelea directa contra Ferrari",
-			        2004, "2004: Éxodo masivo a Michelin; la brecha cliente en Bridgestone supera las 10 posiciones",
-			        2005, "2005: Aislamiento total — Bridgestone relegada a Ferrari mientras Michelin democratiza la grilla",
-			        "Brecha al Líder de Marca: Escuderías Clave (2001-2005)"
+			        2001, "2001: Dominio técnico de Ferrari-Bridgestone; desembarco de Michelin con cuatro escuderías",
+			        2002, "2002: McLaren migra a Michelin; se profundiza la asimetría interna en los clientes Bridgestone",
+			        2003, "2003: Convergencia en Michelin; tres equipos disputan la referencia frente al monopolio de Ferrari",
+			        2004, "2004: Éxodo hacia Michelin; la brecha de los clientes Bridgestone supera las 13 posiciones",
+			        2005, "2005: Aislamiento de Bridgestone; Michelin acapara el 70% de la grilla con dispersión contenida",
+			        "Brecha Media al Líder de Marca por Temporada (2001-2005)"
 			    )
 			```
 		lineageTag: 3e72953e-43de-4651-9154-8413ae8da5a1
@@ -293,12 +291,12 @@ table _Medidas
 			RETURN
 			    SWITCH(
 			        Anio,
-			        2001, "Diferencia media de posiciones en clasificación respecto al mejor auto del fabricante (Williams único referente Michelin)",
-			        2002, "Diferencia media de posiciones en clasificación: el salto de McLaren inicia la división de datos",
-			        2003, "Diferencia media de posiciones en clasificación: convergencia de flota Michelin vs. brecha crítica en Bridgestone",
-			        2004, "Diferencia media de posiciones en clasificación: la brecha de clientes Bridgestone supera los 10 puestos",
-			        2005, "Diferencia media de posiciones en clasificación: paridad de flota Michelin (5 equipos) frente al aislamiento de Ferrari",
-			        "Diferencia media de puestos en clasificación respecto al monoplaza mejor clasificado de cada marca"
+			        2001, "Diferencia media en puestos de qualy respecto al referente de marca. Ferrari y Williams como anclas técnicas.",
+			        2002, "Diferencia media en puestos de qualy: la llegada de McLaren amplía la telemetría francesa frente al modelo Ferrari.",
+			        2003, "Diferencia media en puestos de qualy: paridad técnica Williams-McLaren-Renault vs. dispersión en los satélites Bridgestone.",
+			        2004, "Diferencia media en puestos de qualy: caída de Sauber y Jordan a más de 10 puestos del F2004.",
+			        2005, "Diferencia media en puestos de qualy: 7 escuderías Michelin compactadas frente al colapso de clientes Bridgestone (Jordan/Minardi).",
+			        "Diferencia media de posiciones en clasificación respecto al monoplaza mejor clasificado de cada fabricante"
 			    )
 		lineageTag: ab783b6a-50f7-4ad3-8f6c-44a7666ae85c
 

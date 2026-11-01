@@ -76,7 +76,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
+                      "ColorId": 2,
                       "Percent": 0
                     }
                   }

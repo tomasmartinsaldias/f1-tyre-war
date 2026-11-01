@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "824948cf2669a5d64dc1",
   "position": {
-    "x": 76.766414693571562,
-    "y": 273.80021240707191,
+    "x": 48.618729305928653,
+    "y": 245.652527019429,
     "z": 1000,
-    "height": 762.54638595614415,
-    "width": 1177.0850253014305,
+    "height": 790.69407134378707,
+    "width": 1105.4363715874304,
     "tabOrder": 1000
   },
   "visual": {
@@ -112,7 +112,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#FF2022'"
+                              "Value": "'#004F9F'"
                             }
                           }
                         },
@@ -148,7 +148,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#004F9F'"
+                              "Value": "'#FF2022'"
                             }
                           }
                         }
@@ -191,6 +191,46 @@
               "expr": {
                 "Literal": {
                   "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -249,7 +289,7 @@
             "titleWrap": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
