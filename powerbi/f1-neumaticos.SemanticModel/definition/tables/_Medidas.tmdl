@@ -142,6 +142,52 @@ table _Medidas
 			    "Rendimiento en Lluvia - " & SelSegmento & " | " & Veredicto
 		lineageTag: f7b38905-5cd6-4f89-e754-ddcb55637336
 
+	measure Texto_Insight_Lluvia_Dossier = ```
+			
+			VAR SegmentoSeleccionado = SELECTEDVALUE('dim_segmento_estrategico'[id_segmento], "todos")
+			RETURN
+			    SWITCH(
+			        SegmentoSeleccionado,
+			        "top_tier", 
+			        "TOP TIER (FERRARI vs. McLAREN / RENAULT):" & UNICHAR(10) &
+			        "Durante 2002-2004, Ferrari y Michael Schumacher fijaron la referencia en mojado gracias a carcasas desarrolladas exclusivamente para el F2002/F2004 (+0.12s de ventaja promedio y picos de +3.16s en Silverstone)." & UNICHAR(10) & UNICHAR(10) &
+			        "Sin embargo, el shock regulatorio de 2005 (prohibición de cambios) colapsó la ventana térmica de Bridgestone: McLaren y Renault dominaron bajo lluvia en Monza (-1.81s) y Spa (-1.78s). Para 2006, el retorno de paradas libres devuelve la ventaja a Bridgestone solo si la escudería tiene estatus prioritario de fábrica.",
+			        
+			        "midfield", 
+			        "EL ESPEJISMO DE FERRARI EN LA MEDIA TABLA:" & UNICHAR(10) &
+			        "ADVERTENCIA EJECUTIVA: El rendimiento en mojado de Bridgestone fue exclusivo de Ferrari. En la clase media (Sauber, Jordan, BAR), Michelin dominó el 77% de las carreras húmedas (10 victorias vs 3) con una brecha de ritmo de -0.80s por vuelta (-0.89%) y -1.40% en vueltas rápidas." & UNICHAR(10) & UNICHAR(10) &
+			        "DICTAMEN 2006: Para Williams, Toyota o Red Bull, optar por Bridgestone es una condena técnica en lluvia; Michelin garantiza paridad de compuesto y temperatura inmediata sin depender de datos de Ferrari.",
+			        
+			        "backmarker", 
+			        "FONDO DE GRILLA (SUPERVIVENCIA Y CAOS):" & UNICHAR(10) &
+			        "En la cola del pelotón, Bridgestone ofreció robustez operativa (+0.97s de ventaja en carreras caóticas por supervivencia mecánica como Malasia o Brasil 2001)." & UNICHAR(10) & UNICHAR(10) &
+			        "DICTAMEN 2006: Michelin ofrece el neumático probado de la flota con fiabilidad probada. Bridgestone solo se justifica estratégicamente si aporta un subsidio comercial o descuento de motores.",
+			        
+			        /* General / Sin filtro */
+			        "AUDITORÍA ESTRATÉGICA DE LLUVIA (2001-2005):" & UNICHAR(10) &
+			        "La percepción histórica de que Bridgestone dominaba en agua responde al 'Factor Schumacher'. Al segmentar por estrato competitivo, Michelin superó a Bridgestone en 17 de 32 duelos directos, aplastando en la clase media (-0.80s por vuelta)." & UNICHAR(10) & UNICHAR(10) &
+			        "INSTRUCCIÓN: Seleccione un segmento en la cabecera (Top Tier, Midfield o Fondo) para auditar la recomendación técnica específica para su equipo."
+			    )
+			```
+		lineageTag: 7c51489e-2fa1-4d32-9ef0-bbac33948210
+
+	measure Lluvia_Win_Ratio_Texto = ```
+			
+			VAR M = [Lluvia Victorias Michelin]
+			VAR B = [Lluvia Victorias Bridgestone]
+			RETURN
+			    FORMAT(M, "0") & " Michelin  -  " & FORMAT(B, "0") & " Bridgestone"
+			```
+		lineageTag: 8d62590f-3ab2-4e43-a001-ccbd44059321
+
+	measure 'Ritmo Medio Michelin Lluvia' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[tiempo_promedio_vuelta_michelin_sec])
+		formatString: 0.000
+		lineageTag: 9e736a10-4bc3-4f54-b112-ddce55160432
+
+	measure 'Ritmo Medio Bridgestone Lluvia' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[tiempo_promedio_vuelta_bridgestone_sec])
+		formatString: 0.000
+		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
+
 	partition _Medidas = m
 		mode: import
 		source =
