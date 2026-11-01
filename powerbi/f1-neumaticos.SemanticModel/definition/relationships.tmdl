@@ -44,69 +44,15 @@ relationship 78f3b6e1-ff0a-48e6-84d9-0050269c2678
 	fromColumn: 'formula1 v_acumulacion_poles_carreras'.date
 	toColumn: LocalDateTable_ea1a188e-647f-4aac-9cd1-28743a530a20.Date
 
-relationship AutoDetected_64d43dd6-88e4-4aab-85d6-9d2db57fde70
-	fromColumn: 'formula1 v_f1_qualy_granular'.race_id
-	toColumn: 'formula1 v_acumulacion_poles_carreras'.race_id
-
-relationship AutoDetected_dad5c6ce-b944-446c-aa5a-4f4528ca79ee
-	fromColumn: 'formula1 v_f1_race_granular'.race_id
-	toColumn: 'formula1 v_acumulacion_poles_carreras'.race_id
-
-relationship AutoDetected_f6cff122-055c-4311-b39a-ef95199317be
-	fromColumn: 'formula1 v_f1_qualy_granular'.constructor_id
-	toColumn: 'formula1 v_temporadas_proveedor_marca'.constructor_id
-
-relationship AutoDetected_44d1ae90-e878-476f-88d9-046918599bcb
-	fromColumn: 'formula1 v_f1_race_granular'.constructor_id
-	toColumn: 'formula1 v_temporadas_proveedor_marca'.constructor_id
-
-relationship AutoDetected_32a3dcaf-9aac-4268-9e37-0693a96a5b97
-	fromColumn: 'formula1 v_analisis_rendimiento_anual'.constructor_id
-	toColumn: 'formula1 v_temporadas_proveedor_marca'.constructor_id
-
-relationship AutoDetected_00a2e505-e0b7-4e64-8619-29188b508fbe
-	fromColumn: 'formula1 v_analisis_asimetria_marca'.constructor_id
-	toColumn: 'formula1 v_temporadas_proveedor_marca'.constructor_id
-
-relationship AutoDetected_1fac8043-7077-4598-ac96-b3acaa56b982
-	fromColumn: 'formula1 v_analisis_fiabilidad_neumaticos'.constructor_id
-	toColumn: 'formula1 v_temporadas_proveedor_marca'.constructor_id
-
-relationship AutoDetected_27e0580f-1a09-435b-968f-03dd31db2898
-	fromColumn: 'formula1 v_f1_qualy_granular'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_8ccc2f3f-0c1b-4872-ad43-0004c9ab4e03
-	fromColumn: 'formula1 v_f1_race_granular'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_ccea5f4a-927f-4e19-885f-1da1261dfdd9
-	fromColumn: 'formula1 v_analisis_rendimiento_anual'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_c97d7db8-e7b2-46f7-b58a-0a12ed153b58
-	fromColumn: 'formula1 v_analisis_asimetria_marca'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_7bc27e2a-fd4b-4d65-a858-cc30ec11869d
-	fromColumn: 'formula1 v_analisis_fiabilidad_neumaticos'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_8d828d77-1433-4c39-bb6c-9ef478552ad4
-	isActive: false
-	fromColumn: 'formula1 v_acumulacion_poles_carreras'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_80a1f6b9-f817-49c2-baf3-1bb083e5c3a1
-	fromColumn: 'formula1 v_analisis_rendimiento_lluvia_carreras'.year
-	toColumn: 'formula1 v_cuota_parrilla_anual_neumaticos'.year
-
-relationship AutoDetected_495fab2d-895e-4888-8089-7bb3da23a97b
-	crossFilteringBehavior: bothDirections
-	fromColumn: 'formula1 v_analisis_rendimiento_lluvia_carreras'.race_id
-	toColumn: 'formula1 v_acumulacion_poles_carreras'.race_id
-
 relationship f1_lluvia_segmento
 	fromColumn: 'formula1 v_analisis_rendimiento_lluvia_carreras'.id_segmento
+	toColumn: dim_segmento_estrategico.id_segmento
+
+relationship de42aca3-8f22-eef0-5d70-628bab6c18c5
+	fromColumn: 'formula1 v_analisis_asimetria_marca'.id_segmento
+	toColumn: dim_segmento_estrategico.id_segmento
+
+relationship 9996a01a-8a1b-d33e-84b8-433ba3ddc5e4
+	fromColumn: 'formula1 v_f1_race_granular'.id_segmento
 	toColumn: dim_segmento_estrategico.id_segmento
 

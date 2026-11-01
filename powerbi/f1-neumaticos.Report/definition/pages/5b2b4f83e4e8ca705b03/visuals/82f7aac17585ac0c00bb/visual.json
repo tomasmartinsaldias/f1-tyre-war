@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "82f7aac17585ac0c00bb",
+  "position": {
+    "x": 1392.5,
+    "y": 220,
+    "z": 2002,
+    "height": 363,
+    "width": 375,
+    "tabOrder": 2002
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "KPI_Puntos_Promedio_Michelin"
+                }
+              },
+              "queryRef": "_Medidas.KPI_Puntos_Promedio_Michelin",
+              "nativeQueryRef": "Retorno Promedio Michelin",
+              "displayName": "Retorno Promedio Michelin"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "KPI_Puntos_Promedio_Michelin"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

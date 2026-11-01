@@ -131,6 +131,50 @@ table 'formula1 v_f1_race_granular'
 
 		annotation SummarizationSetBy = Automatic
 
+	column id_segmento = ```
+			
+			VAR Anio = 'formula1 v_f1_race_granular'[year]
+			VAR ConstructorID = LOWER(TRIM('formula1 v_f1_race_granular'[constructor_id] & ""))
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    -- TOP TIER
+			    ConstructorID = "ferrari", "top_tier",
+			    ConstructorID IN {"mclaren", "renault"}, "top_tier",
+			    ConstructorID = "benetton" && Anio = 2001, "top_tier",
+			    ConstructorID = "williams" && Anio <= 2004, "top_tier",
+			    
+			    -- MIDFIELD
+			    ConstructorID = "williams" && Anio = 2005, "midfield",
+			    ConstructorID IN {"bar", "toyota", "sauber", "jaguar", "red_bull"}, "midfield",
+			    ConstructorID = "jordan" && Anio <= 2003, "midfield",
+			    
+			    -- FONDO DE GRILLA
+			    ConstructorID = "jordan" && Anio >= 2004, "backmarker",
+			    ConstructorID IN {"minardi", "midland", "arrows", "prost"}, "backmarker",
+			    
+			    "backmarker"
+			)
+			```
+		lineageTag: d8aa207d-8e6e-4893-b058-07880d4fa10a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_arquetipo =
+			
+			SWITCH(
+			    'formula1 v_f1_race_granular'[id_segmento],
+			    "top_tier", "1. Top Tier",
+			    "midfield", "2. Midfield",
+			    "backmarker", "3. Fondo de Grilla",
+			    "3. Fondo de Grilla"
+			)
+		lineageTag: e8bb99a1-55cc-44aa-99bb-112233445566
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_f1_race_granular' = m
 		mode: import
 		source =
