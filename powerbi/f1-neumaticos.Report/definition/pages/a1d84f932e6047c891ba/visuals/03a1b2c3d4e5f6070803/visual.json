@@ -36,17 +36,17 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+                      "Entity": "_Medidas"
                     }
                   },
-                  "Property": "diferencia_sec"
+                  "Property": "Lluvia Delta Promedio Seg"
                 }
               },
-              "queryRef": "formula1 v_analisis_rendimiento_lluvia_carreras.diferencia_sec",
-              "nativeQueryRef": "Diferencia de Ritmo (seg: Michelin - Bridgestone)"
+              "queryRef": "_Medidas.Lluvia Delta Promedio Seg",
+              "nativeQueryRef": "Delta de Ritmo (segundos)"
             }
           ]
         }
@@ -55,13 +55,13 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+                    "Entity": "_Medidas"
                   }
                 },
-                "Property": "year"
+                "Property": "Lluvia Delta Promedio Seg"
               }
             },
             "direction": "Ascending"
@@ -70,75 +70,41 @@
         "isDefaultSort": true
       }
     },
-    "objects": {
+    "visualContainerObjects": {
       "title": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Brecha de Ritmo por Vuelta en Lluvia (Segundos: Negativo = Michelin m\u00e1s veloz | Positivo = Bridgestone m\u00e1s veloz)'"
+                  "Value": "'Brecha de Ritmo en Lluvia por GP (Segundos: Negativo = Michelin m\u00e1s veloz | Positivo = Bridgestone m\u00e1s veloz)'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "13D"
                 }
               }
             }
           }
         }
       ],
-      "categoryAxis": [
+      "subTitle": [
         {
           "properties": {
-            "show": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'Diferencia de tiempo de vuelta media entre los mejores monoplazas de cada fabricante bajo lluvia'"
                 }
               }
             },
-            "showAxisTitle": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Delta Segundos (Vuelta Media)'"
+                  "Value": "10D"
                 }
               }
             }

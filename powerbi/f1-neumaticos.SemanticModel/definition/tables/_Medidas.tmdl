@@ -176,7 +176,7 @@ table _Medidas
 			VAR M = [Lluvia Victorias Michelin]
 			VAR B = [Lluvia Victorias Bridgestone]
 			RETURN
-			    FORMAT(M, "0") & " Michelin  -  " & FORMAT(B, "0") & " Bridgestone"
+			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
 			```
 		lineageTag: 8d62590f-3ab2-4e43-a001-ccbd44059321
 

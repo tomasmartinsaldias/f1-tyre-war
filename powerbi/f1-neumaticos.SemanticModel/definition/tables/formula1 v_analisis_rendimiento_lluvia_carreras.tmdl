@@ -23,7 +23,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 		dataType: int64
 		formatString: 0
 		lineageTag: 3c967250-43bf-4e13-a9d2-f5741eb7c56f
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: round
 
 		annotation SummarizationSetBy = Automatic
@@ -55,7 +55,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column precipitation_total_mm
 		dataType: double
 		lineageTag: 911e2a82-3997-4327-9836-51487713d852
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: precipitation_total_mm
 
 		annotation SummarizationSetBy = Automatic
@@ -81,7 +81,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column tiempo_promedio_vuelta_michelin_sec
 		dataType: double
 		lineageTag: 9b8696df-dce8-4f52-b19c-ca1208648e27
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: tiempo_promedio_vuelta_michelin_sec
 
 		annotation SummarizationSetBy = Automatic
@@ -107,7 +107,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column tiempo_promedio_vuelta_bridgestone_sec
 		dataType: double
 		lineageTag: 56d4ec06-e99b-4dc6-b98e-213071afa4a1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: tiempo_promedio_vuelta_bridgestone_sec
 
 		annotation SummarizationSetBy = Automatic
@@ -117,7 +117,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column diferencia_sec
 		dataType: double
 		lineageTag: da8eb317-bee6-4168-a8a1-484876126f96
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: diferencia_sec
 
 		annotation SummarizationSetBy = Automatic
@@ -127,7 +127,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column pct_diferencia
 		dataType: double
 		lineageTag: 8ca6b16e-e9c5-4b59-96ce-4de62e61ea0c
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: pct_diferencia
 
 		annotation SummarizationSetBy = Automatic
@@ -145,7 +145,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column mejor_vuelta_michelin_sec
 		dataType: double
 		lineageTag: 3f8a4128-bb20-410a-9d95-93dfc1e28ba2
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: mejor_vuelta_michelin_sec
 
 		annotation SummarizationSetBy = Automatic
@@ -155,7 +155,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column mejor_vuelta_bridgestone_sec
 		dataType: double
 		lineageTag: e48b5912-88f1-432a-ae18-97cbb115ad44
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: mejor_vuelta_bridgestone_sec
 
 		annotation SummarizationSetBy = Automatic
@@ -165,7 +165,7 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 	column diferencia_mejor_vuelta_sec
 		dataType: double
 		lineageTag: 8e5d9c22-7201-447a-b519-aa578c772db9
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: diferencia_mejor_vuelta_sec
 
 		annotation SummarizationSetBy = Automatic
