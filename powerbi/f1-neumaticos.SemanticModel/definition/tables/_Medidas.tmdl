@@ -85,30 +85,6 @@ table _Medidas
 			```
 		lineageTag: a543c48c-d150-45cd-adec-5d3428a931f7
 
-	measure Delta_Shock_Bridgestone = ```
-			
-			VAR Gap_2004 = 
-			    CALCULATE(
-			        [Mediana Gap Pole Pct],
-			        'formula1 v_f1_qualy_granular'[year] = 2004,
-			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
-			    )
-			VAR Gap_2005 = 
-			    CALCULATE(
-			        [Mediana Gap Pole Pct],
-			        'formula1 v_f1_qualy_granular'[year] = 2005,
-			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
-			    )
-			RETURN
-			    IF(
-			        ISBLANK(Gap_2005),
-			        BLANK(),
-			        Gap_2005 - Gap_2004
-			    )
-			```
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: f486e74a-c2ca-47da-812b-2dd1ef72f23f
-
 	measure 'Lluvia Delta Promedio Seg' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[diferencia_sec])
 		formatString: +0.000;-0.000;0.000
 		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192801
@@ -206,8 +182,7 @@ table _Medidas
 		formatString: 0.000
 		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
 
-
-	measure Cuota_Michelin_2005_Pct = 
+	measure Cuota_Michelin_2005_Pct =
 			CALCULATE(
 			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_michelin]), 100),
 			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
@@ -215,7 +190,7 @@ table _Medidas
 		formatString: 0.0%
 		lineageTag: 71a01101-1b2c-4d3e-8f5a-9a01b2c3d4e1
 
-	measure Cuota_Bridgestone_2005_Pct = 
+	measure Cuota_Bridgestone_2005_Pct =
 			CALCULATE(
 			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_bridgestone]), 100),
 			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
@@ -223,12 +198,11 @@ table _Medidas
 		formatString: 0.0%
 		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
 
-	measure Total_Equipos_Grid = 
-			DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
+	measure Total_Equipos_Grid = DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
 		formatString: 0
 		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
 
-	measure Equipos_Michelin_2005_Count = 
+	measure Equipos_Michelin_2005_Count =
 			CALCULATE(
 			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
 			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
@@ -236,7 +210,7 @@ table _Medidas
 		formatString: 0
 		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
 
-	measure Equipos_Bridgestone_2005_Count = 
+	measure Equipos_Bridgestone_2005_Count =
 			CALCULATE(
 			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
 			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
@@ -244,7 +218,7 @@ table _Medidas
 		formatString: 0
 		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
 
-	measure Total_Poles_Michelin = 
+	measure Total_Poles_Michelin =
 			CALCULATE(
 			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
 			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "michelin"
@@ -252,7 +226,7 @@ table _Medidas
 		formatString: 0
 		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
 
-	measure Total_Poles_Bridgestone = 
+	measure Total_Poles_Bridgestone =
 			CALCULATE(
 			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
 			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "bridgestone"
@@ -260,14 +234,14 @@ table _Medidas
 		formatString: 0
 		lineageTag: 71a01107-1b2c-4d3e-8f5a-9a01b2c3d4e7
 
-	measure Poles_Win_Ratio_Texto = 
+	measure Poles_Win_Ratio_Texto =
 			VAR M = [Total_Poles_Michelin]
 			VAR B = [Total_Poles_Bridgestone]
 			RETURN
 			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
 		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
 
-	measure Poles_Michelin_Pct = 
+	measure Poles_Michelin_Pct =
 			VAR M = [Total_Poles_Michelin]
 			VAR B = [Total_Poles_Bridgestone]
 			RETURN
@@ -332,6 +306,30 @@ table _Medidas
 			)
 			```
 		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
+
+	measure Delta_Shock_Bridgestone = ```
+			
+			VAR Gap_2004 = 
+			    CALCULATE(
+			        [Mediana Gap Pole Pct],
+			        'formula1 v_f1_qualy_granular'[year] = 2004,
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			    )
+			VAR Gap_2005 = 
+			    CALCULATE(
+			        [Mediana Gap Pole Pct],
+			        'formula1 v_f1_qualy_granular'[year] = 2005,
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			    )
+			RETURN
+			    IF(
+			        ISBLANK(Gap_2005),
+			        BLANK(),
+			        Gap_2005 - Gap_2004
+			    )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f486e74a-c2ca-47da-812b-2dd1ef72f23f
 
 	measure Gap_Lider_Marca_Pos =
 			

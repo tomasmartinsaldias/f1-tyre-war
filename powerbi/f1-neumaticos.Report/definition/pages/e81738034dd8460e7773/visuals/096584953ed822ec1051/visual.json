@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "096584953ed822ec1051",
   "position": {
-    "x": 30,
-    "y": 25,
+    "x": 60,
+    "y": 35,
     "z": 1000,
-    "height": 160,
-    "width": 840,
+    "height": 110,
+    "width": 700,
     "tabOrder": 1000
   },
   "visual": {
@@ -19,22 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO I: DISTRIBUCIÓN DE ESCUDERÍAS",
+                    "value": "DISTRIBUCIÓN DE ESCUDERÍAS Y CUOTA DE PARRILLA",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "11pt",
-                      "color": "#6B7280"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "La Migración de la Parrilla: El Éxodo hacia Michelin",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontSize": "23pt",
+                      "fontSize": "19pt",
                       "color": "#111827"
                     }
                   }
@@ -43,9 +31,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Evolución histórica de fidelidad y cuota de equipos (2001-2005). El monopolio técnico de Ferrari en Bridgestone impulsó la adopción masiva de Michelin como el estándar multichasis de la F1.",
+                    "value": "Evolución histórica de fidelidad de constructores y cuota de mercado (2001-2005).",
                     "textStyle": {
-                      "fontSize": "12pt",
+                      "fontSize": "11pt",
                       "color": "#4B5563"
                     }
                   }

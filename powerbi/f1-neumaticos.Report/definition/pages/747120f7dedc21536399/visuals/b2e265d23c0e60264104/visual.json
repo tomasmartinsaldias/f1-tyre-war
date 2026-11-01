@@ -3,10 +3,10 @@
   "name": "b2e265d23c0e60264104",
   "position": {
     "x": 20,
-    "y": 267.5,
+    "y": 155,
     "z": 0,
-    "height": 765.360215921936,
-    "width": 1408.8297307896376,
+    "height": 875,
+    "width": 1475,
     "tabOrder": 0
   },
   "visual": {
@@ -495,7 +495,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'El colapso de Bridgestone tras la prohibición de cambios de neumáticos (2005)'"
+                  "Value": "'El colapso de Bridgestone tras la prohibici\u00f3n de cambios de neum\u00e1ticos (2005)'"
                 }
               }
             },
@@ -515,7 +515,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Mediana de la brecha porcentual a la pole position (2001–2005). Valores menores indican mayor competitividad a una vuelta.'"
+                  "Value": "'Mediana de la brecha porcentual a la pole position (2001\u20132005). Valores menores indican mayor competitividad a una vuelta.'"
                 }
               }
             },

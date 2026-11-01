@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "60a7c04aba7e9ac68c00",
   "position": {
-    "x": 770,
-    "y": 205,
+    "x": 975,
+    "y": 175,
     "z": 1005,
-    "height": 575,
-    "width": 710,
+    "height": 865,
+    "width": 885,
     "tabOrder": 1005
   },
   "visual": {
@@ -129,7 +129,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Evolución de Cuota de Mercado de la Parrilla (% Equipos)'"
+                  "Value": "'Evoluci\u00f3n de Cuota de Mercado de la Parrilla (% Equipos)'"
                 }
               }
             },
@@ -149,7 +149,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Evolución anual (2001-2005). El éxodo hacia Michelin y el aislamiento de Ferrari en Bridgestone.'"
+                  "Value": "'Evoluci\u00f3n anual (2001-2005). El \u00e9xodo hacia Michelin y el aislamiento de Ferrari en Bridgestone.'"
                 }
               }
             },

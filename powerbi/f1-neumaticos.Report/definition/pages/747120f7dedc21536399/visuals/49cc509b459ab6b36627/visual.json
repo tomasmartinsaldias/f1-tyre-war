@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "49cc509b459ab6b36627",
   "position": {
-    "x": 0,
-    "y": 27.5,
+    "x": 20,
+    "y": 45,
     "z": 1000,
-    "height": 192.5,
-    "width": 1430,
+    "height": 80,
+    "width": 950,
     "tabOrder": 1000
   },
   "visual": {
@@ -57,46 +57,25 @@
                   "Value": "1D"
                 }
               }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rows": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
             },
-            "filter": {
-              "filter": {
-                "Version": 2,
-                "From": [
-                  {
-                    "Name": "d",
-                    "Entity": "dim_segmento_estrategico",
-                    "Type": 0
-                  }
-                ],
-                "Where": [
-                  {
-                    "Condition": {
-                      "In": {
-                        "Expressions": [
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "d"
-                                }
-                              },
-                              "Property": "nombre_arquetipo"
-                            }
-                          }
-                        ],
-                        "Values": [
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'1. Top Tier'"
-                              }
-                            }
-                          ]
-                        ]
-                      }
-                    }
-                  }
-                ]
+            "columns": {
+              "expr": {
+                "Literal": {
+                  "Value": "3L"
+                }
               }
             }
           }
@@ -108,7 +87,7 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "21D"
+                  "Value": "13D"
                 }
               }
             }
@@ -121,7 +100,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ARQUETIPO DE ESCUDERÍA'"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
@@ -130,62 +123,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9aad7d3e2c188311264c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Mediana Gap Pole Pct"
-          }
-        },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "_",
-              "Entity": "_Medidas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Not": {
-                  "Expression": {
-                    "Comparison": {
-                      "ComparisonKind": 0,
-                      "Left": {
-                        "Measure": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Source": "_"
-                            }
-                          },
-                          "Property": "Mediana Gap Pole Pct"
-                        }
-                      },
-                      "Right": {
-                        "Literal": {
-                          "Value": "null"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "howCreated": "User"
-      }
-    ]
   }
 }

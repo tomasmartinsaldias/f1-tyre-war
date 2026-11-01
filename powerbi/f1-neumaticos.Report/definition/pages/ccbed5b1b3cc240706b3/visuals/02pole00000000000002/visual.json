@@ -84,13 +84,6 @@
                 }
               }
             },
-            "title": {
-              "expr": {
-                "Literal": {
-                  "Value": "'FILTRAR POR TEMPORADA (AÑO)'"
-                }
-              }
-            },
             "textSize": {
               "expr": {
                 "Literal": {
