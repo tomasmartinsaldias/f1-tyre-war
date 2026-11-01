@@ -1,0 +1,182 @@
+table 'formula1 v_analisis_rendimiento_lluvia_carreras'
+	lineageTag: 5207f124-f854-45ce-adea-631fe7e85df2
+
+	column race_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 40cddc62-2271-4fe1-8056-4d8d83a58272
+		summarizeBy: none
+		sourceColumn: race_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2512ef9e-b42f-4969-a8c8-3675c16e08c1
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c967250-43bf-4e13-a9d2-f5741eb7c56f
+		summarizeBy: sum
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column grand_prix
+		dataType: string
+		lineageTag: 228ee5b2-e8c1-44fc-9903-1341f5aee655
+		summarizeBy: none
+		sourceColumn: grand_prix
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_id
+		dataType: string
+		lineageTag: 2d649b2a-f91f-4392-a99e-40f310f9d396
+		summarizeBy: none
+		sourceColumn: circuit_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_segmento
+		dataType: string
+		lineageTag: 7a83d1c4-95e2-4f60-93cb-569d4a821e33
+		summarizeBy: none
+		sourceColumn: id_segmento
+
+		annotation SummarizationSetBy = Automatic
+
+	column precipitation_total_mm
+		dataType: double
+		lineageTag: 911e2a82-3997-4327-9836-51487713d852
+		summarizeBy: sum
+		sourceColumn: precipitation_total_mm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column piloto_michelin
+		dataType: string
+		lineageTag: b3f9b108-6728-4770-a859-a2ed51e7dfdb
+		summarizeBy: none
+		sourceColumn: piloto_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_michelin
+		dataType: string
+		lineageTag: 4983b1dd-aeb8-48fe-9779-fcecdb17fcbe
+		summarizeBy: none
+		sourceColumn: equipo_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column tiempo_promedio_vuelta_michelin_sec
+		dataType: double
+		lineageTag: 9b8696df-dce8-4f52-b19c-ca1208648e27
+		summarizeBy: sum
+		sourceColumn: tiempo_promedio_vuelta_michelin_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column piloto_bridgestone
+		dataType: string
+		lineageTag: 59df19ed-2430-406a-afa4-dd9f8623ffe3
+		summarizeBy: none
+		sourceColumn: piloto_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_bridgestone
+		dataType: string
+		lineageTag: 6248dbe2-bd0b-4594-96f8-f62cd8e85c9a
+		summarizeBy: none
+		sourceColumn: equipo_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column tiempo_promedio_vuelta_bridgestone_sec
+		dataType: double
+		lineageTag: 56d4ec06-e99b-4dc6-b98e-213071afa4a1
+		summarizeBy: sum
+		sourceColumn: tiempo_promedio_vuelta_bridgestone_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column diferencia_sec
+		dataType: double
+		lineageTag: da8eb317-bee6-4168-a8a1-484876126f96
+		summarizeBy: sum
+		sourceColumn: diferencia_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pct_diferencia
+		dataType: double
+		lineageTag: 8ca6b16e-e9c5-4b59-96ce-4de62e61ea0c
+		summarizeBy: sum
+		sourceColumn: pct_diferencia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proveedor_mas_rapido
+		dataType: string
+		lineageTag: c2adea20-d0e1-41ad-9eca-08b35f44173c
+		summarizeBy: none
+		sourceColumn: proveedor_mas_rapido
+
+		annotation SummarizationSetBy = Automatic
+
+	column mejor_vuelta_michelin_sec
+		dataType: double
+		lineageTag: 3f8a4128-bb20-410a-9d95-93dfc1e28ba2
+		summarizeBy: sum
+		sourceColumn: mejor_vuelta_michelin_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mejor_vuelta_bridgestone_sec
+		dataType: double
+		lineageTag: e48b5912-88f1-432a-ae18-97cbb115ad44
+		summarizeBy: sum
+		sourceColumn: mejor_vuelta_bridgestone_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column diferencia_mejor_vuelta_sec
+		dataType: double
+		lineageTag: 8e5d9c22-7201-447a-b519-aa578c772db9
+		summarizeBy: sum
+		sourceColumn: diferencia_mejor_vuelta_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'formula1 v_analisis_rendimiento_lluvia_carreras' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_analisis_rendimiento_lluvia_carreras = Origen{[Schema="formula1",Item="v_analisis_rendimiento_lluvia_carreras"]}[Data]
+				in
+				    formula1_v_analisis_rendimiento_lluvia_carreras

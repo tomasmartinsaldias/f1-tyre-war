@@ -37,6 +37,8 @@ table 'formula1 constructor'
 			    "bar", "midfield",
 			    "sauber", "midfield",
 			    "red_bull", "midfield",
+			    "red-bull", "midfield",
+			    "jaguar", "midfield",
 			    "backmarker"
 			)
 		lineageTag: 3d7a1159-09dd-46b1-b1c2-9d3c2e2b4e87

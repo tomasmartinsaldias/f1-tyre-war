@@ -59,6 +59,58 @@ table _Medidas
 		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
 
+	measure 'Lluvia Delta Promedio Seg' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[diferencia_sec])
+		formatString: +0.000;-0.000;0.000
+		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192801
+
+	measure 'Lluvia Pct Gap Promedio' =
+			
+			DIVIDE(
+			    AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[pct_diferencia]),
+			    100
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b3d945c1-1ef2-4b45-a310-ff8d11293902
+
+	measure 'Lluvia Victorias Michelin' =
+			
+			CALCULATE(
+			    COUNTROWS('formula1 v_analisis_rendimiento_lluvia_carreras'),
+			    'formula1 v_analisis_rendimiento_lluvia_carreras'[proveedor_mas_rapido] = "michelin"
+			)
+		formatString: 0
+		lineageTag: c4e056d2-2fa3-4c56-b421-aa9e22304003
+
+	measure 'Lluvia Victorias Bridgestone' =
+			
+			CALCULATE(
+			    COUNTROWS('formula1 v_analisis_rendimiento_lluvia_carreras'),
+			    'formula1 v_analisis_rendimiento_lluvia_carreras'[proveedor_mas_rapido] = "bridgestone"
+			)
+		formatString: 0
+		lineageTag: d5f167e3-3ab4-4d67-c532-bbaf33415114
+
+	measure 'Lluvia Veredicto Dinamico' =
+			
+			VAR SelSegmento = SELECTEDVALUE(dim_segmento_estrategico[id_segmento], "todos")
+			RETURN
+			    SWITCH(
+			        SelSegmento,
+			        "top_tier", "Top Tier: Paridad técnica cerrada (+0.12s Bridgestone histórico, pero Michelin dominó 2005)",
+			        "midfield", "Midfield: Michelin domina ampliamente (-0.80s / -0.89% delta, 10 victorias vs 3)",
+			        "backmarker", "Fondo de Grilla: Ventaja marginal de Bridgestone (+0.97s) en supervivencia",
+			        "General: La ventaja de Bridgestone en lluvia fue exclusiva de Ferrari; en la clase media Michelin fue 0.8s más veloz"
+			    )
+		lineageTag: e6a278f4-4bc5-4e78-d643-ccba44526225
+
+	measure 'Titulo Dinamico Rendimiento Lluvia' =
+			
+			VAR SelSegmento = SELECTEDVALUE(dim_segmento_estrategico[nombre_arquetipo], "Todos los Segmentos")
+			VAR Veredicto = [Lluvia Veredicto Dinamico]
+			RETURN
+			    "Rendimiento en Lluvia - " & SelSegmento & " | " & Veredicto
+		lineageTag: f7b38905-5cd6-4f89-e754-ddcb55637336
+
 	partition _Medidas = m
 		mode: import
 		source =
@@ -70,4 +122,3 @@ table _Medidas
 				    #"Columnas quitadas"
 
 	annotation PBI_ResultType = Table
-

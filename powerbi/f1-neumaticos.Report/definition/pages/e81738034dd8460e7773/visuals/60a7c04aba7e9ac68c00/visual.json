@@ -1,0 +1,160 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "60a7c04aba7e9ac68c00",
+  "position": {
+    "x": 1041.3441890886127,
+    "y": 526.90768849094479,
+    "z": 2000,
+    "height": 537.8199778975619,
+    "width": 810.62721306299193,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedAreaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
+                    }
+                  },
+                  "Property": "year"
+                }
+              },
+              "queryRef": "formula1 v_cuota_parrilla_anual_neumaticos.year",
+              "nativeQueryRef": "year",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
+                        }
+                      },
+                      "Property": "pct_equipos_bridgestone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_cuota_parrilla_anual_neumaticos.pct_equipos_bridgestone)",
+              "nativeQueryRef": "Suma de pct_equipos_bridgestone"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
+                        }
+                      },
+                      "Property": "pct_equipos_michelin"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_cuota_parrilla_anual_neumaticos.pct_equipos_michelin)",
+              "nativeQueryRef": "Suma de pct_equipos_michelin"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
+                      }
+                    },
+                    "Property": "pct_equipos_bridgestone"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data labels - straight line'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Distribución de equipos con cada proveedor de neumáticos'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

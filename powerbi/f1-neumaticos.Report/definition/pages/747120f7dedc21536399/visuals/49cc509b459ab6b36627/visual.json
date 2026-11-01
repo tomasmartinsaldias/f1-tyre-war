@@ -81,28 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Ferrari'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Renault'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Williams'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'McLaren'"
+                                "Value": "'BAR'"
                               }
                             }
                           ]
@@ -121,20 +100,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "96cd9bea36e070ae5073",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "formula1 constructor"
-              }
-            },
-            "Property": "name"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "9aad7d3e2c188311264c",
         "field": {
