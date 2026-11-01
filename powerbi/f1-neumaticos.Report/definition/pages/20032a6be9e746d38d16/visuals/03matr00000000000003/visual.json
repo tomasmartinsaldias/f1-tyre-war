@@ -89,99 +89,6 @@
       ]
     },
     "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              },
-              "color": {
-                "solid": {
-                  "color": {
-                    "expr": {
-                      "Literal": {
-                        "Value": "'#FFFFFF'"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "border": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              },
-              "radius": {
-                "expr": {
-                  "Literal": {
-                    "Value": "8D"
-                  }
-                }
-              },
-              "color": {
-                "solid": {
-                  "color": {
-                    "expr": {
-                      "Literal": {
-                        "Value": "'#E5E7EB'"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              },
-              "color": {
-                "solid": {
-                  "color": {
-                    "expr": {
-                      "Literal": {
-                        "Value": "'#000000'"
-                      }
-                    }
-                  }
-                }
-              },
-              "transparency": {
-                "expr": {
-                  "Literal": {
-                    "Value": "94D"
-                  }
-                }
-              },
-              "shadowBlur": {
-                "expr": {
-                  "Literal": {
-                    "Value": "4D"
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
       "title": [
         {
           "properties": {
@@ -201,18 +108,14 @@
               "fontSize": {
                 "expr": {
                   "Literal": {
-                    "Value": "11.5D"
+                    "Value": "12D"
                   }
                 }
               },
-              "fontColor": {
-                "solid": {
-                  "color": {
-                    "expr": {
-                      "Literal": {
-                        "Value": "'#6B7280'"
-                      }
-                    }
+              "bold": {
+                "expr": {
+                  "Literal": {
+                    "Value": "true"
                   }
                 }
               }
