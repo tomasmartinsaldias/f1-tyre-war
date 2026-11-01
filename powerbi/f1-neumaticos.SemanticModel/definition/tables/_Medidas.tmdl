@@ -190,13 +190,12 @@ table _Medidas
 			```
 		lineageTag: 7c51489e-2fa1-4d32-9ef0-bbac33948210
 
-	measure Lluvia_Win_Ratio_Texto = ```
+	measure Lluvia_Win_Ratio_Texto =
 			
 			VAR M = [Lluvia Victorias Michelin]
 			VAR B = [Lluvia Victorias Bridgestone]
 			RETURN
 			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
-			```
 		lineageTag: 8d62590f-3ab2-4e43-a001-ccbd44059321
 
 	measure 'Ritmo Medio Michelin Lluvia' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[tiempo_promedio_vuelta_michelin_sec])
@@ -206,6 +205,149 @@ table _Medidas
 	measure 'Ritmo Medio Bridgestone Lluvia' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[tiempo_promedio_vuelta_bridgestone_sec])
 		formatString: 0.000
 		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
+
+	measure Gap_Lider_Marca_Pos =
+			
+			AVERAGE('formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader])
+		lineageTag: 8dc6d7b1-0155-4e3e-913d-7b98ef9bd0d3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Gap_Clientes_Bridgestone =
+			
+			CALCULATE(
+			    [Gap_Lider_Marca_Pos],
+			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "bridgestone",
+			    'formula1 v_analisis_asimetria_marca'[constructor_id] <> "ferrari"
+			)
+		lineageTag: 7833126b-9962-4165-9c9b-ab61300eaf9a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Gap_Clientes_Michelin = ```
+			
+			VAR MinGap = 
+			    CALCULATE(
+			        MIN('formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader]),
+			        'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin"
+			    )
+			RETURN
+			    CALCULATE(
+			        [Gap_Lider_Marca_Pos],
+			        'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin",
+			        'formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader] > MinGap
+			    )
+			```
+		lineageTag: 1029f554-4a06-4ce5-ac08-7c1a99b4d945
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Avg_Posiciones_Ganadas =
+			
+			AVERAGE('formula1 v_f1_race_granular'[positions_gained])
+		lineageTag: 7a760417-bdd2-4c82-9800-eda240666420
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Tasa_Conversion_Puntos =
+			
+			DIVIDE(
+			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[points] > 0),
+			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[is_finished] = TRUE()),
+			    0
+			)
+		lineageTag: 99412b1b-09ae-4034-8645-9bbc00fece60
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Avg_Delta_Conversion =
+			
+			AVERAGE('formula1 v_f1_race_granular'[grid_position_number]) - AVERAGE('formula1 v_f1_race_granular'[finish_position])
+		lineageTag: f6518f92-de9b-4615-96f4-c72355e62f50
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Titulo_Asimetria_Dinamico = ```
+			
+			VAR Anio = SELECTEDVALUE('formula1 v_analisis_asimetria_marca'[year])
+			RETURN 
+			    SWITCH(
+			        Anio,
+			        2001, "2001: Monopolio técnico de Bridgestone; Michelin inicia su desembarco con Williams",
+			        2002, "2002: McLaren abandona Bridgestone; comienza la polarización de flotas",
+			        2003, "2003: La flota Michelin se consolida en la pelea directa contra Ferrari",
+			        2004, "2004: Éxodo masivo a Michelin; la brecha cliente en Bridgestone supera las 10 posiciones",
+			        2005, "2005: Aislamiento total — Bridgestone relegada a Ferrari mientras Michelin democratiza la grilla",
+			        "Brecha al Líder de Marca: Escuderías Clave (2001-2005)"
+			    )
+			```
+		lineageTag: 3e72953e-43de-4651-9154-8413ae8da5a1
+
+	measure Subtitulo_Grafico_Asimetria =
+			
+			VAR Anio = SELECTEDVALUE('formula1 v_analisis_asimetria_marca'[year])
+			RETURN
+			    SWITCH(
+			        Anio,
+			        2001, "Diferencia media de posiciones en clasificación respecto al mejor auto del fabricante (Williams único referente Michelin)",
+			        2002, "Diferencia media de posiciones en clasificación: el salto de McLaren inicia la división de datos",
+			        2003, "Diferencia media de posiciones en clasificación: convergencia de flota Michelin vs. brecha crítica en Bridgestone",
+			        2004, "Diferencia media de posiciones en clasificación: la brecha de clientes Bridgestone supera los 10 puestos",
+			        2005, "Diferencia media de posiciones en clasificación: paridad de flota Michelin (5 equipos) frente al aislamiento de Ferrari",
+			        "Diferencia media de puestos en clasificación respecto al monoplaza mejor clasificado de cada marca"
+			    )
+		lineageTag: ab783b6a-50f7-4ad3-8f6c-44a7666ae85c
+
+	measure Subtitulo_KPI_Bridgestone_Asimetria =
+			
+			VAR Anio = SELECTEDVALUE('formula1 v_analisis_asimetria_marca'[year])
+			RETURN
+			    SWITCH(
+			        Anio,
+			        2001, "Penalización clientes (Jordan, BAR, Sauber) vs. Ferrari",
+			        2002, "Brecha crítica: clientes relegados a +10 posiciones",
+			        2003, "Aislamiento: compuesto optimizado exclusivamente para Maranello",
+			        2004, "Abandono técnico: clientes fuera del top 10 de clasificación",
+			        2005, "Monopolio interno: solo Ferrari y Jordan permanecen en la marca",
+			        "Penalización promedio de equipos cliente vs. Ferrari"
+			    )
+		lineageTag: a9ee04dc-29ab-481c-85d2-dfe856390a31
+
+	measure Subtitulo_KPI_Michelin_Asimetria =
+			
+			VAR Anio = SELECTEDVALUE('formula1 v_analisis_asimetria_marca'[year])
+			RETURN
+			    SWITCH(
+			        Anio,
+			        2001, "Flota heterogénea: Williams en punta, pero clientes de fondo (Prost, Minardi) dispersan la media",
+			        2002, "Migración de McLaren: bifurcación entre clientes top y proyectos satélite",
+			        2003, "Consolidación de flota: 3 escuderías disputando poles de forma simultánea",
+			        2004, "Democratización: 4 equipos en el top 5 de clasificación con la misma especificación",
+			        2005, "Paridad de desarrollo: 5 escuderías dentro de un margen competitivo frente al líder",
+			        "Dispersión promedio de escuderías cliente respecto al líder de marca (2001-2005)"
+			    )
+		lineageTag: dca1df4a-237b-46ab-a7ca-68554aca46b8
+
+	measure Gap_Promedio_Clientes_Linea = ```
+			
+			VAR MinGap = 
+			    CALCULATE(
+			        MIN('formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader]),
+			        ALLEXCEPT(
+			            'formula1 v_analisis_asimetria_marca',
+			            'formula1 v_analisis_asimetria_marca'[year],
+			            'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id]
+			        )
+			    )
+			RETURN
+			    CALCULATE(
+			        [Gap_Lider_Marca_Pos],
+			        'formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader] > MinGap
+			    )
+			```
+		lineageTag: 3cb01dd0-1511-4d10-9a75-e96c62f62232
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition _Medidas = m
 		mode: import
@@ -218,3 +360,4 @@ table _Medidas
 				    #"Columnas quitadas"
 
 	annotation PBI_ResultType = Table
+

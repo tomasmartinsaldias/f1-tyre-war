@@ -4,10 +4,10 @@
   "position": {
     "x": 30,
     "y": 25,
-    "z": 1000,
+    "z": 0,
     "height": 160,
     "width": 880,
-    "tabOrder": 1000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -19,27 +19,34 @@
               {
                 "textRuns": [
                   {
-                    "value": "INFORME T\u00c9CNICO F1 (2001-2005)  |  ACTO II: SENSIBILIDAD AL ENTORNO\n",
+                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO II: SENSIBILIDAD AL ENTORNO",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "11pt",
-                      "color": "#6B7280"
+                      "color": "#6b7280"
                     }
-                  },
+                  }
+                ]
+              },
+              {
+                "textRuns": [
                   {
-                    "value": "Rendimiento en Lluvia: El 'Espejismo Ferrari'\n",
+                    "value": "Rendimiento en Lluvia: El 'Espejismo Ferrari'",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "23pt",
                       "color": "#111827"
                     }
-                  },
+                  }
+                ]
+              },
+              {
+                "textRuns": [
                   {
-                    "value": "Auditor\u00eda de ritmo en mojado (Best-of-Brand) segmentada por estrato de la grilla",
+                    "value": "Auditoría de ritmo en mojado (Best-of-Brand) segmentada por estrato de la grilla",
                     "textStyle": {
-                      "fontWeight": "normal",
                       "fontSize": "12pt",
-                      "color": "#4B5563"
+                      "color": "#4b5563"
                     }
                   }
                 ]

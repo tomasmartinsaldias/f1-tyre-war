@@ -4,10 +4,10 @@
   "position": {
     "x": 30,
     "y": 665,
-    "z": 1003,
+    "z": 3000,
     "height": 385,
     "width": 1450,
-    "tabOrder": 1003
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "tableEx",
@@ -27,7 +27,7 @@
                 }
               },
               "queryRef": "formula1 v_analisis_rendimiento_lluvia_carreras.year",
-              "nativeQueryRef": "A\u00f1o"
+              "nativeQueryRef": "Año"
             },
             {
               "field": {
@@ -184,7 +184,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Detalle de Confrontaciones Directas en Lluvia (Filtra din\u00e1micamente seg\u00fan el segmento seleccionado)'"
+                  "Value": "'Detalle de Confrontaciones Directas en Lluvia (Filtra dinámicamente según el segmento seleccionado)'"
                 }
               }
             },

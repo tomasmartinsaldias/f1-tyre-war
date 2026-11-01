@@ -4,10 +4,10 @@
   "position": {
     "x": 30,
     "y": 200,
-    "z": 1002,
+    "z": 2000,
     "height": 450,
     "width": 1450,
-    "tabOrder": 1002
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "columnChart",
@@ -77,7 +77,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Brecha de Ritmo en Lluvia por GP (Segundos: Negativo = Michelin m\u00e1s veloz | Positivo = Bridgestone m\u00e1s veloz)'"
+                  "Value": "'Brecha de Ritmo en Lluvia por GP (Segundos: Negativo = Michelin más veloz | Positivo = Bridgestone más veloz)'"
                 }
               }
             },

@@ -180,3 +180,4 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 				    formula1_v_analisis_rendimiento_lluvia_carreras = Origen{[Schema="formula1",Item="v_analisis_rendimiento_lluvia_carreras"]}[Data]
 				in
 				    formula1_v_analisis_rendimiento_lluvia_carreras
+
