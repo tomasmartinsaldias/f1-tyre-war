@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "2d03250fb49d4c6b4d05",
+  "displayName": "00. Executive Brief",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

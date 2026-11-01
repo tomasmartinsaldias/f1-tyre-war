@@ -148,20 +148,6 @@
         },
         "type": "Categorical",
         "howCreated": "User"
-      },
-      {
-        "name": "83c34ecbb411aee1c621",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Mediana Gap Pole Pct"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

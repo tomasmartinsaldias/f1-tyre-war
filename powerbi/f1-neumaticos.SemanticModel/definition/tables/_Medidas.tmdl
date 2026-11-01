@@ -85,10 +85,29 @@ table _Medidas
 			```
 		lineageTag: a543c48c-d150-45cd-adec-5d3428a931f7
 
-	measure Puntos_Segmento_Filtrado = SUM('formula1 v_analisis_rendimiento_anual'[total_points])
-		lineageTag: 297bd041-4314-4eb8-b971-71fa1aff7c30
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	measure Delta_Shock_Bridgestone = ```
+			
+			VAR Gap_2004 = 
+			    CALCULATE(
+			        [Mediana Gap Pole Pct],
+			        'formula1 v_f1_qualy_granular'[year] = 2004,
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			    )
+			VAR Gap_2005 = 
+			    CALCULATE(
+			        [Mediana Gap Pole Pct],
+			        'formula1 v_f1_qualy_granular'[year] = 2005,
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			    )
+			RETURN
+			    IF(
+			        ISBLANK(Gap_2005),
+			        BLANK(),
+			        Gap_2005 - Gap_2004
+			    )
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f486e74a-c2ca-47da-812b-2dd1ef72f23f
 
 	partition _Medidas = m
 		mode: import
