@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "096584953ed822ec1051",
   "position": {
-    "x": 100,
-    "y": 32,
+    "x": 30,
+    "y": 25,
     "z": 1000,
-    "height": 103.33333333333334,
-    "width": 1578.3333333333335,
+    "height": 160,
+    "width": 840,
     "tabOrder": 1000
   },
   "visual": {
@@ -19,10 +19,34 @@
               {
                 "textRuns": [
                   {
-                    "value": "¿Cuantos usaban Michelin y cuantos usaban Bridgestone",
+                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO I: DISTRIBUCIÓN DE ESCUDERÍAS",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "44pt"
+                      "fontSize": "11pt",
+                      "color": "#6B7280"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La Migración de la Parrilla: El Éxodo hacia Michelin",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "23pt",
+                      "color": "#111827"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Evolución histórica de fidelidad y cuota de equipos (2001-2005). El monopolio técnico de Ferrari en Bridgestone impulsó la adopción masiva de Michelin como el estándar multichasis de la F1.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
                     }
                   }
                 ]

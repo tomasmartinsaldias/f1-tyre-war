@@ -109,3 +109,4 @@ relationship AutoDetected_495fab2d-895e-4888-8089-7bb3da23a97b
 relationship f1_lluvia_segmento
 	fromColumn: 'formula1 v_analisis_rendimiento_lluvia_carreras'.id_segmento
 	toColumn: dim_segmento_estrategico.id_segmento
+

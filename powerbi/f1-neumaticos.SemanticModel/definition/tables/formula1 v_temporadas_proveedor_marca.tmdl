@@ -60,6 +60,20 @@ table 'formula1 v_temporadas_proveedor_marca'
 
 		annotation SummarizationSetBy = Automatic
 
+	column Tipo_Alianza = ```
+			SWITCH(
+			    TRUE(),
+			    'formula1 v_temporadas_proveedor_marca'[temporadas_bridgestone] > 0 && 'formula1 v_temporadas_proveedor_marca'[temporadas_michelin] = 0, "Exclusivo Bridgestone",
+			    'formula1 v_temporadas_proveedor_marca'[temporadas_michelin] > 0 && 'formula1 v_temporadas_proveedor_marca'[temporadas_bridgestone] = 0, "Exclusivo Michelin",
+			    "Migró de Proveedor"
+			)
+		```
+		dataType: string
+		lineageTag: e8a91c01-7b3d-4e92-a1f4-7128f9a2b001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_temporadas_proveedor_marca' = m
 		mode: import
 		source =
@@ -68,4 +82,3 @@ table 'formula1 v_temporadas_proveedor_marca'
 				    formula1_v_temporadas_proveedor_marca = Origen{[Schema="formula1",Item="v_temporadas_proveedor_marca"]}[Data]
 				in
 				    formula1_v_temporadas_proveedor_marca
-
