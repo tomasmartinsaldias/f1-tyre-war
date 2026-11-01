@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "01a1b2c3d4e5f6070801",
+  "position": {
+    "x": 30,
+    "y": 25,
+    "z": 1000,
+    "height": 160,
+    "width": 880,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "INFORME T\u00c9CNICO F1 (2001-2005)  |  ACTO II: SENSIBILIDAD AL ENTORNO\n",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "11pt",
+                      "color": "#6B7280"
+                    }
+                  },
+                  {
+                    "value": "Rendimiento en Lluvia: El 'Espejismo Ferrari'\n",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "23pt",
+                      "color": "#111827"
+                    }
+                  },
+                  {
+                    "value": "Auditor\u00eda de ritmo en mojado (Best-of-Brand) segmentada por estrato de la grilla",
+                    "textStyle": {
+                      "fontWeight": "normal",
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

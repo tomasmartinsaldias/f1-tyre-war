@@ -13,7 +13,7 @@ table 'formula1 v_analisis_rendimiento_anual'
 		dataType: int64
 		formatString: 0
 		lineageTag: 80ec0f5e-6ef0-4e93-82f0-66187dca2fdf
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: year
 
 		annotation SummarizationSetBy = Automatic

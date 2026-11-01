@@ -5,7 +5,7 @@ table 'formula1 v_analisis_fiabilidad_neumaticos'
 		dataType: int64
 		formatString: 0
 		lineageTag: 3289d182-742e-42e9-bc20-cf5650d3f414
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: year
 
 		annotation SummarizationSetBy = Automatic
