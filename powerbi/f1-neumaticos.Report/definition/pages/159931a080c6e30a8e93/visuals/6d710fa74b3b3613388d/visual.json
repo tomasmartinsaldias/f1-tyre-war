@@ -200,6 +200,20 @@
             "show": {
               "expr": {
                 "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "enableValueDataLabel": {
+              "expr": {
+                "Literal": {
                   "Value": "false"
                 }
               }
@@ -217,6 +231,13 @@
                 }
               }
             },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
             "seriesMaximumWidth": {
               "expr": {
                 "Literal": {
@@ -224,10 +245,10 @@
                 }
               }
             },
-            "textSize": {
+            "leaderLines": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "true"
                 }
               }
             }
