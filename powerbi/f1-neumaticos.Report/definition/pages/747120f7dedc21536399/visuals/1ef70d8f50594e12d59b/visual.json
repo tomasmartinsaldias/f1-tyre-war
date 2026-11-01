@@ -23,11 +23,11 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Puntos_Segmento_Filtrado"
+                  "Property": "Delta_Shock_Bridgestone"
                 }
               },
-              "queryRef": "_Medidas.Puntos_Segmento_Filtrado",
-              "nativeQueryRef": "Puntos_Segmento_Filtrado"
+              "queryRef": "_Medidas.Delta_Shock_Bridgestone",
+              "nativeQueryRef": "Delta_Shock_Bridgestone"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "_Medidas"
                   }
                 },
-                "Property": "Puntos_Segmento_Filtrado"
+                "Property": "Delta_Shock_Bridgestone"
               }
             },
             "direction": "Descending"
@@ -58,20 +58,50 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
+                }
+              }
+            },
+            "customFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             },
             "labelPrecision": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "2L"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "_Medidas.Puntos_Segmento_Filtrado"
+            "metadata": "_Medidas.Delta_Shock_Bridgestone"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'DELTA SHOCK 2005 (BRIDGESTONE)'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Delta_Shock_Bridgestone"
           }
         }
       ]

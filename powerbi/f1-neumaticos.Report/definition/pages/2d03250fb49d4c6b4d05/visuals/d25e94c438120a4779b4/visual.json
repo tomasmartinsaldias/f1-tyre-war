@@ -1,0 +1,202 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d25e94c438120a4779b4",
+  "position": {
+    "x": 130,
+    "y": 323.33333333333337,
+    "z": 6000,
+    "height": 550,
+    "width": 516.66666666666674,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "01 | EL DISPARADOR REGULATORIO",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Semibold",
+                      "fontSize": "12pt",
+                      "color": "#6b7280"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El Artículo 75 y la Quiebra de Paradigma (2005)",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "16pt",
+                      "color": "#111827"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La restricción normativa:",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La FIA prohibió los cambios de neumáticos en carrera, obligando a clasificar y completar los 300 km con un único juego. ",
+                    "textStyle": {
+                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El aislamiento previo en la grilla:",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "12pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El trato preferencial de Bridgestone hacia Ferrari ya había provocado una fuga masiva de equipos (BAR y Sauber) hacia Michelin antes de 2005. Bridgestone encaró el cambio de reglas con solo Ferrari y dos escuderías de fondo de parrilla (Jordan y Minardi), sufriendo un déficit de recolección de datos.",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El dilema de compromiso técnico:",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Bridgestone:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  },
+                  {
+                    "value": " Priorizó la integridad física ante el riesgo de delaminación mediante compuestos rígidos. Sacrificó la ventana de temperatura óptima y el agarre químico a una vuelta.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Michelin:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  },
+                  {
+                    "value": " Su diseño dispersaba mejor el calor acumulado, permitiendo retener grip inmediato en clasificación sin degradar la carcasa a lo largo de los 300 km.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El efecto en la grilla: ",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  },
+                  {
+                    "value": "Un colapso en",
+                    "textStyle": {
+                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  },
+                  {
+                    "value": " el rendimiento de Bridgestone que neutralizó el dominio de Ferrari.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#1f2937"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

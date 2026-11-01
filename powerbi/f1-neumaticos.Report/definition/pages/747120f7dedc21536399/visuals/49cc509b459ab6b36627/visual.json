@@ -185,20 +185,6 @@
           ]
         },
         "howCreated": "User"
-      },
-      {
-        "name": "eecc186f1eb9608b4cdb",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_segmento_estrategico"
-              }
-            },
-            "Property": "nombre_arquetipo"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

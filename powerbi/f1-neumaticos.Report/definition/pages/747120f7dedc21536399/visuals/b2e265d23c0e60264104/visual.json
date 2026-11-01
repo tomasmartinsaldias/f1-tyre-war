@@ -531,51 +531,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "17fa98b5ae7533e807a3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "formula1 race"
-              }
-            },
-            "Property": "year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1c898c9a73398e69d078",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "formula1 v_f1_qualy_granular"
-              }
-            },
-            "Property": "tyre_manufacturer_id"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f73a0d5790124302ead8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Mediana Gap Pole Pct"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
