@@ -1,0 +1,151 @@
+table Matriz_Decision
+	lineageTag: e4f89012-34ab-45cd-89ef-012345678901
+
+	column Arquetipo
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678902
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Arquetipo]
+		sortByColumn: Orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Orden
+		dataType: int64
+		formatString: 0
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678903
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Orden]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Escuderias_Ejemplo
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678904
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Escuderias_Ejemplo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Proveedor_Recomendado
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678905
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Proveedor_Recomendado]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Color_HEX
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678906
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Color_HEX]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Titulo_Veredicto
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678907
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Titulo_Veredicto]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impacto_PitStops
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678908
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Impacto_PitStops]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Horizonte_2007
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678909
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Horizonte_2007]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Riesgo_Asumido
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678910
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Riesgo_Asumido]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Justificacion_Estrategica
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678911
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Justificacion_Estrategica]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Matriz_Decision = calculated
+		mode: import
+		source = ```
+			DATATABLE(
+			    "Arquetipo", STRING,
+			    "Orden", INTEGER,
+			    "Escuderias_Ejemplo", STRING,
+			    "Proveedor_Recomendado", STRING,
+			    "Color_HEX", STRING,
+			    "Titulo_Veredicto", STRING,
+			    "Impacto_PitStops", STRING,
+			    "Horizonte_2007", STRING,
+			    "Riesgo_Asumido", STRING,
+			    "Justificacion_Estrategica", STRING,
+			    {
+			        {
+			            "1. Top Tier", 
+			            1, 
+			            "Ferrari, Renault, McLaren", 
+			            "BRIDGESTONE", 
+			            "#E10600",
+			            "Apuesta al Techo de Rendimiento: La Ventaja del Monopolio Técnico",
+			            "Favorable: La vuelta de los cambios de neumáticos reactiva la ventaja de compuestos hiperblandos y tandas al sprint.",
+			            "Estratégico: Michelin abandona la F1 a fin de 2006; aliarse con Bridgestone anticipa la adaptación al monopolio obligatorio de 2007.",
+			            "Riesgo de estatus: Solo viable si la escudería tiene el peso político para no quedar subordinada al desarrollo centrado en Ferrari.",
+			            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Para un candidato al título, el techo prestacional supera el riesgo del año previo. Si el equipo puede exigir trato de paridad técnica, Bridgestone ofrece el compuesto ganador para 2006 y garantiza continuidad técnica hacia 2007."
+			        },
+			        {
+			            "2. Midfield", 
+			            2, 
+			            "Williams, Toyota, BAR/Honda, Red Bull, Sauber", 
+			            "MICHELIN", 
+			            "#0055A5",
+			            "Consistencia y Paridad Competitiva: Evitar la Trampa Cliente",
+			            "Neutral/Controlado: Menor sensibilidad a paradas; la prioridad es la estabilidad de ritmo sobre tandas constantes.",
+			            "Transición diferida: Tolerar la salida de Michelin a fines de 2006 y aplazar el cambio forzado de proveedor hacia 2007.",
+			            "Riesgo de asimetría nulo: En Bridgestone el déficit de cliente promedia +11 puestos; en Michelin se garantiza compuesto idéntico al líder.",
+			            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Michelin garantiza acceso al mismo compuesto que utiliza el campeón del mundo, maximizando la captura de puntos regulares a costo de una transición forzada en 2007."
+			        },
+			        {
+			            "3. Fondo de Grilla", 
+			            3, 
+			            "Midland/Jordan, Minardi, Super Aguri", 
+			            "MICHELIN (o Bridgestone bajo subsidio)", 
+			            "#0055A5",
+			            "Supervivencia y Eficiencia Operativa: Paquete Técnico Probado",
+			            "Bajo impacto deportivo: Las paradas en boxes no compensan un déficit de carga aerodinámica de base.",
+			            "Financiero: Evaluar si el costo de transición técnica 2006-2007 es compensado por acuerdos de motor.",
+			            "Riesgo de confiabilidad: Michelin ofrece una base probada de flota que minimiza costos por abandono prematuro.",
+			            "En términos deportivos puros, Michelin ofrece un compuesto equilibrado y fiable para completar kilometraje. No obstante, si Bridgestone ofrece subsidio financiero directo, bonificación en paquetes de motores o descuento de suministro, se justifica la firma con los japoneses priorizando la viabilidad económica."
+			        }
+			    }
+			)
+			```
+
+	annotation PBI_Id = 7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d

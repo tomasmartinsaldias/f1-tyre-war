@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "01matr00000000000001",
+  "position": {
+    "x": 40,
+    "y": 25,
+    "z": 1000,
+    "height": 40,
+    "width": 890,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "05. MATRIZ DE DECISIÓN CONTRACTUAL 2006",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "11pt",
+                      "color": "#6B7280"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
