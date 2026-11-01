@@ -4,10 +4,10 @@
   "position": {
     "x": 30,
     "y": 195,
-    "z": 1002,
+    "z": 2000,
     "height": 855,
     "width": 1450,
-    "tabOrder": 1002
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "lineChart",
@@ -42,11 +42,25 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Lluvia Delta Promedio Seg"
+                  "Property": "Ventaja Michelin (Delta < 0 seg)"
                 }
               },
-              "queryRef": "_Medidas.Lluvia Delta Promedio Seg",
-              "nativeQueryRef": "Delta de Ritmo (segundos)"
+              "queryRef": "_Medidas.Ventaja Michelin (Delta < 0 seg)",
+              "nativeQueryRef": "Ventaja Michelin (Azul / Delta < 0s)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Ventaja Bridgestone (Delta >= 0 seg)"
+                }
+              },
+              "queryRef": "_Medidas.Ventaja Bridgestone (Delta >= 0 seg)",
+              "nativeQueryRef": "Ventaja Bridgestone (Rojo / Delta >= 0s)"
             }
           ]
         }
@@ -71,10 +85,10 @@
       }
     },
     "objects": {
-      "lines": [
+      "dataPoint": [
         {
           "properties": {
-            "lineColor": {
+            "fill": {
               "solid": {
                 "color": {
                   "expr": {
@@ -84,11 +98,125 @@
                   }
                 }
               }
-            },
-            "strokeWidth": {
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Ventaja Michelin (Delta < 0 seg)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E10600'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Medidas.Ventaja Bridgestone (Delta >= 0 seg)"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "3D"
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Proveedor con Ventaja de Ritmo'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "y1AxisReferenceLine": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#475569'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "style": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dashed'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'front'"
+                }
+              }
+            },
+            "displayName": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Paridad Técnica (0.0 seg)'"
                 }
               }
             }
@@ -104,11 +232,38 @@
                   "Value": "true"
                 }
               }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             },
-            "size": {
+            "markerSize": {
               "expr": {
                 "Literal": {
                   "Value": "8D"
+                }
+              }
+            },
+            "markerShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'circle'"
+                }
+              }
+            },
+            "strokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "3D"
                 }
               }
             }
@@ -224,7 +379,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Línea continua cronológica. Valores < 0 (Negativos) = Ventaja Michelin | Valores > 0 (Positivos) = Ventaja Bridgestone | Línea 0 = Paridad técnica'"
+                  "Value": "'Línea cronológica por proveedor. Azul (< 0) = Ventaja Michelin | Rojo (>= 0) = Ventaja Bridgestone | Línea discontinua 0 = Paridad técnica'"
                 }
               }
             },

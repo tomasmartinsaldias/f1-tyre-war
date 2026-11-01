@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "01pole00000000000001",
   "position": {
-    "x": 30,
-    "y": 25,
-    "z": 1000,
-    "height": 160,
-    "width": 840,
-    "tabOrder": 1000
+    "x": 60,
+    "y": 35,
+    "z": 0,
+    "height": 110,
+    "width": 520,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "textbox",
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO I: RITMO A UNA VUELTA",
+                    "value": "ACTO I: RITMO A UNA VUELTA (QUALY 2001 - 2005)",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "11pt",
+                      "fontSize": "9pt",
                       "color": "#6B7280"
                     }
                   }
@@ -31,10 +31,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Trayectoria de Poles: El Sorpasso de Michelin",
+                    "value": "Acumulación de Poles: El 'Sorpasso'",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "23pt",
+                      "fontSize": "18pt",
                       "color": "#111827"
                     }
                   }
@@ -43,9 +43,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Acumulación progresiva de Pole Positions carrera a carrera (87 Grandes Premios). Tras el dominio inicial de Ferrari-Bridgestone (2001-2004), la regla de juego único de 2005 desató una sequía histórica en Bridgestone.",
+                    "value": "Trayectoria carrera a carrera. Hegemonía Ferrari-Bridgestone y quiebre en 2005.",
                     "textStyle": {
-                      "fontSize": "12pt",
+                      "fontSize": "10pt",
                       "color": "#4B5563"
                     }
                   }
