@@ -13,7 +13,9 @@ table _Medidas
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 5340a3b0-b39a-4c31-95db-9e0effbb5de5
 
-	measure 'Total Puntos' = SUM('formula1 v_f1_race_granular'[points])
+	measure Puntos_Totales =
+			
+			SUM('formula1 v_f1_race_granular'[points])
 		lineageTag: 7d2aa055-b1dd-46c5-99d9-557181e1da19
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -47,16 +49,16 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Share Puntos Pct' =
+	measure Share_Puntos_Pct = ```
 			
-			DIVIDE(
-			    SUM('formula1 v_analisis_rendimiento_anual'[total_points]),
+			VAR PuntosTotalesTemporada = 
 			    CALCULATE(
-			        SUM('formula1 v_analisis_rendimiento_anual'[total_points]),
-			        ALL('formula1 v_analisis_rendimiento_anual'[tyre_manufacturer_id])
+			        [Puntos_Totales],
+			        ALLSELECTED('formula1 v_f1_race_granular'[tyre_manufacturer_id])
 			    )
-			)
-		formatString: 0.0%;-0.0%;0.0%
+			RETURN
+			    DIVIDE([Puntos_Totales], PuntosTotalesTemporada, 0)
+			```
 		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
 
 	measure Texto_Insight_Dinamico = ```
@@ -471,6 +473,62 @@ table _Medidas
 			    )
 			```
 		lineageTag: 3cb01dd0-1511-4d10-9a75-e96c62f62232
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Cant_Escuderias =
+			
+			DISTINCTCOUNT('formula1 v_f1_race_granular'[constructor_id])
+		formatString: 0
+		lineageTag: 7474ae22-9427-4f11-8147-0d64142594c5
+
+	measure Puntos_Por_Escuderia =
+			
+			DIVIDE([Puntos_Totales], [Cant_Escuderias])
+		formatString: 0.0
+		lineageTag: b30b2b0e-af35-4f99-93f9-fe71869162c8
+
+	measure Flota_Michelin =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
+			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin"
+			)
+		formatString: 0
+		lineageTag: aea88fe4-1dea-45a3-a6a6-3d139a89234f
+
+	measure Flota_Bridgestone =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
+			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "bridgestone"
+			)
+		formatString: 0
+		lineageTag: f053257a-b74b-4b23-9715-eedb4a40aeac
+
+	measure KPI_Puntos_Promedio_Michelin =
+			
+			AVERAGEX(
+			    VALUES('formula1 v_f1_race_granular'[year]),
+			    CALCULATE(
+			        [Puntos_Por_Escuderia],
+			        'formula1 v_f1_race_granular'[tyre_manufacturer_id] = "michelin"
+			    )
+			)
+		lineageTag: 26866106-3efe-4b0f-b5cd-4c609670c906
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure KPI_Puntos_Promedio_Bridgestone =
+			
+			AVERAGEX(
+			    VALUES('formula1 v_f1_race_granular'[year]),
+			    CALCULATE(
+			        [Puntos_Por_Escuderia],
+			        'formula1 v_f1_race_granular'[tyre_manufacturer_id] = "bridgestone"
+			    )
+			)
+		lineageTag: 33b3adb1-769b-4870-b586-ebcb2db9dbb4
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

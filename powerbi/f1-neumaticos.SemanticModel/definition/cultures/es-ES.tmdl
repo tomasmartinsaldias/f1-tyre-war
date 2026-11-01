@@ -28,13 +28,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1376,13 +1372,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3776,38 +3768,25 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "entity__medida.total_puntos": {
+			    "entity__medida.puntos_totales": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Total Puntos"
+			          "ConceptualProperty": "Puntos_Totales"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total puntos": {
+			          "puntos totales": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "aggregate punto": {
+			          "Puntos_Totales": {
 			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall punto": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -3974,7 +3953,7 @@ cultureInfo es-ES
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Share Puntos Pct"
+			          "ConceptualProperty": "Share_Puntos_Pct"
 			        }
 			      },
 			      "State": "Generated",
@@ -3982,6 +3961,13 @@ cultureInfo es-ES
 			        {
 			          "share puntos pct": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Share_Puntos_Pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -4881,13 +4867,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -5562,13 +5544,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -6061,13 +6039,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -8412,9 +8386,6 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "race id": {
@@ -8544,13 +8515,9 @@ cultureInfo es-ES
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "year": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -9208,75 +9175,312 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "formula1_v_f1_race_granular.id_segmento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_f1_race_granular",
+			          "ConceptualProperty": "id_segmento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id segmento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_segmento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular.nombre_arquetipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_f1_race_granular",
+			          "ConceptualProperty": "nombre_arquetipo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nombre arquetipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nombre_arquetipo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cant_escuderias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Cant_Escuderias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cant escuderias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cant_Escuderias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.puntos_por_escuderia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Puntos_Por_Escuderia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntos por escuderia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Puntos_Por_Escuderia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.flota_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Flota_Michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flota michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Flota_Michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.flota_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Flota_Bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flota bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Flota_Bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.KPI_puntos_promedio_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "KPI_Puntos_Promedio_Michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI puntos promedio michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Puntos_Promedio_Michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Retorno Promedio Michelin": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.KPI_puntos_promedio_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "KPI_Puntos_Promedio_Bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KPI puntos promedio bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "KPI_Puntos_Promedio_Bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca.id_segmento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_asimetria_marca",
+			          "ConceptualProperty": "id_segmento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id segmento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_segmento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential segmento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "formula1_race_date_jerarquía_de_fecha_has_formula1_race_date_año": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 race"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_race.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "formula1_race.date.jerarquía_de_fecha"
-			          }
-			        },
-			        "formula1_race.date.año": {
-			          "Target": {
-			            "Entity": "formula1_race.date.año"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_race.date.jerarquía_de_fecha"
-			            },
-			            "Object": {
-			              "Role": "formula1_race.date.año"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "jerarquía_de_fechas_have_años"
-			        }
-			      ]
-			    },
-			    "formula1_race_date_has_jerarquía_de_fecha": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 race"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_race.date": {
-			          "Target": {
-			            "Entity": "formula1_race.date"
-			          }
-			        },
-			        "formula1_race.date.jerarquía_de_fecha": {
-			          "Target": {
-			            "Entity": "formula1_race.date.jerarquía_de_fecha"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_race.date"
-			            },
-			            "Object": {
-			              "Role": "formula1_race.date.jerarquía_de_fecha"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_jerarquía_de_fechas"
-			        }
-			      ]
-			    },
 			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_dim_segmento_estrategico": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
@@ -9320,211 +9524,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_rendimiento_lluvia_carreras"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_formula1_v_acumulacion_poles_carrera": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			          }
-			        },
-			        "formula1_v_acumulacion_poles_carrera": {
-			          "Target": {
-			            "Entity": "formula1_v_acumulacion_poles_carrera"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_formula1_v_acumulacion_poles_carreras"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_acumulacion_poles_carreras_have_formula1_v_analisis_rendimiento_lluvia_carreras"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_formula1_v_cuota_parrilla_anual_neumatico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			          }
-			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_analisis_rendimiento_lluvia_carreras"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_fiabilidad_neumatico_has_formula1_v_cuota_parrilla_anual_neumatico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_fiabilidad_neumaticos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_fiabilidad_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_fiabilidad_neumatico"
-			          }
-			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_fiabilidad_neumaticos_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_analisis_fiabilidad_neumaticos"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_fiabilidad_neumatico_has_formula1_v_temporadas_proveedor_marca": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_fiabilidad_neumaticos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_fiabilidad_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_fiabilidad_neumatico"
-			          }
-			        },
-			        "formula1_v_temporadas_proveedor_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_temporadas_proveedor_marca"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_fiabilidad_neumaticos_have_formula1_v_temporadas_proveedor_marcas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_temporadas_proveedor_marcas_have_formula1_v_analisis_fiabilidad_neumaticos"
 			        }
 			      ]
 			    },
@@ -9581,7 +9580,7 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "formula1_v_analisis_asimetria_marca_has_formula1_v_cuota_parrilla_anual_neumatico": {
+			    "formula1_v_analisis_asimetria_marca_has_dim_segmento_estrategico": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
 			      },
@@ -9592,70 +9591,10 @@ cultureInfo es-ES
 			            "Entity": "formula1_v_analisis_asimetria_marca"
 			          }
 			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			        "dim_segmento_estrategico": {
 			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_asimetria_marcas_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_analisis_asimetria_marcas"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_asimetria_marca_has_formula1_v_temporadas_proveedor_marca": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_asimetria_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_asimetria_marca"
+			            "Entity": "dim_segmento_estrategico"
 			          }
-			        },
-			        "formula1_v_temporadas_proveedor_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_temporadas_proveedor_marca"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
 			        }
 			      },
 			      "Phrasings": [
@@ -9665,17 +9604,17 @@ cultureInfo es-ES
 			              "Role": "formula1_v_analisis_asimetria_marca"
 			            },
 			            "Object": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
+			              "Role": "dim_segmento_estrategico"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_asimetria_marcas_have_formula1_v_temporadas_proveedor_marcas"
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_dim_segmento_estrategicos"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
+			              "Role": "dim_segmento_estrategico"
 			            },
 			            "Object": {
 			              "Role": "formula1_v_analisis_asimetria_marca"
@@ -9683,7 +9622,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_temporadas_proveedor_marcas_have_formula1_v_analisis_asimetria_marcas"
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_asimetria_marcas"
 			        }
 			      ]
 			    },
@@ -9737,112 +9676,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "formula1_constructors_have_formula1_v_analisis_asimetria_marcas"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_rendimiento_anual_has_formula1_v_cuota_parrilla_anual_neumatico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_rendimiento_anual": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_anual"
-			          }
-			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_anuals_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_analisis_rendimiento_anuals"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_rendimiento_anual_has_formula1_v_temporadas_proveedor_marca": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_rendimiento_anual": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_anual"
-			          }
-			        },
-			        "formula1_v_temporadas_proveedor_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_temporadas_proveedor_marca"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_anuals_have_formula1_v_temporadas_proveedor_marcas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_temporadas_proveedor_marcas_have_formula1_v_analisis_rendimiento_anuals"
 			        }
 			      ]
 			    },
@@ -9945,7 +9778,7 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "formula1_v_f1_race_granular_has_formula1_v_cuota_parrilla_anual_neumatico": {
+			    "formula1_v_f1_race_granular_has_dim_segmento_estrategico": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_f1_race_granular"
 			      },
@@ -9956,115 +9789,9 @@ cultureInfo es-ES
 			            "Entity": "formula1_v_f1_race_granular"
 			          }
 			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			        "dim_segmento_estrategico": {
 			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_race_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_race_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_f1_race_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_race_granular_has_formula1_v_temporadas_proveedor_marca": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_race_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_race_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_race_granular"
-			          }
-			        },
-			        "formula1_v_temporadas_proveedor_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_temporadas_proveedor_marca"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_race_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_formula1_v_temporadas_proveedor_marcas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_race_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_temporadas_proveedor_marcas_have_formula1_v_f1_race_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_race_granular_has_formula1_v_acumulacion_poles_carrera": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_race_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_race_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_race_granular"
-			          }
-			        },
-			        "formula1_v_acumulacion_poles_carrera": {
-			          "Target": {
-			            "Entity": "formula1_v_acumulacion_poles_carrera"
+			            "Entity": "dim_segmento_estrategico"
 			          }
 			        }
 			      },
@@ -10075,17 +9802,17 @@ cultureInfo es-ES
 			              "Role": "formula1_v_f1_race_granular"
 			            },
 			            "Object": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
+			              "Role": "dim_segmento_estrategico"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_formula1_v_acumulacion_poles_carreras"
+			          "ID": "formula1_v_f1_race_granulars_have_dim_segmento_estrategicos"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
+			              "Role": "dim_segmento_estrategico"
 			            },
 			            "Object": {
 			              "Role": "formula1_v_f1_race_granular"
@@ -10093,7 +9820,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_acumulacion_poles_carreras_have_formula1_v_f1_race_granulars"
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_f1_race_granulars"
 			        }
 			      ]
 			    },
@@ -10193,158 +9920,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "formula1_races_have_formula1_v_f1_race_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_qualy_granular_has_formula1_v_cuota_parrilla_anual_neumatico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
-			          }
-			        },
-			        "formula1_v_cuota_parrilla_anual_neumatico": {
-			          "Target": {
-			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
-			          },
-			          "Nouns": [
-			            {
-			              "year": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_v_cuota_parrilla_anual_neumaticos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_formula1_v_f1_qualy_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_qualy_granular_has_formula1_v_temporadas_proveedor_marca": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
-			          }
-			        },
-			        "formula1_v_temporadas_proveedor_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_temporadas_proveedor_marca"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_v_temporadas_proveedor_marcas"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_temporadas_proveedor_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_temporadas_proveedor_marcas_have_formula1_v_f1_qualy_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_qualy_granular_has_formula1_v_acumulacion_poles_carrera": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
-			          }
-			        },
-			        "formula1_v_acumulacion_poles_carrera": {
-			          "Target": {
-			            "Entity": "formula1_v_acumulacion_poles_carrera"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_v_acumulacion_poles_carreras"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_acumulacion_poles_carrera"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_acumulacion_poles_carreras_have_formula1_v_f1_qualy_granulars"
 			        }
 			      ]
 			    },
@@ -10490,6 +10065,237 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "formula1_races_have_formula1_v_f1_qualy_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_entity__medida_KPI_puntos_promedio_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "entity__medida.KPI_puntos_promedio_bridgestone": {
+			          "Target": {
+			            "Entity": "entity__medida.KPI_puntos_promedio_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.KPI_puntos_promedio_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_KPI_puntos_promedio_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_entity__medida_KPI_puntos_promedio_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "entity__medida.KPI_puntos_promedio_michelin": {
+			          "Target": {
+			            "Entity": "entity__medida.KPI_puntos_promedio_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.KPI_puntos_promedio_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_KPI_puntos_promedio_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca_has_entity__medida_flota_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_asimetria_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca"
+			          }
+			        },
+			        "entity__medida.flota_bridgestone": {
+			          "Target": {
+			            "Entity": "entity__medida.flota_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.flota_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_flota_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca_has_entity__medida_flota_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_asimetria_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca"
+			          }
+			        },
+			        "entity__medida.flota_michelin": {
+			          "Target": {
+			            "Entity": "entity__medida.flota_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.flota_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_flota_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_entity__medida_puntos_por_escuderia": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "entity__medida.puntos_por_escuderia": {
+			          "Target": {
+			            "Entity": "entity__medida.puntos_por_escuderia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.puntos_por_escuderia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_puntos_por_escuderia"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_entity__medida_cant_escuderias": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "entity__medida.cant_escuderias": {
+			          "Target": {
+			            "Entity": "entity__medida.cant_escuderias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cant_escuderias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_cant_escuderias"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_nombre_arquetipo": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "formula1_v_f1_race_granular.nombre_arquetipo": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular.nombre_arquetipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_race_granular.nombre_arquetipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_nombre_arquetipos"
 			        }
 			      ]
 			    },
@@ -11018,6 +10824,72 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_round"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.year": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_years"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_race_id": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.race_id": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.race_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.race_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_race_ids"
 			        }
 			      ]
 			    },
@@ -12440,6 +12312,39 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "formula1_v_analisis_fiabilidad_neumatico_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_fiabilidad_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_fiabilidad_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_fiabilidad_neumatico"
+			          }
+			        },
+			        "formula1_v_analisis_fiabilidad_neumatico.year": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_fiabilidad_neumatico.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_fiabilidad_neumatico.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_fiabilidad_neumaticos_have_years"
+			        }
+			      ]
+			    },
 			    "formula1_v_analisis_asimetria_marca_has_avg_gap_to_brand_leader": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
@@ -12569,6 +12474,39 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "tyre_manufacturer_ids_have_formula1_v_analisis_asimetria_marcas"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_asimetria_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca"
+			          }
+			        },
+			        "formula1_v_analisis_asimetria_marca.year": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_asimetria_marca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_years"
 			        }
 			      ]
 			    },
@@ -12800,6 +12738,39 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "tyre_manufacturer_ids_have_formula1_v_analisis_rendimiento_anuals"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_anual_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_anual": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_anual"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_anual.year": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_anual.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_anual"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_anual.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_anuals_have_years"
 			        }
 			      ]
 			    },
@@ -13661,15 +13632,15 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "formula1_v_analisis_rendimiento_anual_has_entity__medida_share_puntos_pct": {
+			    "formula1_v_f1_race_granular_has_entity__medida_share_puntos_pct": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_analisis_rendimiento_anual": {
+			        "formula1_v_f1_race_granular": {
 			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_anual"
+			            "Entity": "formula1_v_f1_race_granular"
 			          }
 			        },
 			        "entity__medida.share_puntos_pct": {
@@ -13682,7 +13653,7 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
+			              "Role": "formula1_v_f1_race_granular"
 			            },
 			            "Object": {
 			              "Role": "entity__medida.share_puntos_pct"
@@ -13690,7 +13661,7 @@ cultureInfo es-ES
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_anuals_have_share_puntos_pct"
+			          "ID": "formula1_v_f1_race_granulars_have_share_puntos_pct"
 			        }
 			      ]
 			    },
@@ -13793,7 +13764,7 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "formula1_v_f1_race_granular_has_entity__medida_total_puntos": {
+			    "formula1_v_f1_race_granular_has_entity__medida_puntos_totales": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_f1_race_granular"
 			      },
@@ -13804,9 +13775,9 @@ cultureInfo es-ES
 			            "Entity": "formula1_v_f1_race_granular"
 			          }
 			        },
-			        "entity__medida.total_puntos": {
+			        "entity__medida.puntos_totales": {
 			          "Target": {
-			            "Entity": "entity__medida.total_puntos"
+			            "Entity": "entity__medida.puntos_totales"
 			          }
 			        }
 			      },
@@ -13817,12 +13788,12 @@ cultureInfo es-ES
 			              "Role": "formula1_v_f1_race_granular"
 			            },
 			            "Object": {
-			              "Role": "entity__medida.total_puntos"
+			              "Role": "entity__medida.puntos_totales"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_total_puntos"
+			          "ID": "formula1_v_f1_race_granulars_have_puntos_totales"
 			        }
 			      ]
 			    },
@@ -14657,6 +14628,39 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "formula1_v_f1_race_granular_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "formula1_v_f1_race_granular.year": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_race_granular.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_years"
+			        }
+			      ]
+			    },
 			    "formula1_v_f1_qualy_granular_has_is_within_107": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
@@ -15086,6 +15090,39 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
+			    "formula1_v_f1_qualy_granular_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_qualy_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_qualy_granular"
+			          }
+			        },
+			        "formula1_v_f1_qualy_granular.year": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_qualy_granular.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_qualy_granular.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_qualy_granulars_have_years"
+			        }
+			      ]
+			    },
 			    "formula1_constructor_in_country_id": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 constructor"
@@ -15178,6 +15215,72 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_formula1_v_f1_race_granulars_are_finished_formula1_v_f1_race_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_race_date_has_jerarquía_de_fecha": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_race.date": {
+			          "Target": {
+			            "Entity": "formula1_race.date"
+			          }
+			        },
+			        "formula1_race.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "formula1_race.date.jerarquía_de_fecha"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_race.date"
+			            },
+			            "Object": {
+			              "Role": "formula1_race.date.jerarquía_de_fecha"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_jerarquía_de_fechas"
+			        }
+			      ]
+			    },
+			    "formula1_race_date_jerarquía_de_fecha_has_formula1_race_date_año": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 race"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_race.date.jerarquía_de_fecha": {
+			          "Target": {
+			            "Entity": "formula1_race.date.jerarquía_de_fecha"
+			          }
+			        },
+			        "formula1_race.date.año": {
+			          "Target": {
+			            "Entity": "formula1_race.date.año"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_race.date.jerarquía_de_fecha"
+			            },
+			            "Object": {
+			              "Role": "formula1_race.date.año"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "jerarquía_de_fechas_have_años"
 			        }
 			      ]
 			    },
