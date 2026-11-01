@@ -1,0 +1,210 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "e85e01840d7a40d880a0",
+  "position": {
+    "x": 64,
+    "y": 198,
+    "z": 0,
+    "height": 458,
+    "width": 724,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "formula1 v_acumulacion_poles_carreras"
+                    }
+                  },
+                  "Property": "numero_carrera_acumulado"
+                }
+              },
+              "queryRef": "formula1 v_acumulacion_poles_carreras.numero_carrera_acumulado",
+              "nativeQueryRef": "Suma de numero_carrera_acumulado",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_acumulacion_poles_carreras"
+                        }
+                      },
+                      "Property": "Poles_bridgestone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)",
+              "nativeQueryRef": "Suma de Poles_bridgestone"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_acumulacion_poles_carreras"
+                        }
+                      },
+                      "Property": "Poles_Michelin"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_acumulacion_poles_carreras.Poles_Michelin)",
+              "nativeQueryRef": "Suma de Poles_Michelin"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "formula1 v_acumulacion_poles_carreras"
+                      }
+                    },
+                    "Property": "Poles_bridgestone"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "lineStyles": [
+        {
+          "properties": {
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)"
+          }
+        },
+        {
+          "properties": {
+            "areaShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showOnCategoryAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "error": [
+        {
+          "properties": {
+            "enabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Poles Acumuladas entre 2001-2005'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "divider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

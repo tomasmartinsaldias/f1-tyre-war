@@ -5,7 +5,7 @@ table 'formula1 v_analisis_asimetria_marca'
 		dataType: int64
 		formatString: 0
 		lineageTag: 85fab584-c0e7-4e2b-8ec5-2c14d2caaa30
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: year
 
 		annotation SummarizationSetBy = Automatic
