@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "4395ce8418c967954b71",
   "position": {
-    "x": 99.76950314621439,
-    "y": 526.90768849094479,
-    "z": 0,
-    "height": 515.99539908432757,
-    "width": 860.51196463609915,
-    "tabOrder": 0
+    "x": 30,
+    "y": 205,
+    "z": 1004,
+    "height": 575,
+    "width": 720,
+    "tabOrder": 1004
   },
   "visual": {
     "visualType": "columnChart",
@@ -27,32 +27,13 @@
                 }
               },
               "queryRef": "formula1 v_temporadas_proveedor_marca.constructor_name",
-              "nativeQueryRef": "constructor_name",
+              "nativeQueryRef": "Escudería",
               "active": true
             }
           ]
         },
         "Y": {
           "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "formula1 v_temporadas_proveedor_marca"
-                        }
-                      },
-                      "Property": "temporadas_bridgestone"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(formula1 v_temporadas_proveedor_marca.temporadas_bridgestone)",
-              "nativeQueryRef": "Suma de temporadas_bridgestone"
-            },
             {
               "field": {
                 "Aggregation": {
@@ -70,7 +51,26 @@
                 }
               },
               "queryRef": "Sum(formula1 v_temporadas_proveedor_marca.temporadas_michelin)",
-              "nativeQueryRef": "Suma de temporadas_michelin"
+              "nativeQueryRef": "Años con Michelin"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_temporadas_proveedor_marca"
+                        }
+                      },
+                      "Property": "temporadas_bridgestone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_temporadas_proveedor_marca.temporadas_bridgestone)",
+              "nativeQueryRef": "Años con Bridgestone"
             }
           ]
         }
@@ -87,7 +87,7 @@
                         "Entity": "formula1 v_temporadas_proveedor_marca"
                       }
                     },
-                    "Property": "temporadas_bridgestone"
+                    "Property": "temporadas_michelin"
                   }
                 },
                 "Function": 0
@@ -119,7 +119,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Equipos y cuantas temporadas estuvieron con cada distribuidor.'"
+                  "Value": "'Temporadas por Proveedor según Escudería (2001-2005)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
                 }
               }
             }
@@ -129,10 +136,24 @@
       "subTitle": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Años totales equipados con Michelin vs Bridgestone por cada constructor.'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

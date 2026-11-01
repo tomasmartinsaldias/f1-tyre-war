@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "02a1b2c3d4e5f6070802",
   "position": {
-    "x": 930,
-    "y": 25,
-    "z": 1000,
-    "height": 160,
-    "width": 550,
-    "tabOrder": 1000
+    "x": 755.2347021333976,
+    "y": 24.418673971980525,
+    "z": 1001,
+    "height": 160.465571815872,
+    "width": 723.83926416942268,
+    "tabOrder": 1001
   },
   "visual": {
     "visualType": "slicer",
@@ -89,5 +89,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a2slicer_segmento",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "dim_segmento_estrategico"
+              }
+            },
+            "Property": "nombre_arquetipo"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

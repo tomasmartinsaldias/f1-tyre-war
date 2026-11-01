@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "01pole00000000000001",
+  "position": {
+    "x": 30,
+    "y": 25,
+    "z": 1000,
+    "height": 160,
+    "width": 840,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO I: RITMO A UNA VUELTA",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "11pt",
+                      "color": "#6B7280"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Trayectoria de Poles: El Sorpasso de Michelin",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "23pt",
+                      "color": "#111827"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Acumulación progresiva de Pole Positions carrera a carrera (87 Grandes Premios). Tras el dominio inicial de Ferrari-Bridgestone (2001-2004), la regla de juego único de 2005 desató una sequía histórica en Bridgestone.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#4B5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

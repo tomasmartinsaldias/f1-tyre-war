@@ -44,14 +44,6 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 
 		annotation SummarizationSetBy = Automatic
 
-	column id_segmento
-		dataType: string
-		lineageTag: 7a83d1c4-95e2-4f60-93cb-569d4a821e33
-		summarizeBy: none
-		sourceColumn: id_segmento
-
-		annotation SummarizationSetBy = Automatic
-
 	column precipitation_total_mm
 		dataType: double
 		lineageTag: 911e2a82-3997-4327-9836-51487713d852
@@ -142,6 +134,14 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 
 		annotation SummarizationSetBy = Automatic
 
+	column id_segmento
+		dataType: string
+		lineageTag: 7a83d1c4-95e2-4f60-93cb-569d4a821e33
+		summarizeBy: none
+		sourceColumn: id_segmento
+
+		annotation SummarizationSetBy = Automatic
+
 	column mejor_vuelta_michelin_sec
 		dataType: double
 		lineageTag: 3f8a4128-bb20-410a-9d95-93dfc1e28ba2
@@ -171,6 +171,68 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+
+	column orden_cronologico = 'formula1 v_analisis_rendimiento_lluvia_carreras'[year] * 100 + 'formula1 v_analisis_rendimiento_lluvia_carreras'[round]
+		dataType: int64
+		formatString: 0
+		lineageTag: 5207f124-f854-45ce-adea-631fe7e85d01
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column carrera_corta = ```
+			VAR GP = 'formula1 v_analisis_rendimiento_lluvia_carreras'[grand_prix]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    CONTAINSSTRING(GP, "Malaysia") || CONTAINSSTRING(GP, "Malaysian"), "Malasia",
+			    CONTAINSSTRING(GP, "Brasil") || CONTAINSSTRING(GP, "Brazil"), "Brasil",
+			    CONTAINSSTRING(GP, "Belgique") || CONTAINSSTRING(GP, "Belgium") || CONTAINSSTRING(GP, "Bélgica"), "Bélgica",
+			    CONTAINSSTRING(GP, "British") || CONTAINSSTRING(GP, "Britain"), "G. Bretaña",
+			    CONTAINSSTRING(GP, "Europe") || CONTAINSSTRING(GP, "Europa"), "Europa",
+			    CONTAINSSTRING(GP, "Monaco"), "Mónaco",
+			    CONTAINSSTRING(GP, "Italia") || CONTAINSSTRING(GP, "Italy"), "Italia",
+			    CONTAINSSTRING(GP, "France") || CONTAINSSTRING(GP, "Francia"), "Francia",
+			    CONTAINSSTRING(GP, "Deutschland") || CONTAINSSTRING(GP, "Germany") || CONTAINSSTRING(GP, "Alemania"), "Alemania",
+			    CONTAINSSTRING(GP, "Hungarian") || CONTAINSSTRING(GP, "Hungary") || CONTAINSSTRING(GP, "Hungría"), "Hungría",
+			    CONTAINSSTRING(GP, "Australia"), "Australia",
+			    CONTAINSSTRING(GP, "Canada") || CONTAINSSTRING(GP, "Canadá"), "Canadá",
+			    CONTAINSSTRING(GP, "United States"), "EE.UU.",
+			    CONTAINSSTRING(GP, "Japan") || CONTAINSSTRING(GP, "Japón"), "Japón",
+			    CONTAINSSTRING(GP, "China"), "China",
+			    CONTAINSSTRING(GP, "Bahrain") || CONTAINSSTRING(GP, "Bahréin"), "Bahréin",
+			    CONTAINSSTRING(GP, "Turkey") || CONTAINSSTRING(GP, "Turquía"), "Turquía",
+			    GP
+			)
+		```
+		dataType: string
+		lineageTag: 5207f124-f854-45ce-adea-631fe7e85d02
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column carrera_rotulo = 'formula1 v_analisis_rendimiento_lluvia_carreras'[carrera_corta] & UNICHAR(10) & "(" & FORMAT('formula1 v_analisis_rendimiento_lluvia_carreras'[year], "0") & ")"
+		dataType: string
+		lineageTag: 5207f124-f854-45ce-adea-631fe7e85d03
+		summarizeBy: none
+		sortByColumn: orden_cronologico
+
+		annotation SummarizationSetBy = Automatic
+
+	column Proveedor_Ganador = ```
+			IF(
+			    'formula1 v_analisis_rendimiento_lluvia_carreras'[proveedor_mas_rapido] = "michelin",
+			    "Michelin",
+			    "Bridgestone"
+			)
+		```
+		dataType: string
+		lineageTag: 5207f124-f854-45ce-adea-631fe7e85d04
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 
 	partition 'formula1 v_analisis_rendimiento_lluvia_carreras' = m
 		mode: import

@@ -14,6 +14,11 @@ AutoRecover/
 .dbeaver/
 *.log
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
 # Archivos de sistema operativo
 Thumbs.db
 .DS_Store

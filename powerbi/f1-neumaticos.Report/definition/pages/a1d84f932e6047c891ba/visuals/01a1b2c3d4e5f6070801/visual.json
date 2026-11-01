@@ -4,10 +4,10 @@
   "position": {
     "x": 30,
     "y": 25,
-    "z": 0,
+    "z": 1000,
     "height": 160,
-    "width": 880,
-    "tabOrder": 0
+    "width": 710,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "textbox",
@@ -23,7 +23,7 @@
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "11pt",
-                      "color": "#6b7280"
+                      "color": "#6B7280"
                     }
                   }
                 ]
@@ -31,7 +31,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Rendimiento en Lluvia: El 'Espejismo Ferrari'",
+                    "value": "Rendimiento en Lluvia: ",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "23pt",
@@ -43,10 +43,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Auditoría de ritmo en mojado (Best-of-Brand) segmentada por estrato de la grilla",
+                    "value": "Análisis comparativo de ritmo en mojado por carrera y estrato competitivo. Identificación de la ventana térmica y consistencia multichasis de cada fabricante.",
                     "textStyle": {
-                      "fontSize": "12pt",
-                      "color": "#4b5563"
+                      "fontSize": "11.5pt",
+                      "color": "#4B5563"
                     }
                   }
                 ]

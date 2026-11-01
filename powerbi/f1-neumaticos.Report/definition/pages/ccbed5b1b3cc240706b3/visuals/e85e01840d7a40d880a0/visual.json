@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "e85e01840d7a40d880a0",
   "position": {
-    "x": 64,
-    "y": 198,
-    "z": 0,
-    "height": 458,
-    "width": 724,
-    "tabOrder": 0
+    "x": 30,
+    "y": 205,
+    "z": 1004,
+    "height": 575,
+    "width": 1450,
+    "tabOrder": 1004
   },
   "visual": {
     "visualType": "lineChart",
@@ -27,32 +27,13 @@
                 }
               },
               "queryRef": "formula1 v_acumulacion_poles_carreras.numero_carrera_acumulado",
-              "nativeQueryRef": "Suma de numero_carrera_acumulado",
+              "nativeQueryRef": "Carrera Acumulada (1 a 87)",
               "active": true
             }
           ]
         },
         "Y": {
           "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "formula1 v_acumulacion_poles_carreras"
-                        }
-                      },
-                      "Property": "Poles_bridgestone"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)",
-              "nativeQueryRef": "Suma de Poles_bridgestone"
-            },
             {
               "field": {
                 "Aggregation": {
@@ -70,7 +51,26 @@
                 }
               },
               "queryRef": "Sum(formula1 v_acumulacion_poles_carreras.Poles_Michelin)",
-              "nativeQueryRef": "Suma de Poles_Michelin"
+              "nativeQueryRef": "Poles Acumuladas Michelin"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_acumulacion_poles_carreras"
+                        }
+                      },
+                      "Property": "Poles_bridgestone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)",
+              "nativeQueryRef": "Poles Acumuladas Bridgestone"
             }
           ]
         }
@@ -79,61 +79,29 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "formula1 v_acumulacion_poles_carreras"
-                      }
-                    },
-                    "Property": "Poles_bridgestone"
+                  "SourceRef": {
+                    "Entity": "formula1 v_acumulacion_poles_carreras"
                   }
                 },
-                "Function": 0
+                "Property": "numero_carrera_acumulado"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "lineStyles": [
-        {
-          "properties": {
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)"
-          }
-        },
-        {
-          "properties": {
-            "areaShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "zoom": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -146,22 +114,6 @@
             }
           }
         }
-      ],
-      "error": [
-        {
-          "properties": {
-            "enabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(formula1 v_acumulacion_poles_carreras.Poles_bridgestone)"
-          }
-        }
       ]
     },
     "visualContainerObjects": {
@@ -171,7 +123,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Poles Acumuladas entre 2001-2005'"
+                  "Value": "'Acumulación Progresiva de Pole Positions (2001-2005)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "18D"
                 }
               }
             }
@@ -181,23 +140,24 @@
       "subTitle": [
         {
           "properties": {
-            "show": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Trayectoria acumulada carrera a carrera (87 Grandes Premios). En la carrera 74 (GP de Europa 2005, Nürburgring) Michelin consuma el Sorpasso definitivo.'"
                 }
               }
-            }
-          }
-        }
-      ],
-      "divider": [
-        {
-          "properties": {
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "60a7c04aba7e9ac68c00",
   "position": {
-    "x": 1041.3441890886127,
-    "y": 526.90768849094479,
-    "z": 2000,
-    "height": 537.8199778975619,
-    "width": 810.62721306299193,
-    "tabOrder": 2000
+    "x": 770,
+    "y": 205,
+    "z": 1005,
+    "height": 575,
+    "width": 710,
+    "tabOrder": 1005
   },
   "visual": {
     "visualType": "hundredPercentStackedAreaChart",
@@ -27,32 +27,13 @@
                 }
               },
               "queryRef": "formula1 v_cuota_parrilla_anual_neumaticos.year",
-              "nativeQueryRef": "year",
+              "nativeQueryRef": "Temporada",
               "active": true
             }
           ]
         },
         "Y": {
           "projections": [
-            {
-              "field": {
-                "Aggregation": {
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
-                        }
-                      },
-                      "Property": "pct_equipos_bridgestone"
-                    }
-                  },
-                  "Function": 0
-                }
-              },
-              "queryRef": "Sum(formula1 v_cuota_parrilla_anual_neumaticos.pct_equipos_bridgestone)",
-              "nativeQueryRef": "Suma de pct_equipos_bridgestone"
-            },
             {
               "field": {
                 "Aggregation": {
@@ -70,7 +51,26 @@
                 }
               },
               "queryRef": "Sum(formula1 v_cuota_parrilla_anual_neumaticos.pct_equipos_michelin)",
-              "nativeQueryRef": "Suma de pct_equipos_michelin"
+              "nativeQueryRef": "% Equipos Michelin"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
+                        }
+                      },
+                      "Property": "pct_equipos_bridgestone"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(formula1 v_cuota_parrilla_anual_neumaticos.pct_equipos_bridgestone)",
+              "nativeQueryRef": "% Equipos Bridgestone"
             }
           ]
         }
@@ -79,21 +79,16 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Column": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
-                      }
-                    },
-                    "Property": "pct_equipos_bridgestone"
+                  "SourceRef": {
+                    "Entity": "formula1 v_cuota_parrilla_anual_neumaticos"
                   }
                 },
-                "Function": 0
+                "Property": "year"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
@@ -134,7 +129,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Distribución de equipos con cada proveedor de neumáticos'"
+                  "Value": "'Evolución de Cuota de Mercado de la Parrilla (% Equipos)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
                 }
               }
             }
@@ -144,10 +146,24 @@
       "subTitle": [
         {
           "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Evolución anual (2001-2005). El éxodo hacia Michelin y el aislamiento de Ferrari en Bridgestone.'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
