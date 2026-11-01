@@ -4,30 +4,28 @@ CREATE OR REPLACE VIEW formula1.v_analisis_fiabilidad_neumaticos AS
 WITH race_scope AS (
     SELECT 
         r.id AS race_id,
-        r.year
+        r.year,
+        r.round
     FROM formula1.race r
     WHERE r.year BETWEEN 2001 AND 2005
 ),
 categorized_retirements AS (
     SELECT 
         rs.year,
+        rs.round,
         rr.constructor_id,
         rr.tyre_manufacturer_id,
-        rr.laps,
+        COALESCE(rr.laps, 0) AS laps,
         CASE 
             WHEN rr.reason_retired IN ('Tyre', 'Puncture', 'Wheel rim') 
                 THEN 'Tyre/Wheel Failure'
-            
             WHEN rr.reason_retired IN ('Collision', 'Collision damage', 'Caused collision with Trulli', 
                                       'Accident', 'Spun off', 'Spin') 
                 THEN 'Accident/Collision'
-            
             WHEN rr.reason_retired IN ('Withdrew', 'Safety concerns') 
                 THEN 'Withdrawal / Safety'
-            
             WHEN rr.reason_retired IS NOT NULL 
                 THEN 'Car Mechanical / Technical'
-            
             ELSE 'Finished / Classified'
         END AS dnf_category
     FROM formula1.race_result rr
@@ -45,6 +43,9 @@ SELECT
     COUNT(CASE WHEN dnf_category = 'Accident/Collision' THEN 1 END) AS accident_dnfs,
     COUNT(CASE WHEN dnf_category = 'Withdrawal / Safety' THEN 1 END) AS withdrawal_dnfs,
     COUNT(CASE WHEN dnf_category = 'Car Mechanical / Technical' THEN 1 END) AS mechanical_dnfs,
-    COUNT(CASE WHEN dnf_category = 'Finished / Classified' THEN 1 END) AS finished_races
+    COUNT(CASE WHEN dnf_category = 'Finished / Classified' THEN 1 END) AS finished_races,
+    
+    -- Indianápolis 2005 fue la ronda 9 de la temporada 2005
+    COUNT(CASE WHEN year = 2005 AND round = 9 AND dnf_category = 'Withdrawal / Safety' THEN 1 END) AS indy_2005_withdrawals
 FROM categorized_retirements
 GROUP BY year, constructor_id, tyre_manufacturer_id;

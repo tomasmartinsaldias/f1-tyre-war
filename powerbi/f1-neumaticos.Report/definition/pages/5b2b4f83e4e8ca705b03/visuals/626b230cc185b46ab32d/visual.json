@@ -1,140 +1,140 @@
 {
-    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-    "name":  "626b230cc185b46ab32d",
-    "position":  {
-                     "x":  882.64458927837472,
-                     "y":  615.68668897892087,
-                     "z":  2003,
-                     "height":  276.57800481474959,
-                     "width":  964.41547765838766,
-                     "tabOrder":  2003
-                 },
-    "visual":  {
-                   "visualType":  "textbox",
-                   "objects":  {
-                                   "general":  [
-                                                   {
-                                                       "properties":  {
-                                                                          "paragraphs":  [
-                                                                                             {
-                                                                                                 "textRuns":  [
-                                                                                                                  {
-                                                                                                                      "value":  "La paradoja de volumen:",
-                                                                                                                      "textStyle":  {
-                                                                                                                                        "fontWeight":  "bold",
-                                                                                                                                        "fontFamily":  "Google Sans Text, sans-serif",
-                                                                                                                                        "fontSize":  "24pt"
-                                                                                                                                    }
-                                                                                                                  },
-                                                                                                                  {
-                                                                                                                      "value":  " ",
-                                                                                                                      "textStyle":  {
-                                                                                                                                        "fontFamily":  "Google Sans Text, sans-serif",
-                                                                                                                                        "fontSize":  "24pt"
-                                                                                                                                    }
-                                                                                                                  }
-                                                                                                              ]
-                                                                                             },
-                                                                                             {
-                                                                                                 "textRuns":  [
-                                                                                                                  {
-                                                                                                                      "value":  ""
-                                                                                                                  }
-                                                                                                              ]
-                                                                                             },
-                                                                                             {
-                                                                                                 "textRuns":  [
-                                                                                                                  {
-                                                                                                                      "value":  "La migración masiva hacia Michelin (+75% de la grilla en 2005) no diluyó su rendimiento medio; al contrario, triplicó la conversión de puntos de Bridgestone (89 vs. 27 pts). El modelo monocliente centrado en Ferrari colapsó, relegando a sus equipos cliente a la parte baja de la tabla.",
-                                                                                                                      "textStyle":  {
-                                                                                                                                        "fontFamily":  "Google Sans Text, sans-serif",
-                                                                                                                                        "fontSize":  "24pt"
-                                                                                                                                    }
-                                                                                                                  },
-                                                                                                                  {
-                                                                                                                      "value":  " ",
-                                                                                                                      "textStyle":  {
-                                                                                                                                        "fontSize":  "24pt"
-                                                                                                                                    }
-                                                                                                                  }
-                                                                                                              ]
-                                                                                             }
-                                                                                         ]
-                                                                      }
-                                                   }
-                                               ]
-                               },
-                   "visualContainerObjects":  {
-                                                  "background":  [
-                                                                     {
-                                                                         "properties":  {
-                                                                                            "show":  {
-                                                                                                         "expr":  {
-                                                                                                                      "Literal":  {
-                                                                                                                                      "Value":  "false"
-                                                                                                                                  }
-                                                                                                                  }
-                                                                                                     },
-                                                                                            "color":  {
-                                                                                                          "solid":  {
-                                                                                                                        "color":  {
-                                                                                                                                      "expr":  {
-                                                                                                                                                   "Literal":  {
-                                                                                                                                                                   "Value":  "\u0027#F8F9FA\u0027"
-                                                                                                                                                               }
-                                                                                                                                               }
-                                                                                                                                  }
-                                                                                                                    }
-                                                                                                      }
-                                                                                        }
-                                                                     }
-                                                                 ],
-                                                  "border":  [
-                                                                 {
-                                                                     "properties":  {
-                                                                                        "show":  {
-                                                                                                     "expr":  {
-                                                                                                                  "Literal":  {
-                                                                                                                                  "Value":  "false"
-                                                                                                                              }
-                                                                                                              }
-                                                                                                 },
-                                                                                        "radius":  {
-                                                                                                       "expr":  {
-                                                                                                                    "Literal":  {
-                                                                                                                                    "Value":  "4D"
-                                                                                                                                }
-                                                                                                                }
-                                                                                                   }
-                                                                                    }
-                                                                 }
-                                                             ],
-                                                  "dropShadow":  [
-                                                                     {
-                                                                         "properties":  {
-                                                                                            "show":  {
-                                                                                                         "expr":  {
-                                                                                                                      "Literal":  {
-                                                                                                                                      "Value":  "false"
-                                                                                                                                  }
-                                                                                                                  }
-                                                                                                     },
-                                                                                            "color":  {
-                                                                                                          "solid":  {
-                                                                                                                        "color":  {
-                                                                                                                                      "expr":  {
-                                                                                                                                                   "ThemeDataColor":  {
-                                                                                                                                                                          "ColorId":  3,
-                                                                                                                                                                          "Percent":  0
-                                                                                                                                                                      }
-                                                                                                                                               }
-                                                                                                                                  }
-                                                                                                                    }
-                                                                                                      }
-                                                                                        }
-                                                                     }
-                                                                 ]
-                                              },
-                   "drillFilterOtherVisuals":  true
-               }
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "626b230cc185b46ab32d",
+  "position": {
+    "x": 882.64458927837472,
+    "y": 615.68668897892087,
+    "z": 2003,
+    "height": 276.57800481474959,
+    "width": 964.41547765838766,
+    "tabOrder": 2003
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "La paradoja de volumen:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontSize": "24pt"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontSize": "24pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La migración masiva hacia Michelin (+75% de la grilla en 2005) no diluyó su rendimiento medio; al contrario, triplicó la conversión de puntos de Bridgestone (89 vs. 27 pts). El modelo monocliente centrado en Ferrari colapsó, relegando a sus equipos cliente a la parte baja de la tabla.",
+                    "textStyle": {
+                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontSize": "24pt"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "24pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F8F9FA'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
 }
