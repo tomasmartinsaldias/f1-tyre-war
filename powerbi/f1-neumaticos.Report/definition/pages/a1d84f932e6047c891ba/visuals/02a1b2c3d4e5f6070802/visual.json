@@ -4,10 +4,10 @@
   "position": {
     "x": 755.2347021333976,
     "y": 24.418673971980525,
-    "z": 1001,
+    "z": 1000,
     "height": 160.465571815872,
     "width": 723.83926416942268,
-    "tabOrder": 1001
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -89,23 +89,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "a2slicer_segmento",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "dim_segmento_estrategico"
-              }
-            },
-            "Property": "nombre_arquetipo"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

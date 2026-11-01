@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "04cd37fd04028da73c6e",
   "position": {
-    "x": 1347.9244955144775,
-    "y": 272.25405651975586,
+    "x": 1348.5300181170737,
+    "y": 271.24133191728617,
     "z": 2000,
-    "height": 141.46534309359862,
-    "width": 509.80906662032714,
+    "height": 161.20947085650027,
+    "width": 509.217217467358,
     "tabOrder": 2000
   },
   "visual": {
@@ -135,13 +135,52 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "16D"
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
           },
           "selector": {
             "metadata": "_Medidas.Gap_Clientes_Bridgestone"
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "24D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]

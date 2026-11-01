@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "12b22126ee0beaab9332",
+  "position": {
+    "x": 1079.8475666895733,
+    "y": 857.22496407821575,
+    "z": 7000,
+    "height": 163.76835134628598,
+    "width": 811.16511526207285,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Riesgo crítico real (1.58):",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20pt"
+                    }
+                  },
+                  {
+                    "value": " Al incorporar los 14 retiros preventivos del GP de EE.UU. por riesgos de seguridad en los neumáticos Michelin el índice de riesgo triplica la tasa de Bridgestone de ese mismo año.",
+                    "textStyle": {
+                      "fontSize": "20pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

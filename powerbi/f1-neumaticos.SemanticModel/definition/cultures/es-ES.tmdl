@@ -3821,7 +3821,7 @@ cultureInfo es-ES
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Tyre Failures per 1k Laps"
+			          "ConceptualProperty": "Tasa_Fallas_Por_1000_Vueltas"
 			        }
 			      },
 			      "State": "Generated",
@@ -3937,7 +3937,7 @@ cultureInfo es-ES
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Tyre to Accident Ratio"
+			          "ConceptualProperty": "Tasa_Riesgo_Total_Por_1000"
 			        }
 			      },
 			      "State": "Generated",

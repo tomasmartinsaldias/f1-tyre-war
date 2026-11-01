@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ba10965f4c2973c16d04",
   "position": {
-    "x": 52,
-    "y": 92,
+    "x": 52.240069499639567,
+    "y": 124.92190532522505,
     "z": 1000,
-    "height": 60,
-    "width": 1138,
+    "height": 77.224450564684574,
+    "width": 1353.6991922515297,
     "tabOrder": 1000
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "The 2005 Tyre Shock: Diagnóstico Sistémico y Matriz de Decisión 2006",
                     "textStyle": {
                       "fontFamily": "Segoe (Bold)",
-                      "fontSize": "24pt",
+                      "fontSize": "28pt",
                       "color": "#111827"
                     }
                   }

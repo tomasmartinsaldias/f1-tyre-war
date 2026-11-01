@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "18bdbabc690003820790",
   "position": {
-    "x": 1347.9244955144775,
-    "y": 80.074722505810541,
+    "x": 1348.5300181170737,
+    "y": 79.325295183357284,
     "z": 3000,
-    "height": 152.14197276104005,
-    "width": 509.80906662032714,
+    "height": 174.00387330542887,
+    "width": 509.217217467358,
     "tabOrder": 3000
   },
   "visual": {
@@ -150,13 +150,45 @@
             "valueFontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "16D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "_Medidas.Gap_Clientes_Michelin"
+          }
+        }
+      ],
+      "value": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "24D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]
