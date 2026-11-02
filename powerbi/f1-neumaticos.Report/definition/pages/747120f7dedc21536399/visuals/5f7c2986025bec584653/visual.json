@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "5f7c2986025bec584653",
   "position": {
-    "x": 20.471043918285748,
-    "y": 51.177609795714375,
+    "x": 52.240069499639567,
+    "y": 65.86791371693684,
     "z": 7000,
-    "height": 40.942087836571496,
-    "width": 271.24133191728617,
+    "height": 43.15484002144138,
+    "width": 288.45603593279236,
     "tabOrder": 7000
   },
   "visual": {
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "01. RITMO A UNA VUELTA",
+                    "value": "03. RITMO A UNA VUELTA",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
                       "fontSize": "16pt",

@@ -363,6 +363,149 @@ table 'formula1 v_analisis_rendimiento_circuitos'
 
 		annotation SummarizationSetBy = Automatic
 
+	column orden_carrera
+		dataType: int64
+		formatString: 0
+		lineageTag: 1a5f3f43-2e2a-4eed-a425-9451b59c16c9
+		summarizeBy: sum
+		sourceColumn: orden_carrera
+
+		annotation SummarizationSetBy = Automatic
+
+	column michelin_ritmo_score_pct
+		dataType: double
+		lineageTag: 9a78f781-156f-45af-afb0-6519f75cef84
+		summarizeBy: sum
+		sourceColumn: michelin_ritmo_score_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column michelin_ritmo_piloto
+		dataType: string
+		lineageTag: 4d5f7fd3-96ea-4388-9094-d52f1820147b
+		summarizeBy: none
+		sourceColumn: michelin_ritmo_piloto
+
+		annotation SummarizationSetBy = Automatic
+
+	column michelin_ritmo_constructor
+		dataType: string
+		lineageTag: 4a38ed7d-60de-407b-849c-671b5915583c
+		summarizeBy: none
+		sourceColumn: michelin_ritmo_constructor
+
+		annotation SummarizationSetBy = Automatic
+
+	column michelin_ritmo_label
+		dataType: string
+		lineageTag: 2defe211-f078-452e-a0d7-dde962ae1ac9
+		summarizeBy: none
+		sourceColumn: michelin_ritmo_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column michelin_race_fl_sec
+		dataType: double
+		lineageTag: b4c6f6bd-6f2e-4afa-a91f-2695dd992275
+		summarizeBy: sum
+		sourceColumn: michelin_race_fl_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column michelin_ritmo_qualy_sec
+		dataType: double
+		lineageTag: 3343fbe7-265b-43ca-9dc0-9a42c911f2b6
+		summarizeBy: sum
+		sourceColumn: michelin_ritmo_qualy_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bridgestone_ritmo_score_pct
+		dataType: double
+		lineageTag: 7107a8e2-dd9b-44e6-ad38-8ebe08f5d9d5
+		summarizeBy: sum
+		sourceColumn: bridgestone_ritmo_score_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bridgestone_ritmo_piloto
+		dataType: string
+		lineageTag: 6a899d4c-0d6f-43c2-be65-89e051dc5981
+		summarizeBy: none
+		sourceColumn: bridgestone_ritmo_piloto
+
+		annotation SummarizationSetBy = Automatic
+
+	column bridgestone_ritmo_constructor
+		dataType: string
+		lineageTag: 28a7e83f-0002-4c19-9a52-f461379fc85b
+		summarizeBy: none
+		sourceColumn: bridgestone_ritmo_constructor
+
+		annotation SummarizationSetBy = Automatic
+
+	column bridgestone_ritmo_label
+		dataType: string
+		lineageTag: 1d529d5d-c491-4230-8361-931db6d2406c
+		summarizeBy: none
+		sourceColumn: bridgestone_ritmo_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column bridgestone_race_fl_sec
+		dataType: double
+		lineageTag: 7a270181-753e-4657-bf67-acbeddad8e3f
+		summarizeBy: sum
+		sourceColumn: bridgestone_race_fl_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bridgestone_ritmo_qualy_sec
+		dataType: double
+		lineageTag: f8f8986d-b5f9-4a5c-846a-2705362626a2
+		summarizeBy: sum
+		sourceColumn: bridgestone_ritmo_qualy_sec
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column delta_ritmo_score_pct
+		dataType: double
+		lineageTag: 41ef23b0-bd1a-461b-b125-9a8117b39466
+		summarizeBy: sum
+		sourceColumn: delta_ritmo_score_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ganador_ritmo
+		dataType: string
+		lineageTag: 50208a82-b241-4d5f-9145-dc83aa72fe75
+		summarizeBy: none
+		sourceColumn: ganador_ritmo
+
+		annotation SummarizationSetBy = Automatic
+
+	column comparativa_pilotos_ritmo
+		dataType: string
+		lineageTag: ed458821-145d-4e97-85d6-022cba6211cf
+		summarizeBy: none
+		sourceColumn: comparativa_pilotos_ritmo
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_analisis_rendimiento_circuitos' = m
 		mode: import
 		source =

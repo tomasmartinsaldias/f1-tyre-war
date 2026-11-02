@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "096584953ed822ec1051",
   "position": {
-    "x": 60,
-    "y": 36,
+    "x": 59.053991608288207,
+    "y": 97.6662168906305,
     "z": 0,
-    "height": 140,
-    "width": 1800,
+    "height": 115.83667584702687,
+    "width": 1801.1467440527902,
     "tabOrder": 0
   },
   "visual": {
@@ -24,17 +24,6 @@
                       "fontWeight": "bold",
                       "fontSize": "19pt",
                       "color": "#111827"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Evolución histórica de fidelidad de constructores y cuota de mercado (2001-2005).",
-                    "textStyle": {
-                      "fontSize": "11pt",
-                      "color": "#4b5563"
                     }
                   }
                 ]

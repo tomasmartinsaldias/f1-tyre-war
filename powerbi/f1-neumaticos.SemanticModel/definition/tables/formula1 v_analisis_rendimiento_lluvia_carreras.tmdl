@@ -44,6 +44,14 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 
 		annotation SummarizationSetBy = Automatic
 
+	column id_segmento
+		dataType: string
+		lineageTag: 7a83d1c4-95e2-4f60-93cb-569d4a821e33
+		summarizeBy: none
+		sourceColumn: id_segmento
+
+		annotation SummarizationSetBy = Automatic
+
 	column precipitation_total_mm
 		dataType: double
 		lineageTag: 911e2a82-3997-4327-9836-51487713d852
@@ -131,14 +139,6 @@ table 'formula1 v_analisis_rendimiento_lluvia_carreras'
 		lineageTag: c2adea20-d0e1-41ad-9eca-08b35f44173c
 		summarizeBy: none
 		sourceColumn: proveedor_mas_rapido
-
-		annotation SummarizationSetBy = Automatic
-
-	column id_segmento
-		dataType: string
-		lineageTag: 7a83d1c4-95e2-4f60-93cb-569d4a821e33
-		summarizeBy: none
-		sourceColumn: id_segmento
 
 		annotation SummarizationSetBy = Automatic
 

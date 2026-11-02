@@ -50,118 +50,22 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Avg Posicion Llegada' =
-			
-			
-			
-			
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    AVERAGE('formula1 v_f1_race_granular'[finish_position]),
-			
-			
-			
-			    'formula1 v_f1_race_granular'[is_finished] = TRUE()
-			
-			
-			
-			)
-		formatString: 0.00
-		lineageTag: 1f05b90b-404e-401a-85b7-ea5b0a242749
-
-	measure 'Tyre Failures per 1k Laps' =
-			
-			
-			
-			
+	measure Tasa_Fallas_Por_1000_Vueltas =
 			
 			
 			
 			DIVIDE(
 			
-			
-			
 			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
 			
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed]),
 			
-			
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed])
-			
-			
+			    0
 			
 			) * 1000
-		lineageTag: 2b9c8294-5c8d-4627-8b34-f58fbaec67c0
+		lineageTag: b272e92b-ec68-4ff7-aad3-486220be700d
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Tyre to Accident Ratio' =
-			
-			
-			
-			
-			
-			
-			
-			DIVIDE(
-			
-			
-			
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
-			
-			
-			
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[accident_dnfs])
-			
-			
-			
-			)
-		lineageTag: e3128af6-9083-4959-8340-502bc1745f5e
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Share_Puntos_Pct = ```
-			
-			
-			
-			
-			
-			
-			
-			VAR PuntosTotalesTemporada = 
-			
-			
-			
-			    CALCULATE(
-			
-			
-			
-			        [Puntos_Totales],
-			
-			
-			
-			        ALLSELECTED('formula1 v_f1_race_granular'[tyre_manufacturer_id])
-			
-			
-			
-			    )
-			
-			
-			
-			RETURN
-			
-			
-			
-			    DIVIDE([Puntos_Totales], PuntosTotalesTemporada, 0)
-			
-			
-			
-			```
-		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
 
 	measure Texto_Insight_Dinamico = ```
 			
@@ -257,6 +161,90 @@ table _Medidas
 			
 			```
 		lineageTag: a543c48c-d150-45cd-adec-5d3428a931f7
+
+	measure Delta_Shock_Bridgestone = ```
+			
+			
+			
+			
+			
+			
+			
+			VAR Gap_2004 = 
+			
+			
+			
+			    CALCULATE(
+			
+			
+			
+			        [Mediana Gap Pole Pct],
+			
+			
+			
+			        'formula1 v_f1_qualy_granular'[year] = 2004,
+			
+			
+			
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			
+			
+			
+			    )
+			
+			
+			
+			VAR Gap_2005 = 
+			
+			
+			
+			    CALCULATE(
+			
+			
+			
+			        [Mediana Gap Pole Pct],
+			
+			
+			
+			        'formula1 v_f1_qualy_granular'[year] = 2005,
+			
+			
+			
+			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
+			
+			
+			
+			    )
+			
+			
+			
+			RETURN
+			
+			
+			
+			    IF(
+			
+			
+			
+			        ISBLANK(Gap_2005),
+			
+			
+			
+			        BLANK(),
+			
+			
+			
+			        Gap_2005 - Gap_2004
+			
+			
+			
+			    )
+			
+			
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: f486e74a-c2ca-47da-812b-2dd1ef72f23f
 
 	measure 'Lluvia Delta Promedio Seg' = AVERAGE('formula1 v_analisis_rendimiento_lluvia_carreras'[diferencia_sec])
 		formatString: +0.000;-0.000;0.000
@@ -538,467 +526,6 @@ table _Medidas
 		formatString: 0.000
 		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
 
-	measure Cuota_Michelin_2005_Pct =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_michelin]), 100),
-			
-			
-			
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			
-			
-			
-			)
-		formatString: 0.0%
-		lineageTag: 71a01101-1b2c-4d3e-8f5a-9a01b2c3d4e1
-
-	measure Cuota_Bridgestone_2005_Pct =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_bridgestone]), 100),
-			
-			
-			
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			
-			
-			
-			)
-		formatString: 0.0%
-		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
-
-	measure Total_Equipos_Grid = DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
-		formatString: 0
-		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
-
-	measure Equipos_Michelin_2005_Count =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
-			
-			
-			
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
-
-	measure Equipos_Bridgestone_2005_Count =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
-			
-			
-			
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
-
-	measure Total_Poles_Michelin =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
-			
-			
-			
-			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "michelin"
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
-
-	measure Total_Poles_Bridgestone =
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
-			
-			
-			
-			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "bridgestone"
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: 71a01107-1b2c-4d3e-8f5a-9a01b2c3d4e7
-
-	measure Poles_Win_Ratio_Texto =
-			
-			
-			
-			VAR M = [Total_Poles_Michelin]
-			
-			
-			
-			VAR B = [Total_Poles_Bridgestone]
-			
-			
-			
-			RETURN
-			
-			
-			
-			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
-		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
-
-	measure Poles_Michelin_Pct =
-			
-			
-			
-			VAR M = [Total_Poles_Michelin]
-			
-			
-			
-			VAR B = [Total_Poles_Bridgestone]
-			
-			
-			
-			RETURN
-			
-			
-			
-			    DIVIDE(M, M + B)
-		formatString: 0.0%
-		lineageTag: 71a01109-1b2c-4d3e-8f5a-9a01b2c3d4e9
-
-	measure Texto_Insight_Escuderias = ```
-			
-			
-			
-			VAR SelFidelidad = SELECTEDVALUE('formula1 v_temporadas_proveedor_marca'[Tipo_Alianza], "todos")
-			
-			
-			
-			RETURN
-			
-			
-			
-			SWITCH(
-			
-			
-			
-			    SelFidelidad,
-			
-			
-			
-			    "Exclusivo Michelin",
-			
-			
-			
-			    "ALIANZA PURA MICHELIN (CONFIANZA MULTICHASIS):" & UNICHAR(10) &
-			
-			
-			
-			    "Escuderias como Renault y Williams compitieron exclusivamente con Michelin durante todo el periodo. La garantia de reparto democratico de datos y especificacion comun fue determinante para desbancar a Ferrari en los campeonatos 2005.",
-			
-			
-			
-			    
-			
-			
-			
-			    "Exclusivo Bridgestone",
-			
-			
-			
-			    "EL EJE MONOPOLICO FERRARI Y EL AISLAMIENTO:" & UNICHAR(10) &
-			
-			
-			
-			    "Ferrari concentro el 100% de la atencion termomecanica de Bridgestone disenando neumaticos a medida exclusiva de su chasis. Equipos cliente como Minardi sufrieron brechas abismales sin soporte de ingenieria personalizada.",
-			
-			
-			
-			    
-			
-			
-			
-			    "Migró de Proveedor",
-			
-			
-			
-			    "EL EXODO ESTRATEGICO (FUGA A MICHELIN):" & UNICHAR(10) &
-			
-			
-			
-			    "McLaren (2002), Toyota y BAR (2003) y Sauber abandonaron a Bridgestone tras comprobar que era un suicidio competir como clientes de segunda frente a Ferrari. El paso a Michelin les devolvio victorias y regularidad en puntos.",
-			
-			
-			
-			    
-			
-			
-			
-			    /* Global */
-			
-			
-			
-			    "ESTRATEGIA GLOBAL DE PARRILLA (2001-2005):" & UNICHAR(10) &
-			
-			
-			
-			    "En 2001, Bridgestone acaparaba el 70% de los constructores. Para 2005, la situacion se invertio: Michelin controlo el 70% de los equipos (7 de 10) y el 70% de los monoplazas en pista." & UNICHAR(10) & UNICHAR(10) &
-			
-			
-			
-			    "DICTAMEN 2006: Salvo poseer el peso politico para exigir a Bridgestone desarrollo dedicado exclusivo, la alternativa sensata para cualquier equipo independiente es Michelin."
-			
-			
-			
-			)
-			
-			
-			
-			```
-		lineageTag: 71a0110a-1b2c-4d3e-8f5a-9a01b2c3d4ea
-
-	measure Texto_Insight_Poles = ```
-			
-			
-			
-			VAR AnioSel = SELECTEDVALUE('formula1 v_acumulacion_poles_carreras'[year], 0)
-			
-			
-			
-			RETURN
-			
-			
-			
-			SWITCH(
-			
-			
-			
-			    AnioSel,
-			
-			
-			
-			    2001,
-			
-			
-			
-			    "TEMPORADA 2001 (RETORNO DE MICHELIN):" & UNICHAR(10) &
-			
-			
-			
-			    "En su retorno a la categoria reina tras 17 anos, Michelin planto cara de inmediato al binomio dominante Ferrari-Bridgestone gracias a la potencia de Williams-BMW (Ralf Schumacher y Juan Pablo Montoya), sumando 4 poles frente a 13 de Bridgestone.",
-			
-			
-			
-			    
-			
-			
-			
-			    2002,
-			
-			
-			
-			    "TEMPORADA 2002 (HEGEMONIA FERRARI-BRIDGESTONE):" & UNICHAR(10) &
-			
-			
-			
-			    "El legendario Ferrari F2002 impuso un dominio abrumador con 15 poles en 17 carreras (Schumacher y Barrichello). Michelin alcanzo 2 poles con Montoya, confirmando la eficacia de su compuesto blando en Monza.",
-			
-			
-			
-			    
-			
-			
-			
-			    2003,
-			
-			
-			
-			    "TEMPORADA 2003 (EQUILIBRIO TOTAL Y FRACTURA):" & UNICHAR(10) &
-			
-			
-			
-			    "Con McLaren y Toyota uniendose a la flota francesa, la batalla se emparejo por completo (8 poles Michelin vs 8 Bridgestone). Las poles de Fernando Alonso en Malasia y Kimi Raikkonen en Nurburgring sellaron el fin de la invulnerabilidad japonesa.",
-			
-			
-			
-			    
-			
-			
-			
-			    2004,
-			
-			
-			
-			    "TEMPORADA 2004 (EL ULTIMO PICO DE BRIDGESTONE):" & UNICHAR(10) &
-			
-			
-			
-			    "Ferrari volvio a imponerse con 12 poles gracias a la combinacion del F2004 y paradas multiples en boxes. Michelin resistio logrando 6 poles repartidas democraticamente entre Renault, BAR-Honda y Williams.",
-			
-			
-			
-			    
-			
-			
-			
-			    2005,
-			
-			
-			
-			    "TEMPORADA 2005 (EL COLAPSO DEL JUEGO UNICO):" & UNICHAR(10) &
-			
-			
-			
-			    "El shock regulatorio de la FIA que prohibio el cambio de neumaticos desato una catastrofe para Bridgestone: sufrio una sequia historica de poles (1 sola en 19 carreras, Schumacher en Hungria). Michelin acaparo 18 de las 19 poles posibles (94.7%).",
-			
-			
-			
-			    
-			
-			
-			
-			    /* Global */
-			
-			
-			
-			    "TRAYECTORIA HISTORICA DE POLES (2001-2005):" & UNICHAR(10) &
-			
-			
-			
-			    "Bridgestone lidero la contienda de poles hasta mediados de 2005. En el GP de Europa 2005 (Nurburgring, carrera 74), Michelin consumo el 'Sorpasso' definitivo, cerrando el periodo con 54 poles frente a 33 de Bridgestone." & UNICHAR(10) & UNICHAR(10) &
-			
-			
-			
-			    "INSTRUCCION: Seleccione un ano en la cabecera (2001 a 2005) para auditar la distribucion y el equilibrio de poles en cada temporada."
-			
-			
-			
-			)
-			
-			
-			
-			```
-		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
-
-	measure Delta_Shock_Bridgestone = ```
-			
-			
-			
-			
-			
-			
-			
-			VAR Gap_2004 = 
-			
-			
-			
-			    CALCULATE(
-			
-			
-			
-			        [Mediana Gap Pole Pct],
-			
-			
-			
-			        'formula1 v_f1_qualy_granular'[year] = 2004,
-			
-			
-			
-			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
-			
-			
-			
-			    )
-			
-			
-			
-			VAR Gap_2005 = 
-			
-			
-			
-			    CALCULATE(
-			
-			
-			
-			        [Mediana Gap Pole Pct],
-			
-			
-			
-			        'formula1 v_f1_qualy_granular'[year] = 2005,
-			
-			
-			
-			        'formula1 v_f1_qualy_granular'[tyre_manufacturer_id] = "bridgestone"
-			
-			
-			
-			    )
-			
-			
-			
-			RETURN
-			
-			
-			
-			    IF(
-			
-			
-			
-			        ISBLANK(Gap_2005),
-			
-			
-			
-			        BLANK(),
-			
-			
-			
-			        Gap_2005 - Gap_2004
-			
-			
-			
-			    )
-			
-			
-			
-			```
-		formatString: 0.00%;-0.00%;0.00%
-		lineageTag: f486e74a-c2ca-47da-812b-2dd1ef72f23f
-
 	measure Gap_Lider_Marca_Pos =
 			
 			
@@ -1095,61 +622,6 @@ table _Medidas
 			
 			```
 		lineageTag: 1029f554-4a06-4ce5-ac08-7c1a99b4d945
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Avg_Posiciones_Ganadas =
-			
-			
-			
-			
-			
-			
-			
-			AVERAGE('formula1 v_f1_race_granular'[positions_gained])
-		lineageTag: 7a760417-bdd2-4c82-9800-eda240666420
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Tasa_Conversion_Puntos =
-			
-			
-			
-			
-			
-			
-			
-			DIVIDE(
-			
-			
-			
-			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[points] > 0),
-			
-			
-			
-			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[is_finished] = TRUE()),
-			
-			
-			
-			    0
-			
-			
-			
-			)
-		lineageTag: 99412b1b-09ae-4034-8645-9bbc00fece60
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Avg_Delta_Conversion =
-			
-			
-			
-			
-			
-			
-			
-			AVERAGE('formula1 v_f1_race_granular'[grid_position_number]) - AVERAGE('formula1 v_f1_race_granular'[finish_position])
-		lineageTag: f6518f92-de9b-4615-96f4-c72355e62f50
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
@@ -1430,38 +902,6 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Ventaja Bridgestone (Delta >= 0 seg)' =
-			
-			
-			
-			VAR Delta = [Lluvia Delta Promedio Seg]
-			
-			
-			
-			RETURN
-			
-			
-			
-			    IF(Delta >= 0, Delta, BLANK())
-		formatString: +0.000
-		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192803
-
-	measure 'Ventaja Michelin (Delta < 0 seg)' =
-			
-			
-			
-			VAR Delta = [Lluvia Delta Promedio Seg]
-			
-			
-			
-			RETURN
-			
-			
-			
-			    IF(Delta < 0, Delta, BLANK())
-		formatString: -0.000
-		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192802
-
 	measure Cant_Escuderias =
 			
 			
@@ -1474,7 +914,7 @@ table _Medidas
 		formatString: 0
 		lineageTag: 7474ae22-9427-4f11-8147-0d64142594c5
 
-	measure Flota_Bridgestone =
+	measure Puntos_Por_Escuderia =
 			
 			
 			
@@ -1482,82 +922,9 @@ table _Medidas
 			
 			
 			
-			CALCULATE(
-			
-			
-			
-			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
-			
-			
-			
-			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "bridgestone"
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: f053257a-b74b-4b23-9715-eedb4a40aeac
-
-	measure Flota_Michelin =
-			
-			
-			
-			
-			
-			
-			
-			CALCULATE(
-			
-			
-			
-			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
-			
-			
-			
-			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin"
-			
-			
-			
-			)
-		formatString: 0
-		lineageTag: aea88fe4-1dea-45a3-a6a6-3d139a89234f
-
-	measure KPI_Puntos_Promedio_Bridgestone =
-			
-			
-			
-			
-			
-			
-			
-			AVERAGEX(
-			
-			
-			
-			    VALUES('formula1 v_f1_race_granular'[year]),
-			
-			
-			
-			    CALCULATE(
-			
-			
-			
-			        [Puntos_Por_Escuderia],
-			
-			
-			
-			        'formula1 v_f1_race_granular'[tyre_manufacturer_id] = "bridgestone"
-			
-			
-			
-			    )
-			
-			
-			
-			)
-		lineageTag: 33b3adb1-769b-4870-b586-ebcb2db9dbb4
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+			DIVIDE([Puntos_Totales], [Cant_Escuderias])
+		formatString: 0.0
+		lineageTag: b30b2b0e-af35-4f99-93f9-fe71869162c8
 
 	measure KPI_Puntos_Promedio_Michelin =
 			
@@ -1596,7 +963,7 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure Puntos_Por_Escuderia =
+	measure KPI_Puntos_Promedio_Bridgestone =
 			
 			
 			
@@ -1604,129 +971,347 @@ table _Medidas
 			
 			
 			
-			DIVIDE([Puntos_Totales], [Cant_Escuderias])
-		formatString: 0.0
-		lineageTag: b30b2b0e-af35-4f99-93f9-fe71869162c8
+			AVERAGEX(
+			
+			
+			
+			    VALUES('formula1 v_f1_race_granular'[year]),
+			
+			
+			
+			    CALCULATE(
+			
+			
+			
+			        [Puntos_Por_Escuderia],
+			
+			
+			
+			        'formula1 v_f1_race_granular'[tyre_manufacturer_id] = "bridgestone"
+			
+			
+			
+			    )
+			
+			
+			
+			)
+		lineageTag: 33b3adb1-769b-4870-b586-ebcb2db9dbb4
 
-	measure 'Circuitos Delta Qualy Promedio Seg' =
-			
-			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
-		formatString: 0.000
-		lineageTag: fb6ac950-d866-41c8-afdd-65d6468878a7
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Circuitos Delta Qualy Promedio Seg Positivo' =
+	measure Cuota_Michelin_2005_Pct =
 			
-			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			
+			
+			CALCULATE(
+			
+			
+			
+			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_michelin]), 100),
+			
+			
+			
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			
+			
+			
+			)
+		formatString: 0.0%
+		lineageTag: 71a01101-1b2c-4d3e-8f5a-9a01b2c3d4e1
+
+	measure Cuota_Bridgestone_2005_Pct =
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    DIVIDE(MAX('formula1 v_cuota_parrilla_anual_neumaticos'[pct_equipos_bridgestone]), 100),
+			
+			
+			
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			
+			
+			
+			)
+		formatString: 0.0%
+		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
+
+	measure Total_Poles_Michelin =
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
+			
+			
+			
+			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "michelin"
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
+
+	measure Total_Poles_Bridgestone =
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
+			
+			
+			
+			    'formula1 v_acumulacion_poles_carreras'[pole_tyre] = "bridgestone"
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: 71a01107-1b2c-4d3e-8f5a-9a01b2c3d4e7
+
+	measure Poles_Win_Ratio_Texto =
+			
+			
+			
+			VAR M = [Total_Poles_Michelin]
+			
+			
+			
+			VAR B = [Total_Poles_Bridgestone]
+			
+			
 			
 			RETURN
 			
-			IF(ISBLANK(D), BLANK(), ABS(D))
-		formatString: 0.000
-		lineageTag: c79d2874-c60a-43ed-950c-039bdf0b66d8
-
-	measure 'Circuitos Color Delta Qualy' =
 			
-			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			
+			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
+		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
+
+	measure Texto_Insight_Escuderias = ```
+			
+			
+			
+			VAR SelFidelidad = SELECTEDVALUE('formula1 v_temporadas_proveedor_marca'[Tipo_Alianza], "todos")
+			
+			
 			
 			RETURN
+			
+			
 			
 			SWITCH(
 			
-			    TRUE(),
 			
-			    ISBLANK(D), "#6B7280",
 			
-			    D < 0, "#004F9F",
+			    SelFidelidad,
 			
-			    D > 0, "#E10600",
 			
-			    "#475569"
+			
+			    "Exclusivo Michelin",
+			
+			
+			
+			    "ALIANZA PURA MICHELIN (CONFIANZA MULTICHASIS):" & UNICHAR(10) &
+			
+			
+			
+			    "Escuderias como Renault y Williams compitieron exclusivamente con Michelin durante todo el periodo. La garantia de reparto democratico de datos y especificacion comun fue determinante para desbancar a Ferrari en los campeonatos 2005.",
+			
+			
+			
+			    
+			
+			
+			
+			    "Exclusivo Bridgestone",
+			
+			
+			
+			    "EL EJE MONOPOLICO FERRARI Y EL AISLAMIENTO:" & UNICHAR(10) &
+			
+			
+			
+			    "Ferrari concentro el 100% de la atencion termomecanica de Bridgestone disenando neumaticos a medida exclusiva de su chasis. Equipos cliente como Minardi sufrieron brechas abismales sin soporte de ingenieria personalizada.",
+			
+			
+			
+			    
+			
+			
+			
+			    "Migró de Proveedor",
+			
+			
+			
+			    "EL EXODO ESTRATEGICO (FUGA A MICHELIN):" & UNICHAR(10) &
+			
+			
+			
+			    "McLaren (2002), Toyota y BAR (2003) y Sauber abandonaron a Bridgestone tras comprobar que era un suicidio competir como clientes de segunda frente a Ferrari. El paso a Michelin les devolvio victorias y regularidad en puntos.",
+			
+			
+			
+			    
+			
+			
+			
+			    /* Global */
+			
+			
+			
+			    "ESTRATEGIA GLOBAL DE PARRILLA (2001-2005):" & UNICHAR(10) &
+			
+			
+			
+			    "En 2001, Bridgestone acaparaba el 70% de los constructores. Para 2005, la situacion se invertio: Michelin controlo el 70% de los equipos (7 de 10) y el 70% de los monoplazas en pista." & UNICHAR(10) & UNICHAR(10) &
+			
+			
+			
+			    "DICTAMEN 2006: Salvo poseer el peso politico para exigir a Bridgestone desarrollo dedicado exclusivo, la alternativa sensata para cualquier equipo independiente es Michelin."
+			
+			
 			
 			)
-		lineageTag: 53336f79-55b0-45ef-80fe-aacaaacb0599
-
-	measure 'Circuitos Michelin Pts Por Auto' =
 			
-			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_michelin])
-		formatString: 0.00
-		lineageTag: 0c2a7acc-6d32-43e6-b211-821a9e1d690c
-
-	measure 'Circuitos Bridgestone Pts Por Auto' =
 			
-			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_bridgestone])
-		formatString: 0.00
-		lineageTag: 76073f22-d376-46ec-89a3-472a9dc63e15
-
-	measure 'Circuitos Delta Pts Por Auto' =
 			
-			[Circuitos Michelin Pts Por Auto] - [Circuitos Bridgestone Pts Por Auto]
-		formatString: +0.00;-0.00;0.00
-		lineageTag: 823e0e7a-8b8e-4f77-a115-d5824c3a738c
+			```
+		lineageTag: 71a0110a-1b2c-4d3e-8f5a-9a01b2c3d4ea
 
-	measure 'Circuitos Ratio Pts Por Auto' =
+	measure Texto_Insight_Poles = ```
 			
-			DIVIDE([Circuitos Michelin Pts Por Auto], [Circuitos Bridgestone Pts Por Auto])
-		formatString: 0.00"x"
-		lineageTag: 04b947a6-53fb-4c6f-9f35-bc05600a72de
-
-	measure 'Circuitos Qualy Poles Michelin' =
 			
-			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Michelin")
-		formatString: 0
-		lineageTag: 0eb1627e-2439-4775-81df-1e885f51e670
-
-	measure 'Circuitos Qualy Poles Bridgestone' =
 			
-			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Bridgestone")
-		formatString: 0
-		lineageTag: 7d3e1498-751d-43cc-86db-315a66f19d72
-
-	measure 'Circuitos Poles Card Texto' =
+			VAR AnioSel = SELECTEDVALUE('formula1 v_acumulacion_poles_carreras'[year], 0)
 			
-			"M: " & FORMAT([Circuitos Qualy Poles Michelin], "0") & " | B: " & FORMAT([Circuitos Qualy Poles Bridgestone], "0")
-		lineageTag: 99511de2-59a3-4a17-8a5b-47e46064438d
-
-	measure 'Circuitos Pts Norm Card Texto' =
 			
-			"M: " & FORMAT([Circuitos Michelin Pts Por Auto], "0.00") & " vs B: " & FORMAT([Circuitos Bridgestone Pts Por Auto], "0.00")
-		lineageTag: 0cdf8756-a595-47b2-9f45-42bf4124b18f
-
-	measure 'Ventaja Michelin Qualy Circuitos' =
-			
-			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
 			
 			RETURN
 			
-			IF(Delta < 0, Delta, BLANK())
-		formatString: -0.000
-		lineageTag: 01971f40-9302-407b-b456-3b88a28087bc
-
-	measure 'Ventaja Bridgestone Qualy Circuitos' =
 			
-			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
 			
-			RETURN
-			
-			IF(Delta >= 0, Delta, BLANK())
-		formatString: +0.000
-		lineageTag: aa4e260e-ed47-488c-ac02-7de0bfe4e942
-
-	measure Tasa_Fallas_Por_1000_Vueltas =
+			SWITCH(
 			
 			
 			
-			DIVIDE(
+			    AnioSel,
 			
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
 			
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed]),
 			
-			    0
+			    2001,
 			
-			) * 1000
-		lineageTag: b272e92b-ec68-4ff7-aad3-486220be700d
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+			
+			
+			    "TEMPORADA 2001 (RETORNO DE MICHELIN):" & UNICHAR(10) &
+			
+			
+			
+			    "En su retorno a la categoria reina tras 17 anos, Michelin planto cara de inmediato al binomio dominante Ferrari-Bridgestone gracias a la potencia de Williams-BMW (Ralf Schumacher y Juan Pablo Montoya), sumando 4 poles frente a 13 de Bridgestone.",
+			
+			
+			
+			    
+			
+			
+			
+			    2002,
+			
+			
+			
+			    "TEMPORADA 2002 (HEGEMONIA FERRARI-BRIDGESTONE):" & UNICHAR(10) &
+			
+			
+			
+			    "El legendario Ferrari F2002 impuso un dominio abrumador con 15 poles en 17 carreras (Schumacher y Barrichello). Michelin alcanzo 2 poles con Montoya, confirmando la eficacia de su compuesto blando en Monza.",
+			
+			
+			
+			    
+			
+			
+			
+			    2003,
+			
+			
+			
+			    "TEMPORADA 2003 (EQUILIBRIO TOTAL Y FRACTURA):" & UNICHAR(10) &
+			
+			
+			
+			    "Con McLaren y Toyota uniendose a la flota francesa, la batalla se emparejo por completo (8 poles Michelin vs 8 Bridgestone). Las poles de Fernando Alonso en Malasia y Kimi Raikkonen en Nurburgring sellaron el fin de la invulnerabilidad japonesa.",
+			
+			
+			
+			    
+			
+			
+			
+			    2004,
+			
+			
+			
+			    "TEMPORADA 2004 (EL ULTIMO PICO DE BRIDGESTONE):" & UNICHAR(10) &
+			
+			
+			
+			    "Ferrari volvio a imponerse con 12 poles gracias a la combinacion del F2004 y paradas multiples en boxes. Michelin resistio logrando 6 poles repartidas democraticamente entre Renault, BAR-Honda y Williams.",
+			
+			
+			
+			    
+			
+			
+			
+			    2005,
+			
+			
+			
+			    "TEMPORADA 2005 (EL COLAPSO DEL JUEGO UNICO):" & UNICHAR(10) &
+			
+			
+			
+			    "El shock regulatorio de la FIA que prohibio el cambio de neumaticos desato una catastrofe para Bridgestone: sufrio una sequia historica de poles (1 sola en 19 carreras, Schumacher en Hungria). Michelin acaparo 18 de las 19 poles posibles (94.7%).",
+			
+			
+			
+			    
+			
+			
+			
+			    /* Global */
+			
+			
+			
+			    "TRAYECTORIA HISTORICA DE POLES (2001-2005):" & UNICHAR(10) &
+			
+			
+			
+			    "Bridgestone lidero la contienda de poles hasta mediados de 2005. En el GP de Europa 2005 (Nurburgring, carrera 74), Michelin consumo el 'Sorpasso' definitivo, cerrando el periodo con 54 poles frente a 33 de Bridgestone." & UNICHAR(10) & UNICHAR(10) &
+			
+			
+			
+			    "INSTRUCCION: Seleccione un ano en la cabecera (2001 a 2005) para auditar la distribucion y el equilibrio de poles en cada temporada."
+			
+			
+			
+			)
+			
+			
+			
+			```
+		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
 
 	measure Retiros_Preventivos_Indy = ```
 			
@@ -1875,14 +1460,429 @@ table _Medidas
 
 	measure Veredicto_Factores =
 			
-			
-			
-			"• Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
-			
-			"• Seguridad y Fiabilidad Operativa: " & SELECTEDVALUE('Matriz_Decision'[Seguridad_Operativa]) & UNICHAR(10) & UNICHAR(10) &
-			
-			"• Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
+			IF(
+			    NOT HASONEVALUE('Matriz_Decision'[Arquetipo]),
+			    "Seleccione un arquetipo de escudería en el segmentador superior (Top Tier, Midfield o Fondo de Grilla) para evaluar el impacto regulatorio, la seguridad operativa y el riesgo asumido.",
+			    "• Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
+			    "• Seguridad y Fiabilidad Operativa: " & SELECTEDVALUE('Matriz_Decision'[Seguridad_Operativa]) & UNICHAR(10) & UNICHAR(10) &
+			    "• Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
+			)
 		lineageTag: c4d8e005-1b2c-4d3e-8f5a-9a01b2c3d405
+
+	measure 'Avg Posicion Llegada' =
+			
+			
+			
+			
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    AVERAGE('formula1 v_f1_race_granular'[finish_position]),
+			
+			
+			
+			    'formula1 v_f1_race_granular'[is_finished] = TRUE()
+			
+			
+			
+			)
+		formatString: 0.00
+		lineageTag: 1f05b90b-404e-401a-85b7-ea5b0a242749
+
+	measure 'Tyre Failures per 1k Laps' =
+			
+			
+			
+			
+			
+			
+			
+			DIVIDE(
+			
+			
+			
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
+			
+			
+			
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed])
+			
+			
+			
+			) * 1000
+		lineageTag: 2b9c8294-5c8d-4627-8b34-f58fbaec67c0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Tyre to Accident Ratio' =
+			
+			
+			
+			
+			
+			
+			
+			DIVIDE(
+			
+			
+			
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
+			
+			
+			
+			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[accident_dnfs])
+			
+			
+			
+			)
+		lineageTag: e3128af6-9083-4959-8340-502bc1745f5e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Share_Puntos_Pct = ```
+			
+			
+			
+			
+			
+			
+			
+			VAR PuntosTotalesTemporada = 
+			
+			
+			
+			    CALCULATE(
+			
+			
+			
+			        [Puntos_Totales],
+			
+			
+			
+			        ALLSELECTED('formula1 v_f1_race_granular'[tyre_manufacturer_id])
+			
+			
+			
+			    )
+			
+			
+			
+			RETURN
+			
+			
+			
+			    DIVIDE([Puntos_Totales], PuntosTotalesTemporada, 0)
+			
+			
+			
+			```
+		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
+
+	measure Total_Equipos_Grid = DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
+		formatString: 0
+		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
+
+	measure Equipos_Michelin_2005_Count =
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
+			
+			
+			
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
+
+	measure Equipos_Bridgestone_2005_Count =
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
+			
+			
+			
+			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
+
+	measure Poles_Michelin_Pct =
+			
+			
+			
+			VAR M = [Total_Poles_Michelin]
+			
+			
+			
+			VAR B = [Total_Poles_Bridgestone]
+			
+			
+			
+			RETURN
+			
+			
+			
+			    DIVIDE(M, M + B)
+		formatString: 0.0%
+		lineageTag: 71a01109-1b2c-4d3e-8f5a-9a01b2c3d4e9
+
+	measure Avg_Posiciones_Ganadas =
+			
+			
+			
+			
+			
+			
+			
+			AVERAGE('formula1 v_f1_race_granular'[positions_gained])
+		lineageTag: 7a760417-bdd2-4c82-9800-eda240666420
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Tasa_Conversion_Puntos =
+			
+			
+			
+			
+			
+			
+			
+			DIVIDE(
+			
+			
+			
+			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[points] > 0),
+			
+			
+			
+			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[is_finished] = TRUE()),
+			
+			
+			
+			    0
+			
+			
+			
+			)
+		lineageTag: 99412b1b-09ae-4034-8645-9bbc00fece60
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Avg_Delta_Conversion =
+			
+			
+			
+			
+			
+			
+			
+			AVERAGE('formula1 v_f1_race_granular'[grid_position_number]) - AVERAGE('formula1 v_f1_race_granular'[finish_position])
+		lineageTag: f6518f92-de9b-4615-96f4-c72355e62f50
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Ventaja Bridgestone (Delta >= 0 seg)' =
+			
+			
+			
+			VAR Delta = [Lluvia Delta Promedio Seg]
+			
+			
+			
+			RETURN
+			
+			
+			
+			    IF(Delta >= 0, Delta, BLANK())
+		formatString: +0.000
+		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192803
+
+	measure 'Ventaja Michelin (Delta < 0 seg)' =
+			
+			
+			
+			VAR Delta = [Lluvia Delta Promedio Seg]
+			
+			
+			
+			RETURN
+			
+			
+			
+			    IF(Delta < 0, Delta, BLANK())
+		formatString: -0.000
+		lineageTag: a1c834b2-9df1-4a34-b209-ee7c00192802
+
+	measure Flota_Bridgestone =
+			
+			
+			
+			
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
+			
+			
+			
+			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "bridgestone"
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: f053257a-b74b-4b23-9715-eedb4a40aeac
+
+	measure Flota_Michelin =
+			
+			
+			
+			
+			
+			
+			
+			CALCULATE(
+			
+			
+			
+			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
+			
+			
+			
+			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin"
+			
+			
+			
+			)
+		formatString: 0
+		lineageTag: aea88fe4-1dea-45a3-a6a6-3d139a89234f
+
+	measure 'Circuitos Delta Qualy Promedio Seg' =
+			
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+		formatString: 0.000
+		lineageTag: fb6ac950-d866-41c8-afdd-65d6468878a7
+
+	measure 'Circuitos Delta Qualy Promedio Seg Positivo' =
+			
+			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			
+			RETURN
+			
+			IF(ISBLANK(D), BLANK(), ABS(D))
+		formatString: 0.000
+		lineageTag: c79d2874-c60a-43ed-950c-039bdf0b66d8
+
+	measure 'Circuitos Color Delta Qualy' =
+			
+			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			
+			RETURN
+			
+			SWITCH(
+			
+			    TRUE(),
+			
+			    ISBLANK(D), "#6B7280",
+			
+			    D < 0, "#004F9F",
+			
+			    D > 0, "#E10600",
+			
+			    "#475569"
+			
+			)
+		lineageTag: 53336f79-55b0-45ef-80fe-aacaaacb0599
+
+	measure 'Circuitos Michelin Pts Por Auto' =
+			
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_michelin])
+		formatString: 0.00
+		lineageTag: 0c2a7acc-6d32-43e6-b211-821a9e1d690c
+
+	measure 'Circuitos Bridgestone Pts Por Auto' =
+			
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_bridgestone])
+		formatString: 0.00
+		lineageTag: 76073f22-d376-46ec-89a3-472a9dc63e15
+
+	measure 'Circuitos Delta Pts Por Auto' =
+			
+			[Circuitos Michelin Pts Por Auto] - [Circuitos Bridgestone Pts Por Auto]
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 823e0e7a-8b8e-4f77-a115-d5824c3a738c
+
+	measure 'Circuitos Ratio Pts Por Auto' =
+			
+			DIVIDE([Circuitos Michelin Pts Por Auto], [Circuitos Bridgestone Pts Por Auto])
+		formatString: 0.00"x"
+		lineageTag: 04b947a6-53fb-4c6f-9f35-bc05600a72de
+
+	measure 'Circuitos Qualy Poles Michelin' =
+			
+			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Michelin")
+		formatString: 0
+		lineageTag: 0eb1627e-2439-4775-81df-1e885f51e670
+
+	measure 'Circuitos Qualy Poles Bridgestone' =
+			
+			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Bridgestone")
+		formatString: 0
+		lineageTag: 7d3e1498-751d-43cc-86db-315a66f19d72
+
+	measure 'Circuitos Poles Card Texto' =
+			
+			"M: " & FORMAT([Circuitos Qualy Poles Michelin], "0") & " | B: " & FORMAT([Circuitos Qualy Poles Bridgestone], "0")
+		lineageTag: 99511de2-59a3-4a17-8a5b-47e46064438d
+
+	measure 'Circuitos Pts Norm Card Texto' =
+			
+			"M: " & FORMAT([Circuitos Michelin Pts Por Auto], "0.00") & " vs B: " & FORMAT([Circuitos Bridgestone Pts Por Auto], "0.00")
+		lineageTag: 0cdf8756-a595-47b2-9f45-42bf4124b18f
+
+	measure 'Ventaja Michelin Qualy Circuitos' =
+			
+			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+			
+			RETURN
+			
+			IF(Delta < 0, Delta, BLANK())
+		formatString: -0.000
+		lineageTag: 01971f40-9302-407b-b456-3b88a28087bc
+
+	measure 'Ventaja Bridgestone Qualy Circuitos' =
+			
+			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+			
+			RETURN
+			
+			IF(Delta >= 0, Delta, BLANK())
+		formatString: +0.000
+		lineageTag: aa4e260e-ed47-488c-ac02-7de0bfe4e942
 
 	partition _Medidas = m
 		mode: import
