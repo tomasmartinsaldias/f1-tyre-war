@@ -516,17 +516,10 @@ table _Medidas
 		lineageTag: c4d8e004-1b2c-4d3e-8f5a-9a01b2c3d404
 
 	measure Veredicto_Factores =
-			VAR Arq = SELECTEDVALUE('Matriz_Decision'[Arquetipo])
-			RETURN
-			IF(
-			    ISBLANK(Arq),
-			    UNICHAR(8226) & " Impacto Paradas en Boxes (2006): Seleccione un arquetipo en la botonera superior." & UNICHAR(10) & UNICHAR(10) &
-			    UNICHAR(8226) & " Horizonte Regulatorio (2007): Seleccione un arquetipo en la botonera superior." & UNICHAR(10) & UNICHAR(10) &
-			    UNICHAR(8226) & " Riesgo Operativo Evaluado: Seleccione un arquetipo en la botonera superior.",
-			    UNICHAR(8226) & " Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
-			    UNICHAR(8226) & " Horizonte Regulatorio (2007): " & SELECTEDVALUE('Matriz_Decision'[Horizonte_2007]) & UNICHAR(10) & UNICHAR(10) &
-			    UNICHAR(8226) & " Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
-			)
+			
+			"• Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
+			"• Seguridad y Fiabilidad Operativa: " & SELECTEDVALUE('Matriz_Decision'[Seguridad_Operativa]) & UNICHAR(10) & UNICHAR(10) &
+			"• Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
 		lineageTag: c4d8e005-1b2c-4d3e-8f5a-9a01b2c3d405
 
 	partition _Medidas = m

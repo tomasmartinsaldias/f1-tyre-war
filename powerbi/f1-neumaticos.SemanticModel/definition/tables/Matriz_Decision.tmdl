@@ -66,15 +66,6 @@ table Matriz_Decision
 
 		annotation SummarizationSetBy = Automatic
 
-	column Horizonte_2007
-		dataType: string
-		lineageTag: e4f89012-34ab-45cd-89ef-012345678909
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Horizonte_2007]
-
-		annotation SummarizationSetBy = Automatic
-
 	column Riesgo_Asumido
 		dataType: string
 		lineageTag: e4f89012-34ab-45cd-89ef-012345678910
@@ -93,6 +84,14 @@ table Matriz_Decision
 
 		annotation SummarizationSetBy = Automatic
 
+	column Seguridad_Operativa
+		lineageTag: d9f14ebb-5023-4086-a5a8-5896df3910d5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Seguridad_Operativa]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Matriz_Decision = calculated
 		mode: import
 		source = ```
@@ -105,7 +104,7 @@ table Matriz_Decision
 				    "Color_HEX", STRING,
 				    "Titulo_Veredicto", STRING,
 				    "Impacto_PitStops", STRING,
-				    "Horizonte_2007", STRING,
+				    "Seguridad_Operativa", STRING,
 				    "Riesgo_Asumido", STRING,
 				    "Justificacion_Estrategica", STRING,
 				    {
@@ -117,9 +116,9 @@ table Matriz_Decision
 				            "#E10600",
 				            "Apuesta al Techo de Rendimiento: La Ventaja del Monopolio Técnico",
 				            "Favorable. El retorno de paradas reactiva la ventaja de compuestos hiperblandos y tandas al sprint.",
-				            "Estratégico. Michelin se retira a fines de 2006; aliarse con Bridgestone anticipa la adaptación al monopolio de 2007.",
-				            "Riesgo de estatus. Solo viable si la escudería tiene peso político para no quedar subordinada al desarrollo centrado en Ferrari.",
-				            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Para un candidato al título, el techo prestacional supera el riesgo del año previo. Si el equipo puede exigir trato de paridad técnica, Bridgestone ofrece el compuesto ganador para 2006 y garantiza continuidad técnica hacia 2007."
+				            "Crítico. Un candidato al título no puede tolerar la pérdida total de puntos por inviabilidad estructural (caso Indianápolis).",
+				            "Riesgo de estatus. Solo viable si la escudería tiene el peso político para no quedar subordinada al desarrollo centrado en Ferrari.",
+				            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Además, una escudería que pelea el campeonato no puede arriesgarse a un colapso de seguridad como el de EE.UU., donde Michelin dejó a su flota con cero puntos. Si el equipo tiene la escala para exigir paridad técnica frente a Ferrari, Bridgestone garantiza el compuesto con mayor techo de velocidad y solidez de carcasa ante cargas extremas."
 				        },
 				        {
 				            "2. Midfield", 
@@ -129,9 +128,9 @@ table Matriz_Decision
 				            "#0055A5",
 				            "Consistencia y Paridad Competitiva: Evitar la Trampa Cliente",
 				            "Controlado. Menor sensibilidad a paradas al sprint; la prioridad es la estabilidad de ritmo sobre tandas constantes.",
-				            "Transición diferida. Tolerar la salida de Michelin a fines de 2006 y aplazar el cambio forzado de proveedor hacia 2007.",
+				            "Evento aislado. El incidente de Indianápolis fue extraordinario; en el resto del calendario Michelin mantuvo una tasa de rotura ordinaria baja (0.38).",
 				            "Riesgo de asimetría nulo. En Bridgestone el déficit de cliente promedia +11 puestos; en Michelin se garantiza compuesto idéntico al líder.",
-				            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Michelin garantiza acceso al mismo compuesto que utiliza el campeón del mundo, maximizando la captura de puntos regulares a costo de una transición forzada en 2007."
+				            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Aunque Indianápolis expuso una debilidad de diseño específica, en condiciones normales Michelin ofrece una plataforma probada que democratiza el rendimiento y maximiza la captura regular de puntos."
 				        },
 				        {
 				            "3. Fondo de Grilla", 
@@ -141,9 +140,9 @@ table Matriz_Decision
 				            "#0055A5",
 				            "Supervivencia Operativa y Control de Daños",
 				            "Bajo impacto relativo. Las paradas no compensan un déficit aerodinámico; la clave es la fiabilidad mecánica en carrera (0.38 vs 0.51).",
-				            "Transición técnica protegida. Evitar el compuesto rígido de Ferrari en 2006; migrar al monopolio en 2007 con la grilla ya unificada.",
+				            "Prioridad mecánica. La probabilidad de finalizar carreras en el pelotón trasero es mayor con la goma francesa que con las fallas cliente de Bridgestone.",
 				            "Riesgo de aislamiento evitado. En Bridgestone la brecha cliente trepa a +16 puestos (Minardi 16.1); Michelin garantiza compuesto estándar probado.",
-				            "Para una escudería de fondo de grilla, el objetivo prioritario es maximizar la tasa de finalización y aprovechar abandonos ajenos. Apostar a Bridgestone implica asumir el compuesto diseñado exclusivamente para el chasis de Ferrari, penalizando la adherencia en autos con poca carga y sufriendo mayor tasa de fallas en carrera (0.51). Michelin garantiza paridad técnica y menor tasa de roturas mecánicas."
+				            "Para una escudería de fondo de grilla, el objetivo prioritario es maximizar la tasa de finalización y aprovechar abandonos ajenos. Apostar a Bridgestone implica asumir el compuesto diseñado exclusivamente para el chasis de Ferrari, penalizando la adherencia en autos con poca carga y sufriendo mayor tasa de fallas en carrera (0.51). Michelin garantiza paridad técnica y menor tasa de roturas mecánicas ordinarias."
 				        }
 				    }
 				)
