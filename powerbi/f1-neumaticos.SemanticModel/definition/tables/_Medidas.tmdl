@@ -995,6 +995,82 @@ table _Medidas
 
 		lineageTag: 71a01106-1b2c-4d3e-8f5a-9a01b2c3d4e6
 
+	measure 'Circuitos Delta Qualy Promedio Seg' =
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+		formatString: 0.000
+		lineageTag: fb6ac950-d866-41c8-afdd-65d6468878a7
+
+	measure 'Circuitos Delta Qualy Promedio Seg Positivo' =
+			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			RETURN
+			IF(ISBLANK(D), BLANK(), ABS(D))
+		formatString: 0.000
+		lineageTag: c79d2874-c60a-43ed-950c-039bdf0b66d8
+
+	measure 'Circuitos Color Delta Qualy' =
+			VAR D = [Circuitos Delta Qualy Promedio Seg]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(D), "#6B7280",
+			    D < 0, "#004F9F",
+			    D > 0, "#E10600",
+			    "#475569"
+			)
+		lineageTag: 53336f79-55b0-45ef-80fe-aacaaacb0599
+
+	measure 'Circuitos Michelin Pts Por Auto' =
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_michelin])
+		formatString: 0.00
+		lineageTag: 0c2a7acc-6d32-43e6-b211-821a9e1d690c
+
+	measure 'Circuitos Bridgestone Pts Por Auto' =
+			AVERAGE('formula1 v_analisis_rendimiento_circuitos'[puntos_por_auto_bridgestone])
+		formatString: 0.00
+		lineageTag: 76073f22-d376-46ec-89a3-472a9dc63e15
+
+	measure 'Circuitos Delta Pts Por Auto' =
+			[Circuitos Michelin Pts Por Auto] - [Circuitos Bridgestone Pts Por Auto]
+		formatString: +0.00;-0.00;0.00
+		lineageTag: 823e0e7a-8b8e-4f77-a115-d5824c3a738c
+
+	measure 'Circuitos Ratio Pts Por Auto' =
+			DIVIDE([Circuitos Michelin Pts Por Auto], [Circuitos Bridgestone Pts Por Auto])
+		formatString: 0.00"x"
+		lineageTag: 04b947a6-53fb-4c6f-9f35-bc05600a72de
+
+	measure 'Circuitos Qualy Poles Michelin' =
+			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Michelin")
+		formatString: 0
+		lineageTag: 0eb1627e-2439-4775-81df-1e885f51e670
+
+	measure 'Circuitos Qualy Poles Bridgestone' =
+			CALCULATE(COUNTROWS('formula1 v_analisis_rendimiento_circuitos'), 'formula1 v_analisis_rendimiento_circuitos'[ganador_qualy] = "Bridgestone")
+		formatString: 0
+		lineageTag: 7d3e1498-751d-43cc-86db-315a66f19d72
+
+	measure 'Circuitos Poles Card Texto' =
+			"M: " & FORMAT([Circuitos Qualy Poles Michelin], "0") & " | B: " & FORMAT([Circuitos Qualy Poles Bridgestone], "0")
+		lineageTag: 99511de2-59a3-4a17-8a5b-47e46064438d
+
+	measure 'Circuitos Pts Norm Card Texto' =
+			"M: " & FORMAT([Circuitos Michelin Pts Por Auto], "0.00") & " vs B: " & FORMAT([Circuitos Bridgestone Pts Por Auto], "0.00")
+		lineageTag: 0cdf8756-a595-47b2-9f45-42bf4124b18f
+
+	measure 'Ventaja Michelin Qualy Circuitos' =
+			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+			RETURN
+			IF(Delta < 0, Delta, BLANK())
+		formatString: -0.000
+		lineageTag: 01971f40-9302-407b-b456-3b88a28087bc
+
+	measure 'Ventaja Bridgestone Qualy Circuitos' =
+			VAR Delta = AVERAGE('formula1 v_analisis_rendimiento_circuitos'[delta_qualy_sec])
+			RETURN
+			IF(Delta >= 0, Delta, BLANK())
+		formatString: +0.000
+		lineageTag: aa4e260e-ed47-488c-ac02-7de0bfe4e942
+
 	partition _Medidas = m
 		mode: import
 		source =

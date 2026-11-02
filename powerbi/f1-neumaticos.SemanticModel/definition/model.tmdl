@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["formula1 v_f1_qualy_granular","formula1 v_f1_race_granular","formula1 race","formula1 constructor","_Medidas","dim_segmento_estrategico","formula1 v_analisis_rendimiento_anual","formula1 v_analisis_asimetria_marca","formula1 v_analisis_fiabilidad_neumaticos","formula1 v_acumulacion_poles_carreras","formula1 v_temporadas_proveedor_marca","formula1 v_cuota_parrilla_anual_neumaticos","formula1 v_analisis_rendimiento_lluvia_carreras"]
+annotation PBI_QueryOrder = ["formula1 v_f1_qualy_granular","formula1 v_f1_race_granular","formula1 race","formula1 constructor","_Medidas","dim_segmento_estrategico","formula1 v_analisis_rendimiento_anual","formula1 v_analisis_asimetria_marca","formula1 v_analisis_fiabilidad_neumaticos","formula1 v_acumulacion_poles_carreras","formula1 v_temporadas_proveedor_marca","formula1 v_cuota_parrilla_anual_neumaticos","formula1 v_analisis_rendimiento_lluvia_carreras","formula1 v_analisis_rendimiento_circuitos"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -29,6 +29,7 @@ ref table LocalDateTable_ea1a188e-647f-4aac-9cd1-28743a530a20
 ref table 'formula1 v_temporadas_proveedor_marca'
 ref table 'formula1 v_cuota_parrilla_anual_neumaticos'
 ref table 'formula1 v_analisis_rendimiento_lluvia_carreras'
+ref table 'formula1 v_analisis_rendimiento_circuitos'
 
 ref cultureInfo es-ES
 
