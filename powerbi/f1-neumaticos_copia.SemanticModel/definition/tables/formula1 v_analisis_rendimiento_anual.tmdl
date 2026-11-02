@@ -1,0 +1,119 @@
+table 'formula1 v_analisis_rendimiento_anual'
+	lineageTag: 2c6258d4-3e1d-480b-aded-dd5f892d42df
+
+	column constructor_id
+		dataType: string
+		lineageTag: 0193d8e6-ed36-49ef-ab84-f0370bf6f394
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 80ec0f5e-6ef0-4e93-82f0-66187dca2fdf
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column tyre_manufacturer_id
+		dataType: string
+		lineageTag: a8c486dc-ae8a-4a17-b434-ca4841956231
+		summarizeBy: none
+		sourceColumn: tyre_manufacturer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column entries
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c371999-fa9e-4e1e-a0e8-e50b157e0433
+		summarizeBy: sum
+		sourceColumn: entries
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_qualy_pos
+		dataType: double
+		lineageTag: ec3f676d-81db-4ff5-87d7-a4e2195bb0fb
+		summarizeBy: sum
+		sourceColumn: avg_qualy_pos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_finish_pos
+		dataType: double
+		lineageTag: d50212f5-22f7-4892-9cae-590af3486a4f
+		summarizeBy: sum
+		sourceColumn: avg_finish_pos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column avg_positions_gained
+		dataType: double
+		lineageTag: c133395f-c9cf-4318-8579-6450002a3760
+		summarizeBy: sum
+		sourceColumn: avg_positions_gained
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_points
+		dataType: double
+		lineageTag: 168b990d-2fb9-49b2-b8c5-eb89f2d3b3aa
+		summarizeBy: sum
+		sourceColumn: total_points
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id_segmento = ```
+			
+			VAR Anio = 'formula1 v_analisis_rendimiento_anual'[year]
+			-- Si constructor_id ya tiene el texto ("ferrari", etc.), lo lee directo; si es FK a la dimensión, RELATED lo resuelve:
+			VAR ConstructorID = LOWER(TRIM(COALESCE(RELATED('formula1 constructor'[id]), 'formula1 v_analisis_rendimiento_anual'[constructor_id] & "")))
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    -- TOP TIER
+			    ConstructorID = "ferrari", "top_tier",
+			    ConstructorID IN {"mclaren", "renault"}, "top_tier",
+			    ConstructorID = "benetton" && Anio == 2001, "top_tier",
+			    ConstructorID = "williams" && Anio <= 2004, "top_tier",
+			    
+			    -- MIDFIELD
+			    ConstructorID = "williams" && Anio == 2005, "midfield",
+			    ConstructorID IN {"bar", "toyota", "sauber", "jaguar", "red_bull"}, "midfield",
+			    ConstructorID = "jordan" && Anio <= 2003, "midfield",
+			    
+			    -- FONDO DE GRILLA
+			    ConstructorID = "jordan" && Anio >= 2004, "backmarker",
+			    ConstructorID IN {"minardi", "midland", "arrows", "prost"}, "backmarker",
+			    
+			    "backmarker"
+			)
+			```
+		lineageTag: 65e5e814-6e3d-4988-bd4c-2b1c600c9028
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_analisis_rendimiento_anual' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_analisis_rendimiento_anual = Origen{[Schema="formula1",Item="v_analisis_rendimiento_anual"]}[Data]
+				in
+				    formula1_v_analisis_rendimiento_anual
+
+	annotation PBI_ResultType = Table
+

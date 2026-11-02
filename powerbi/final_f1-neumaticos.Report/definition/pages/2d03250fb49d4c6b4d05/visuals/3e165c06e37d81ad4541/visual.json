@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3e165c06e37d81ad4541",
+  "position": {
+    "x": 36.52595585949642,
+    "y": 1018.4295927883121,
+    "z": 5000,
+    "height": 34.377370220702517,
+    "width": 964.71495181846433,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "DATOS: F1DB, OPEN-METEO ERA5 & REGULACIONES TÉCNICAS FIA | CONSULTORÍA ESTRATÉGICA INDEPENDIENTE",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

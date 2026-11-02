@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "01a1b2c3d4e5f6070801",
+  "position": {
+    "x": 63.333333333333336,
+    "y": 43.333333333333336,
+    "z": 0,
+    "height": 160,
+    "width": 851.66666666666674,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Rendimiento en Lluvia: ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "23pt",
+                      "color": "#111827"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Análisis comparativo de ritmo en mojado por carrera y estrato competitivo. Identificación de la ventana térmica y consistencia multichasis de cada fabricante.",
+                    "textStyle": {
+                      "fontSize": "11.5pt",
+                      "color": "#4b5563"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

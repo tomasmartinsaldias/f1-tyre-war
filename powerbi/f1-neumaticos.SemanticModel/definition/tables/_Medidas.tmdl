@@ -1711,235 +1711,178 @@ table _Medidas
 		formatString: +0.000
 		lineageTag: aa4e260e-ed47-488c-ac02-7de0bfe4e942
 
-
-
-
-
 	measure Tasa_Fallas_Por_1000_Vueltas =
-
 			
-
+			
+			
 			DIVIDE(
-
+			
 			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
-
+			
 			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed]),
-
+			
 			    0
-
+			
 			) * 1000
-
 		lineageTag: b272e92b-ec68-4ff7-aad3-486220be700d
 
-
-
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-
-
-
 
 	measure Retiros_Preventivos_Indy = ```
-
 			
-
+			
+			
 			VAR TotalRetiros = 
-
+			
 			    CALCULATE(
-
+			
 			        SUM('formula1 v_analisis_fiabilidad_neumaticos'[indy_2005_withdrawals]),
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "michelin"
-
+			
 			    )
-
+			
 			RETURN
-
+			
 			TotalRetiros & " monoplazas"
-
+			
 			```
-
 		lineageTag: 2268c38b-c2f1-42bc-afeb-365be8107c21
 
-
-
-
-
 	measure Tasa_Media_Fallas_Michelin =
-
 			
-
+			
+			
 			AVERAGEX(
-
+			
 			    VALUES('formula1 v_analisis_fiabilidad_neumaticos'[year]),
-
+			
 			    CALCULATE(
-
+			
 			        [Tasa_Fallas_Por_1000_Vueltas],
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "michelin"
-
+			
 			    )
-
+			
 			)
-
 		lineageTag: 909f93bd-6cec-454c-b97d-2136dcbb0cb9
 
-
-
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-
-
-
 
 	measure Tasa_Media_Fallas_Bridgestone =
-
 			
-
+			
+			
 			AVERAGEX(
-
+			
 			    VALUES('formula1 v_analisis_fiabilidad_neumaticos'[year]),
-
+			
 			    CALCULATE(
-
+			
 			        [Tasa_Fallas_Por_1000_Vueltas],
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "bridgestone"
-
+			
 			    )
-
+			
 			)
-
 		lineageTag: 87c80cc4-ae23-4409-8fe5-bc4de05b89aa
 
-
-
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-
-
-
 
 	measure Tasa_Riesgo_Total_Michelin_2005 = ```
-
 			
-
+			
+			
 			VAR FallasMecanicas = 
-
+			
 			    CALCULATE(
-
+			
 			        SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "michelin",
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[year] = 2005
-
+			
 			    )
-
+			
 			VAR RetirosSeguridad = 
-
+			
 			    CALCULATE(
-
+			
 			        SUM('formula1 v_analisis_fiabilidad_neumaticos'[withdrawal_dnfs]),
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "michelin",
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[year] = 2005
-
+			
 			    )
-
+			
 			VAR VueltasCompletadas = 
-
+			
 			    CALCULATE(
-
+			
 			        SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed]),
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[tyre_manufacturer_id] = "michelin",
-
+			
 			        'formula1 v_analisis_fiabilidad_neumaticos'[year] = 2005
-
+			
 			    )
-
+			
 			RETURN
-
+			
 			DIVIDE(FallasMecanicas + RetirosSeguridad, VueltasCompletadas, 0) * 1000
-
+			
 			```
-
 		lineageTag: 022387fa-c642-41c9-a8c7-843eee24de99
-
-
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-
-
-
-
 	measure Veredicto_Proveedor =
-
+			
 			SELECTEDVALUE(
-
+			
 			    'Matriz_Decision'[Proveedor_Recomendado],
-
+			
 			    "Seleccione un Arquetipo"
-
+			
 			)
-
 		lineageTag: c4d8e001-1b2c-4d3e-8f5a-9a01b2c3d401
 
-
-
-
-
 	measure Veredicto_Titulo =
-
+			
 			SELECTEDVALUE(
-
+			
 			    'Matriz_Decision'[Titulo_Veredicto],
-
+			
 			    "Matriz de Decisión Contractual 2006"
-
+			
 			)
-
 		lineageTag: c4d8e003-1b2c-4d3e-8f5a-9a01b2c3d403
 
-
-
-
-
 	measure Veredicto_Justificacion =
-
+			
 			SELECTEDVALUE(
-
+			
 			    'Matriz_Decision'[Justificacion_Estrategica],
-
+			
 			    "Seleccione una categoría de escudería para visualizar el dictamen técnico."
-
+			
 			)
-
 		lineageTag: c4d8e004-1b2c-4d3e-8f5a-9a01b2c3d404
 
-
-
-
-
 	measure Veredicto_Factores =
-
 			
-
+			
+			
 			"• Impacto Paradas en Boxes (2006): " & SELECTEDVALUE('Matriz_Decision'[Impacto_PitStops]) & UNICHAR(10) & UNICHAR(10) &
-
+			
 			"• Seguridad y Fiabilidad Operativa: " & SELECTEDVALUE('Matriz_Decision'[Seguridad_Operativa]) & UNICHAR(10) & UNICHAR(10) &
-
+			
 			"• Riesgo Operativo Evaluado: " & SELECTEDVALUE('Matriz_Decision'[Riesgo_Asumido])
-
 		lineageTag: c4d8e005-1b2c-4d3e-8f5a-9a01b2c3d405
-
-
-
-
 
 	partition _Medidas = m
 		mode: import

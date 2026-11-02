@@ -1,0 +1,122 @@
+table 'formula1 v_acumulacion_poles_carreras'
+	lineageTag: 0c5d02d1-1633-4552-a5a0-760cc90876e6
+
+	column numero_carrera_acumulado
+		dataType: int64
+		formatString: 0
+		lineageTag: aa4fe821-859e-4797-9a4b-560bbf45367e
+		summarizeBy: sum
+		sourceColumn: numero_carrera_acumulado
+
+		annotation SummarizationSetBy = Automatic
+
+	column race_id
+		dataType: int64
+		formatString: 0
+		lineageTag: defcf095-f9bb-428f-aecb-38d07bbbe1a4
+		summarizeBy: none
+		sourceColumn: race_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 88342a34-ba3b-4900-8411-66595add6af4
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: 5225c523-4eef-4bc6-bedd-e30c95c3e67c
+		summarizeBy: sum
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 28184d58-7360-47f3-a980-3aaec490a833
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 78f3b6e1-ff0a-48e6-84d9-0050269c2678
+			defaultHierarchy: LocalDateTable_ea1a188e-647f-4aac-9cd1-28743a530a20.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column grand_prix
+		dataType: string
+		lineageTag: 7063948c-246f-4b0d-aec5-b8058841839e
+		summarizeBy: none
+		sourceColumn: grand_prix
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_id
+		dataType: string
+		lineageTag: e653d4d7-3f64-42fb-8dab-66f5e96bd727
+		summarizeBy: none
+		sourceColumn: circuit_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column pole_driver_id
+		dataType: string
+		lineageTag: 9b5e5623-a299-4acc-bb3e-993590593d61
+		summarizeBy: none
+		sourceColumn: pole_driver_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column pole_constructor_id
+		dataType: string
+		lineageTag: b430a89a-ad83-4e11-a4a5-ae98c13691fc
+		summarizeBy: none
+		sourceColumn: pole_constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column pole_tyre
+		dataType: string
+		lineageTag: e649e1cf-9811-4171-89bf-9d2b8f53a256
+		summarizeBy: none
+		sourceColumn: pole_tyre
+
+		annotation SummarizationSetBy = Automatic
+
+	column Poles_Michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: eec9e222-7127-4183-b0d6-920a29e0c589
+		summarizeBy: sum
+		sourceColumn: Poles_Michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column Poles_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: 2bd60cb6-129b-450d-bee3-c8fa2bdb9f6f
+		summarizeBy: sum
+		sourceColumn: Poles_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_acumulacion_poles_carreras' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_acumulacion_poles_carreras = Origen{[Schema="formula1",Item="v_acumulacion_poles_carreras"]}[Data]
+				in
+				    formula1_v_acumulacion_poles_carreras
+

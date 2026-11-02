@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 1174.7605256766826,
-            "y": 995.84310918971539
+            "y": 1051.4433572878004
           },
           "nodeIndex": "formula1 v_f1_qualy_granular",
           "nodeLineageTag": "d1c0ac8c-9626-4535-ab4d-1434559b75ac",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 1194.2728243948306,
-            "y": 538.35891866293036
+            "y": 593.95916676101535
           },
           "nodeIndex": "formula1 v_f1_race_granular",
           "nodeLineageTag": "80b69bd6-11ab-4ba5-aed5-4c0c14550a69",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 631.21618515801345,
-            "y": 569.02655180336671
+            "y": 624.6267999014517
           },
           "nodeIndex": "formula1 constructor",
           "nodeLineageTag": "9c62b124-6771-42a2-b2a8-bcab0da4011b",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 1879.9449538168012,
-            "y": 540.31466055361136
+            "y": 595.91490865169635
           },
           "nodeIndex": "formula1 race",
           "nodeLineageTag": "c2678f99-46d9-4ccf-880e-c7eac87cc005",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 682,
-            "y": 1209.2349660833465
+            "y": 1264.8352141814316
           },
           "nodeIndex": "_Medidas",
           "nodeLineageTag": "f109edcd-bc73-46bb-b6b2-98d97f815e1b",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 729.725291791131,
-            "y": 920.97796806050428
+            "y": 976.57821615858927
           },
           "nodeIndex": "dim_segmento_estrategico",
           "nodeLineageTag": "4f364602-e7c2-45de-a92d-33f95c2e03f8",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 593.34507214365044,
-            "y": 111.20049619617004
+            "y": 166.80074429425503
           },
           "nodeIndex": "formula1 v_analisis_asimetria_marca",
           "nodeLineageTag": "b5c125ae-52d7-4742-a097-6ed075de9f7b",
@@ -102,7 +102,7 @@
         {
           "location": {
             "x": 0,
-            "y": 751.40950367803168
+            "y": 807.00975177611667
           },
           "nodeIndex": "formula1 v_analisis_rendimiento_anual",
           "nodeLineageTag": "2c6258d4-3e1d-480b-aded-dd5f892d42df",
@@ -115,7 +115,7 @@
         {
           "location": {
             "x": 1150.299449415457,
-            "y": 134.14110968600889
+            "y": 189.74135778409388
           },
           "nodeIndex": "formula1 v_analisis_fiabilidad_neumaticos",
           "nodeLineageTag": "8419257f-8f5c-4aea-83cf-9f0faf6685b1",
@@ -128,7 +128,7 @@
         {
           "location": {
             "x": 2163.944953816801,
-            "y": 540.25220102693447
+            "y": 595.85244912501946
           },
           "nodeIndex": "formula1 v_acumulacion_poles_carreras",
           "nodeLineageTag": "0c5d02d1-1633-4552-a5a0-760cc90876e6",
@@ -141,7 +141,7 @@
         {
           "location": {
             "x": 2447.944953816801,
-            "y": 566.25220102693447
+            "y": 621.85244912501946
           },
           "nodeIndex": "formula1 v_temporadas_proveedor_marca",
           "nodeLineageTag": "9ec8d67f-b7a9-45c7-887b-2d4df0f6e2fc",
@@ -154,7 +154,7 @@
         {
           "location": {
             "x": 2731.944953816801,
-            "y": 529.26943597052264
+            "y": 584.86968406860763
           },
           "nodeIndex": "formula1 v_cuota_parrilla_anual_neumaticos",
           "nodeLineageTag": "bb3158c6-94bb-462d-afc9-c04cf94b5d1e",
@@ -167,7 +167,7 @@
         {
           "location": {
             "x": 3015.944953816801,
-            "y": 512.79528838590488
+            "y": 568.39553648398987
           },
           "nodeIndex": "formula1 v_analisis_rendimiento_lluvia_carreras",
           "nodeLineageTag": "5207f124-f854-45ce-adea-631fe7e85df2",
@@ -180,10 +180,23 @@
         {
           "location": {
             "x": 3299.944953816801,
-            "y": 488.0840670089782
+            "y": 543.68431510706318
           },
           "nodeIndex": "formula1 v_analisis_rendimiento_circuitos",
           "nodeLineageTag": "93169260-76c9-4cc2-9acf-87527a7efbf4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3583.944953816801,
+            "y": 506.61748304167327
+          },
+          "nodeIndex": "Matriz_Decision",
+          "nodeLineageTag": "e4f89012-34ab-45cd-89ef-012345678901",
           "size": {
             "height": 300,
             "width": 234
