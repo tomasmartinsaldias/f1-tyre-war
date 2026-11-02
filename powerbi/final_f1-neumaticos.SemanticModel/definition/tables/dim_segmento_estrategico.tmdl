@@ -1,0 +1,45 @@
+table dim_segmento_estrategico
+	lineageTag: 4f364602-e7c2-45de-a92d-33f95c2e03f8
+
+	column id_segmento
+		dataType: string
+		lineageTag: bc3e9558-33b1-475d-915b-97a063d5aa9a
+		summarizeBy: none
+		sourceColumn: id_segmento
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_arquetipo
+		dataType: string
+		lineageTag: 59a1a5d5-89f2-4d60-8f60-f7a940706b7f
+		summarizeBy: none
+		sourceColumn: nombre_arquetipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column descripcion_objetivo
+		dataType: string
+		lineageTag: a9442e33-8608-4fb4-9c46-61d590f7fd4e
+		summarizeBy: none
+		sourceColumn: descripcion_objetivo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_segmento_estrategico = m
+		mode: import
+		source =
+				let
+				    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Nc7BagJBDAbgVwlzsiAL1Uco2JMgZW+LSJxJ2+DsZMlkpfpGPfTUR9gXa9zqLQl/vqTrgslwMCYNy/DcQCsDtN7B4gVL4oQmFTBDO/3YmOXJU1v84p6vqGAUPwUSgZJne6ZiAhcYJFMN+2UXek7vTDn51qqB7b2DxW4sN/eNPsaMSvXG7lD9XAKbvmPhiA5FKZWrUYmM4LgSmOIVk/zzR5FTj3qan183sJGS5n9elXNGH24Yj5xn9wJ1HEjPfH54EFGVFKsX06/5TWf3fw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [id_segmento = _t, nombre_arquetipo = _t, descripcion_objetivo = _t]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(Origen,{{"id_segmento", type text}, {"nombre_arquetipo", type text}, {"descripcion_objetivo", type text}}),
+				    #"Valor reemplazado" = Table.ReplaceValue(#"Tipo cambiado","bookmarker","backmarker",Replacer.ReplaceText,{"id_segmento"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","1. Top Tier (Candidatos al Título)","1. Top Tier",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","2. Midfield","",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2"," (Puntos Regulares)","Midfield",Replacer.ReplaceText,{"nombre_arquetipo"}),
+				    #"Valor reemplazado4" = Table.ReplaceValue(#"Valor reemplazado3","Midfield","2. Midfield",Replacer.ReplaceText,{"nombre_arquetipo"})
+				in
+				    #"Valor reemplazado4"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
+

@@ -1,0 +1,76 @@
+table 'formula1 race'
+	lineageTag: c2678f99-46d9-4ccf-880e-c7eac87cc005
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: 33e837bf-4a0c-4d1b-a294-85ddf6a13aef
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b8aba3c-171e-4b52-804c-269ee7b4127b
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: 699513fd-1758-42f6-b5b9-5e37aae6b98b
+		summarizeBy: sum
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fc6396bc-b40b-4aab-b8ea-948eb5f263aa
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: a71fc53a-a3b9-48ff-a4de-4c0ea9a2a84b
+			defaultHierarchy: LocalDateTable_ff685e70-f6e1-4650-a638-082127be5937.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column official_name
+		dataType: string
+		lineageTag: 48fb4f1d-6e1f-4e5a-87c9-326620687477
+		summarizeBy: none
+		sourceColumn: official_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_id
+		dataType: string
+		lineageTag: a7715420-d6f1-4186-bb83-06a7246fe46c
+		summarizeBy: none
+		sourceColumn: circuit_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 race' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_race = Origen{[Schema="formula1",Item="race"]}[Data],
+				    #"Otras columnas quitadas" = Table.SelectColumns(formula1_race,{"id", "year", "round", "date", "official_name", "circuit_id"})
+				in
+				    #"Otras columnas quitadas"
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "01a1b2c3d4e5f6070801",
   "position": {
-    "x": 30,
-    "y": 25,
+    "x": 63.333333333333336,
+    "y": 43.333333333333336,
     "z": 0,
     "height": 160,
-    "width": 710,
+    "width": 851.66666666666674,
     "tabOrder": 0
   },
   "visual": {
@@ -16,18 +16,6 @@
         {
           "properties": {
             "paragraphs": [
-              {
-                "textRuns": [
-                  {
-                    "value": "INFORME TÉCNICO F1 (2001-2005)  |  ACTO II: SENSIBILIDAD AL ENTORNO",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontSize": "11pt",
-                      "color": "#6B7280"
-                    }
-                  }
-                ]
-              },
               {
                 "textRuns": [
                   {
@@ -46,7 +34,7 @@
                     "value": "Análisis comparativo de ritmo en mojado por carrera y estrato competitivo. Identificación de la ventana térmica y consistencia multichasis de cada fabricante.",
                     "textStyle": {
                       "fontSize": "11.5pt",
-                      "color": "#4B5563"
+                      "color": "#4b5563"
                     }
                   }
                 ]

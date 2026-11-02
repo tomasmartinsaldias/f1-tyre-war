@@ -1,0 +1,152 @@
+table Matriz_Decision
+	lineageTag: e4f89012-34ab-45cd-89ef-012345678901
+
+	column Arquetipo
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678902
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Arquetipo]
+		sortByColumn: Orden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Orden
+		dataType: int64
+		formatString: 0
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678903
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Orden]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Escuderias_Ejemplo
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678904
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Escuderias_Ejemplo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Proveedor_Recomendado
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678905
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Proveedor_Recomendado]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Color_HEX
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678906
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Color_HEX]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Titulo_Veredicto
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678907
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Titulo_Veredicto]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impacto_PitStops
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678908
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Impacto_PitStops]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Riesgo_Asumido
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678910
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Riesgo_Asumido]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Justificacion_Estrategica
+		dataType: string
+		lineageTag: e4f89012-34ab-45cd-89ef-012345678911
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Justificacion_Estrategica]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Seguridad_Operativa
+		lineageTag: d9f14ebb-5023-4086-a5a8-5896df3910d5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Seguridad_Operativa]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Matriz_Decision = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Arquetipo", STRING,
+				    "Orden", INTEGER,
+				    "Escuderias_Ejemplo", STRING,
+				    "Proveedor_Recomendado", STRING,
+				    "Color_HEX", STRING,
+				    "Titulo_Veredicto", STRING,
+				    "Impacto_PitStops", STRING,
+				    "Seguridad_Operativa", STRING,
+				    "Riesgo_Asumido", STRING,
+				    "Justificacion_Estrategica", STRING,
+				    {
+				        {
+				            "1. Top Tier", 
+				            1, 
+				            "Ferrari, Renault, McLaren", 
+				            "BRIDGESTONE", 
+				            "#E10600",
+				            "Apuesta al Techo de Rendimiento: La Ventaja del Monopolio Técnico",
+				            "Favorable. El retorno de paradas reactiva la ventaja de compuestos hiperblandos y tandas al sprint.",
+				            "Crítico. Un candidato al título no puede tolerar la pérdida total de puntos por inviabilidad estructural (caso Indianápolis).",
+				            "Riesgo de estatus. Solo viable si la escudería tiene el peso político para no quedar subordinada al desarrollo centrado en Ferrari.",
+				            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Además, una escudería que pelea el campeonato no puede arriesgarse a un colapso de seguridad como el de EE.UU., donde Michelin dejó a su flota con cero puntos. Si el equipo tiene la escala para exigir paridad técnica frente a Ferrari, Bridgestone garantiza el compuesto con mayor techo de velocidad y solidez de carcasa ante cargas extremas."
+				        },
+				        {
+				            "2. Midfield", 
+				            2, 
+				            "Williams, Toyota, BAR/Honda, Red Bull, Sauber", 
+				            "MICHELIN", 
+				            "#0055A5",
+				            "Consistencia y Paridad Competitiva: Evitar la Trampa Cliente",
+				            "Controlado. Menor sensibilidad a paradas al sprint; la prioridad es la estabilidad de ritmo sobre tandas constantes.",
+				            "Evento aislado. El incidente de Indianápolis fue extraordinario; en el resto del calendario Michelin mantuvo una tasa de rotura ordinaria baja (0.38).",
+				            "Riesgo de asimetría nulo. En Bridgestone el déficit de cliente promedia +11 puestos; en Michelin se garantiza compuesto idéntico al líder.",
+				            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Aunque Indianápolis expuso una debilidad de diseño específica, en condiciones normales Michelin ofrece una plataforma probada que democratiza el rendimiento y maximiza la captura regular de puntos."
+				        },
+				        {
+				            "3. Fondo de Grilla", 
+				            3, 
+				            "Midland/Jordan, Minardi, Super Aguri", 
+				            "MICHELIN", 
+				            "#0055A5",
+				            "Supervivencia Operativa y Control de Daños",
+				            "Bajo impacto relativo. Las paradas no compensan un déficit aerodinámico; la clave es la fiabilidad mecánica en carrera (0.38 vs 0.51).",
+				            "Prioridad mecánica. La probabilidad de finalizar carreras en el pelotón trasero es mayor con la goma francesa que con las fallas cliente de Bridgestone.",
+				            "Riesgo de aislamiento evitado. En Bridgestone la brecha cliente trepa a +16 puestos (Minardi 16.1); Michelin garantiza compuesto estándar probado.",
+				            "Para una escudería de fondo de grilla, el objetivo prioritario es maximizar la tasa de finalización y aprovechar abandonos ajenos. Apostar a Bridgestone implica asumir el compuesto diseñado exclusivamente para el chasis de Ferrari, penalizando la adherencia en autos con poca carga y sufriendo mayor tasa de fallas en carrera (0.51). Michelin garantiza paridad técnica y menor tasa de roturas mecánicas ordinarias."
+				        }
+				    }
+				)
+				```
+
+	annotation PBI_Id = 7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d
+

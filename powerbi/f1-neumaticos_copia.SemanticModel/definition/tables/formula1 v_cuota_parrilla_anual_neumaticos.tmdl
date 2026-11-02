@@ -1,0 +1,115 @@
+table 'formula1 v_cuota_parrilla_anual_neumaticos'
+	lineageTag: bb3158c6-94bb-462d-afc9-c04cf94b5d1e
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 876e3ba5-0a39-4cef-995d-e4fd356ded7b
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_equipos
+		dataType: int64
+		formatString: 0
+		lineageTag: 547e6df2-03e3-468f-b9c8-442385f13bc4
+		summarizeBy: sum
+		sourceColumn: total_equipos
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipos_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a7ee538-f067-4d72-8d77-ac0e0ded7c67
+		summarizeBy: sum
+		sourceColumn: equipos_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipos_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: cf8b3769-93ed-4839-a01f-840eebeef516
+		summarizeBy: sum
+		sourceColumn: equipos_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column pct_equipos_michelin
+		dataType: double
+		lineageTag: c79c8774-b12d-49d6-9f1e-b4c4eb2e87c2
+		summarizeBy: sum
+		sourceColumn: pct_equipos_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pct_equipos_bridgestone
+		dataType: double
+		lineageTag: 3563925a-712b-48e6-a9ca-fec6d6229f99
+		summarizeBy: sum
+		sourceColumn: pct_equipos_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column total_autos_grilla
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e354977-151a-4ff1-a465-53728cdbd39f
+		summarizeBy: sum
+		sourceColumn: total_autos_grilla
+
+		annotation SummarizationSetBy = Automatic
+
+	column autos_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: a53db4c1-d82e-4ad9-b6e9-56732eddc2f3
+		summarizeBy: sum
+		sourceColumn: autos_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column autos_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: e8eef042-b911-46e8-b03d-14135f51998d
+		summarizeBy: sum
+		sourceColumn: autos_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column pct_parrilla_michelin
+		dataType: double
+		lineageTag: bc0a07b9-59c7-4c4e-936b-2823f34e7fd5
+		summarizeBy: sum
+		sourceColumn: pct_parrilla_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column pct_parrilla_bridgestone
+		dataType: double
+		lineageTag: 7b3532bd-1dd1-4633-a619-7494b0273846
+		summarizeBy: sum
+		sourceColumn: pct_parrilla_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'formula1 v_cuota_parrilla_anual_neumaticos' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_cuota_parrilla_anual_neumaticos = Origen{[Schema="formula1",Item="v_cuota_parrilla_anual_neumaticos"]}[Data]
+				in
+				    formula1_v_cuota_parrilla_anual_neumaticos
+

@@ -1,0 +1,374 @@
+table 'formula1 v_analisis_rendimiento_circuitos'
+	lineageTag: 93169260-76c9-4cc2-9acf-87527a7efbf4
+
+	column race_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 651205a5-f8ee-4d6c-ba1e-9180dd46d207
+		summarizeBy: none
+		sourceColumn: race_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c76be25-f5df-40a6-8732-6a89143464df
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		lineageTag: d375e3f7-9670-4438-8b2a-f1552c9eb383
+		summarizeBy: none
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column grand_prix
+		dataType: string
+		lineageTag: 51820022-bc5b-46bc-9a93-c0b8e9893dca
+		summarizeBy: none
+		sourceColumn: grand_prix
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_id
+		dataType: string
+		lineageTag: 318428f1-fc81-4d71-bec6-36eec9a1adfc
+		summarizeBy: none
+		sourceColumn: circuit_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuit_name
+		dataType: string
+		lineageTag: 5409c8ca-74b2-47a5-8433-445436dc2d1d
+		summarizeBy: none
+		sourceColumn: circuit_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_circuito
+		dataType: string
+		lineageTag: 18723a2f-f506-46c5-9342-1c113535cd59
+		summarizeBy: none
+		sourceColumn: tipo_circuito
+
+		annotation SummarizationSetBy = Automatic
+
+	column carrera_rotulo
+		dataType: string
+		lineageTag: 90060056-c942-48e7-9898-551553e76d05
+		summarizeBy: none
+		sourceColumn: carrera_rotulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column piloto_id_michelin
+		dataType: string
+		lineageTag: 6aeb9d68-4880-4045-a99d-9e3476d21a77
+		summarizeBy: none
+		sourceColumn: piloto_id_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column piloto_michelin
+		dataType: string
+		lineageTag: 5ffeb199-f6ae-4608-96bd-c181048a741e
+		summarizeBy: none
+		sourceColumn: piloto_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_id_michelin
+		dataType: string
+		lineageTag: 4fdd620c-945b-4351-aeb2-afa53460a481
+		summarizeBy: none
+		sourceColumn: equipo_id_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_michelin
+		dataType: string
+		lineageTag: 9f531e74-b6d6-4267-9f05-c3c845f6808d
+		summarizeBy: none
+		sourceColumn: equipo_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column tiempo_qualy_michelin_sec
+		dataType: double
+		formatString: 0.000
+		lineageTag: c93e0204-3c26-492c-b0e8-72abd347d0b1
+		summarizeBy: none
+		sourceColumn: tiempo_qualy_michelin_sec
+
+		annotation SummarizationSetBy = Automatic
+
+	column piloto_id_bridgestone
+		dataType: string
+		lineageTag: b1ae04eb-5f10-4e3e-adb7-616644e5d01a
+		summarizeBy: none
+		sourceColumn: piloto_id_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column piloto_bridgestone
+		dataType: string
+		lineageTag: e07ecd31-5c79-4ed3-96ae-22cce71b4e97
+		summarizeBy: none
+		sourceColumn: piloto_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_id_bridgestone
+		dataType: string
+		lineageTag: 88fa7b7c-88ae-444f-9643-2e4a2c716b21
+		summarizeBy: none
+		sourceColumn: equipo_id_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column equipo_bridgestone
+		dataType: string
+		lineageTag: 8453be24-5ec1-45a2-935d-b0955c2d114d
+		summarizeBy: none
+		sourceColumn: equipo_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column tiempo_qualy_bridgestone_sec
+		dataType: double
+		formatString: 0.000
+		lineageTag: cefbcfbe-1cdb-46a2-acbb-87c3d930cf32
+		summarizeBy: none
+		sourceColumn: tiempo_qualy_bridgestone_sec
+
+		annotation SummarizationSetBy = Automatic
+
+	column delta_qualy_sec
+		dataType: double
+		formatString: 0.000
+		lineageTag: 5999097c-7822-4e3c-b6b5-b372f7502346
+		summarizeBy: none
+		sourceColumn: delta_qualy_sec
+
+		annotation SummarizationSetBy = Automatic
+
+	column delta_qualy_sec_abs
+		dataType: double
+		formatString: 0.000
+		lineageTag: 0d2c7c89-e694-41f1-91a2-e4b83d55fb80
+		summarizeBy: none
+		sourceColumn: delta_qualy_sec_abs
+
+		annotation SummarizationSetBy = Automatic
+
+	column delta_qualy_pct
+		dataType: double
+		formatString: 0.00%
+		lineageTag: 83e0775b-6e10-4020-b833-1bd36a153345
+		summarizeBy: none
+		sourceColumn: delta_qualy_pct
+
+		annotation SummarizationSetBy = Automatic
+
+	column ganador_qualy
+		dataType: string
+		lineageTag: fad69d07-5631-45ca-af69-ffb63475be34
+		summarizeBy: none
+		sourceColumn: ganador_qualy
+
+		annotation SummarizationSetBy = Automatic
+
+	column rotulo_comparacion_qualy
+		dataType: string
+		lineageTag: e249aaba-8f18-4110-9f01-0fd46b39517f
+		summarizeBy: none
+		sourceColumn: rotulo_comparacion_qualy
+
+		annotation SummarizationSetBy = Automatic
+
+	column autos_grilla_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: cc21a11d-310a-4ae0-a690-ed11c3f948f8
+		summarizeBy: sum
+		sourceColumn: autos_grilla_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntos_totales_michelin
+		dataType: double
+		formatString: 0.00
+		lineageTag: d1eb2e8d-781c-4143-a88e-847253b5c5ce
+		summarizeBy: sum
+		sourceColumn: puntos_totales_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntos_por_auto_michelin
+		dataType: double
+		formatString: 0.00
+		lineageTag: e2280b34-509b-445a-96e9-ecaa0a3cc7d2
+		summarizeBy: none
+		sourceColumn: puntos_por_auto_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column autos_grilla_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: 6359dbb2-8c05-4c25-bfae-06f2b7c911ac
+		summarizeBy: sum
+		sourceColumn: autos_grilla_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntos_totales_bridgestone
+		dataType: double
+		formatString: 0.00
+		lineageTag: 61e486b1-3ce6-4989-80fb-91bbfb39366e
+		summarizeBy: sum
+		sourceColumn: puntos_totales_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column puntos_por_auto_bridgestone
+		dataType: double
+		formatString: 0.00
+		lineageTag: d8adaf03-9a81-4f44-b78d-b2ebb4a1a7b9
+		summarizeBy: none
+		sourceColumn: puntos_por_auto_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column delta_puntos_por_auto
+		dataType: double
+		formatString: 0.00
+		lineageTag: 72db4090-9354-4a45-a0c5-c34967201040
+		summarizeBy: none
+		sourceColumn: delta_puntos_por_auto
+
+		annotation SummarizationSetBy = Automatic
+
+	column delta_puntos_por_auto_abs
+		dataType: double
+		formatString: 0.00
+		lineageTag: e6196d00-a69d-48d3-9a02-bc4074c08d0f
+		summarizeBy: none
+		sourceColumn: delta_puntos_por_auto_abs
+
+		annotation SummarizationSetBy = Automatic
+
+	column ganador_puntos_normalizados
+		dataType: string
+		lineageTag: 4aa5752d-60f4-4f5c-9f92-306a87a024f9
+		summarizeBy: none
+		sourceColumn: ganador_puntos_normalizados
+
+		annotation SummarizationSetBy = Automatic
+
+	column victorias_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e17beb2-cc35-46c4-9cb1-327b9a567e61
+		summarizeBy: sum
+		sourceColumn: victorias_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column victorias_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: 62425f44-6f70-43b3-9b0b-f582894e1823
+		summarizeBy: sum
+		sourceColumn: victorias_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column podios_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: 6a357480-0620-440b-8600-333294c84a5b
+		summarizeBy: sum
+		sourceColumn: podios_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column podios_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: 418708ca-f17b-40cd-945e-49a358369013
+		summarizeBy: sum
+		sourceColumn: podios_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column dnf_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: f355628b-0a49-4ead-ac9d-cd602d9f3aa5
+		summarizeBy: sum
+		sourceColumn: dnf_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column dnf_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: 6130f22a-548e-4db5-8977-29923c8a9f35
+		summarizeBy: sum
+		sourceColumn: dnf_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column dnf_neumaticos_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: 7cf38092-53d3-47ab-b203-b2bc0a32dc53
+		summarizeBy: sum
+		sourceColumn: dnf_neumaticos_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column dnf_neumaticos_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: f54b967c-d631-4fe7-a3bd-55e5190e58ee
+		summarizeBy: sum
+		sourceColumn: dnf_neumaticos_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column tasa_dnf_michelin
+		dataType: double
+		formatString: 0.00%
+		lineageTag: b4d212a7-c54f-4504-80a2-798533f3a2e8
+		summarizeBy: none
+		sourceColumn: tasa_dnf_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column tasa_dnf_bridgestone
+		dataType: double
+		formatString: 0.00%
+		lineageTag: 8cf49222-122b-468e-9b86-4c211b841c09
+		summarizeBy: none
+		sourceColumn: tasa_dnf_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_analisis_rendimiento_circuitos' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_analisis_rendimiento_circuitos = Origen{[Schema="formula1",Item="v_analisis_rendimiento_circuitos"]}[Data]
+				in
+				    formula1_v_analisis_rendimiento_circuitos
+

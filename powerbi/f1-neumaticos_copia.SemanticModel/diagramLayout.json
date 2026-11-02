@@ -1,0 +1,204 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 517.87954481580937,
+        "y": 747.78118449049953
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1174.7605256766826,
+            "y": 995.84310918971539
+          },
+          "nodeIndex": "formula1 v_f1_qualy_granular",
+          "nodeLineageTag": "d1c0ac8c-9626-4535-ab4d-1434559b75ac",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1194.2728243948306,
+            "y": 538.35891866293036
+          },
+          "nodeIndex": "formula1 v_f1_race_granular",
+          "nodeLineageTag": "80b69bd6-11ab-4ba5-aed5-4c0c14550a69",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 631.21618515801345,
+            "y": 569.02655180336671
+          },
+          "nodeIndex": "formula1 constructor",
+          "nodeLineageTag": "9c62b124-6771-42a2-b2a8-bcab0da4011b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1879.9449538168012,
+            "y": 540.31466055361136
+          },
+          "nodeIndex": "formula1 race",
+          "nodeLineageTag": "c2678f99-46d9-4ccf-880e-c7eac87cc005",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 682,
+            "y": 1209.2349660833465
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "f109edcd-bc73-46bb-b6b2-98d97f815e1b",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 729.725291791131,
+            "y": 920.97796806050428
+          },
+          "nodeIndex": "dim_segmento_estrategico",
+          "nodeLineageTag": "4f364602-e7c2-45de-a92d-33f95c2e03f8",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 593.34507214365044,
+            "y": 111.20049619617004
+          },
+          "nodeIndex": "formula1 v_analisis_asimetria_marca",
+          "nodeLineageTag": "b5c125ae-52d7-4742-a097-6ed075de9f7b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 751.40950367803168
+          },
+          "nodeIndex": "formula1 v_analisis_rendimiento_anual",
+          "nodeLineageTag": "2c6258d4-3e1d-480b-aded-dd5f892d42df",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1150.299449415457,
+            "y": 134.14110968600889
+          },
+          "nodeIndex": "formula1 v_analisis_fiabilidad_neumaticos",
+          "nodeLineageTag": "8419257f-8f5c-4aea-83cf-9f0faf6685b1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2163.944953816801,
+            "y": 540.25220102693447
+          },
+          "nodeIndex": "formula1 v_acumulacion_poles_carreras",
+          "nodeLineageTag": "0c5d02d1-1633-4552-a5a0-760cc90876e6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 2447.944953816801,
+            "y": 566.25220102693447
+          },
+          "nodeIndex": "formula1 v_temporadas_proveedor_marca",
+          "nodeLineageTag": "9ec8d67f-b7a9-45c7-887b-2d4df0f6e2fc",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2731.944953816801,
+            "y": 529.26943597052264
+          },
+          "nodeIndex": "formula1 v_cuota_parrilla_anual_neumaticos",
+          "nodeLineageTag": "bb3158c6-94bb-462d-afc9-c04cf94b5d1e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 3015.944953816801,
+            "y": 512.79528838590488
+          },
+          "nodeIndex": "formula1 v_analisis_rendimiento_lluvia_carreras",
+          "nodeLineageTag": "5207f124-f854-45ce-adea-631fe7e85df2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 3299.944953816801,
+            "y": 488.0840670089782
+          },
+          "nodeIndex": "formula1 v_analisis_rendimiento_circuitos",
+          "nodeLineageTag": "93169260-76c9-4cc2-9acf-87527a7efbf4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 99.868785586227432,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

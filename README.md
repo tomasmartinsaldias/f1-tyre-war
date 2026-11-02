@@ -74,10 +74,14 @@ Para tener todo el entorno de datos configurado exactamente igual en PostgreSQL 
 
 ## 📊 Vistas y Dashboards en Power BI
 
-El informe incluye 6 secciones ejecutivas organizadas para el storytelling consultivo:
+El informe incluye las secciones ejecutivas organizadas para el storytelling consultivo:
 1. **00. Executive Brief:** Portada ejecutiva con el marco del problema 2006, tesis consultora y navegación interactiva.
-2. **01. Shock Qualy 2005:** Impacto del cambio regulatorio de 2005 y colapso de rendimiento de Bridgestone a una vuelta.
-3. **Acto II: Asimetría de Marca:** Dilema *Custom vs Off-the-Shelf*, comparando la paridad multichasis de Michelin vs la brecha estructural (+11 puestos) de los clientes de Bridgestone frente a Ferrari.
-4. **Acto II: Lluvia y Segmentos:** Rendimiento en mojado carrera a carrera (orden cronológico) con codificación por color por proveedor ganador (Azul Michelin vs Rojo Bridgestone) y años visibles al pie.
-5. **Scuderías: Cuota de Equipos:** Alianzas estratégicas, cuota de mercado en la parrilla (2001-2005) y segmentación dinámica por tipo de fidelidad.
-6. **Página 2 (Acumulación de Poles):** Trayectoria temporal acumulada de poles position entre Michelin y Bridgestone por temporada y análisis del *Sorpasso* de 2005.
+2. **01. Shock Qualy 2005:** Impacto del cambio regulatorio de 2005 y colapso de rendimiento de Bridgestone a una vuelta con selector interactivo 1x3 (`Top-tier, middle, bottom`).
+3. **02. Modelo de Soporte (Asimetría de Marca):** Dilema *Custom vs Off-the-Shelf*, comparando la paridad multichasis de Michelin vs la brecha estructural (+11 puestos) de los clientes de Bridgestone frente a Ferrari.
+4. **03. Conversión Real de Puntos:** Análisis de eficiencia de conversión de puntos vs volumen de participantes y paradoja de flota.
+5. **04. Sensibilidad al Entorno (Trazados y Clima):** Ventanas operativas térmicas y adaptabilidad a características de circuito.
+6. **Acto II: Lluvia y Segmentos:** Evolución continua del ritmo en mojado carrera a carrera en orden cronológico (2001-2005) con delta Michelin vs Bridgestone y selector mosaico 1x3.
+7. **Scuderías: Cuota de Equipos:** Alianzas estratégicas, cuota de mercado en la parrilla (2001-2005) y segmentación dinámica 1x3 en diseño limpio y centrado.
+8. **Página 2 (Acumulación de Poles):** Trayectoria temporal acumulada de poles position entre Michelin y Bridgestone por temporada y análisis del *Sorpasso* de 2005.
+9. **05. Fiabilidad y Riesgo Operativo:** Tasa de fallas y abandonos atribuibles a neumáticos.
+10. **06. Matriz de Decisión 2006:** Cuadro de mando de recomendación final para Directores de Equipo.

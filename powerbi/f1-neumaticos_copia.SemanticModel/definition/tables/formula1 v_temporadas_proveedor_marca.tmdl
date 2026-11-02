@@ -1,0 +1,85 @@
+table 'formula1 v_temporadas_proveedor_marca'
+	lineageTag: 9ec8d67f-b7a9-45c7-887b-2d4df0f6e2fc
+
+	column constructor_id
+		dataType: string
+		lineageTag: fc3f5d55-dcff-460f-a3e3-501a4089de8f
+		summarizeBy: none
+		sourceColumn: constructor_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column constructor_name
+		dataType: string
+		lineageTag: 8e7f31bf-cfd1-4d33-aaa1-00969167d1ee
+		summarizeBy: none
+		sourceColumn: constructor_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column temporadas_michelin
+		dataType: int64
+		formatString: 0
+		lineageTag: 9690025b-d734-4095-bb20-8f9ec7265c91
+		summarizeBy: sum
+		sourceColumn: temporadas_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column temporadas_bridgestone
+		dataType: int64
+		formatString: 0
+		lineageTag: e552e27c-f2c1-4ebb-84d2-32d984eb5955
+		summarizeBy: sum
+		sourceColumn: temporadas_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_temporadas
+		dataType: int64
+		formatString: 0
+		lineageTag: efd027d9-b4e3-4275-aeb4-9d331c0e8ff5
+		summarizeBy: sum
+		sourceColumn: total_temporadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column anios_michelin
+		dataType: string
+		lineageTag: 9f045042-8013-4fed-8bf7-1080227b7676
+		summarizeBy: none
+		sourceColumn: anios_michelin
+
+		annotation SummarizationSetBy = Automatic
+
+	column anios_bridgestone
+		dataType: string
+		lineageTag: 29a28947-f78b-4c39-8e25-14038227563c
+		summarizeBy: none
+		sourceColumn: anios_bridgestone
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tipo_Alianza = ```
+				SWITCH(
+				    TRUE(),
+				    'formula1 v_temporadas_proveedor_marca'[temporadas_bridgestone] > 0 && 'formula1 v_temporadas_proveedor_marca'[temporadas_michelin] = 0, "Exclusivo Bridgestone",
+				    'formula1 v_temporadas_proveedor_marca'[temporadas_michelin] > 0 && 'formula1 v_temporadas_proveedor_marca'[temporadas_bridgestone] = 0, "Exclusivo Michelin",
+				    "Migró de Proveedor"
+				)
+			```
+		dataType: string
+		lineageTag: e8a91c01-7b3d-4e92-a1f4-7128f9a2b001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'formula1 v_temporadas_proveedor_marca' = m
+		mode: import
+		source =
+				let
+				    Origen = PostgreSQL.Database("localhost", "postgres"),
+				    formula1_v_temporadas_proveedor_marca = Origen{[Schema="formula1",Item="v_temporadas_proveedor_marca"]}[Data]
+				in
+				    formula1_v_temporadas_proveedor_marca
+

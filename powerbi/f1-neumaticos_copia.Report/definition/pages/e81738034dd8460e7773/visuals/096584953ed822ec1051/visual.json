@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "096584953ed822ec1051",
+  "position": {
+    "x": 60,
+    "y": 36,
+    "z": 0,
+    "height": 140,
+    "width": 1800,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "DISTRIBUCIÓN DE ESCUDERÍAS Y CUOTA DE PARRILLA",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "19pt",
+                      "color": "#111827"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Evolución histórica de fidelidad de constructores y cuota de mercado (2001-2005).",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#4b5563"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Vemos la disposición de la parrilla según cuantos equipos deciden inclinarse a un u otra proveedor de neumáticos, vemos una tendencia hacia Michelin para el año 2005. También encontramos equipos que fueron fieles a un solo proveedor (como Ferrari con Bridgestone o Williams con Michelin), como también aquellos equipos que cambiaron de proveedor entre el lapso de 2001-2005.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -9188,10 +9188,2808 @@ cultureInfo es-ES
 			          }
 			        }
 			      ]
+			    },
+			    "entity__medida.cuota_michelin_2005_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Cuota_Michelin_2005_Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cuota michelin 2005 pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cuota_Michelin_2005_Pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cuota_bridgestone_2005_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Cuota_Bridgestone_2005_Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cuota bridgestone 2005 pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Cuota_Bridgestone_2005_Pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.total_equipos_grid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Total_Equipos_Grid"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total equipos grid": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Equipos_Grid": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate equipo grid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall equipo grid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "total equipo gridiron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total equipo framework": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "total equipo network": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total equipo lattice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total equipo net": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total equipo web": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total equipo grid-iron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total equipo grating": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.equipos_michelin_2005_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Equipos_Michelin_2005_Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipos michelin 2005 count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Equipos_Michelin_2005_Count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "equipo michelin 2005 amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.equipos_bridgestone_2005_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Equipos_Bridgestone_2005_Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipos bridgestone 2005 count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Equipos_Bridgestone_2005_Count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "equipo bridgestone 2005 amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.total_poles_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Total_Poles_Michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total poles michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Poles_Michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "michelin": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate pole michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall pole michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.total_poles_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Total_Poles_Bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total poles bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total_Poles_Bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bridgestone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate pole bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall pole bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.poles_win_ratio_texto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Poles_Win_Ratio_Texto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poles win ratio texto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Poles_Win_Ratio_Texto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.poles_michelin_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Poles_Michelin_Pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "poles michelin pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Poles_Michelin_Pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.texto_insight_escuderias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Texto_Insight_Escuderias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "texto insight escuderias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Texto_Insight_Escuderias": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.texto_insight_poles": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Texto_Insight_Poles"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "texto insight poles": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Texto_Insight_Poles": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "texto insight extremities": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "texto insight opposite": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "texto insight extreme": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "texto insight limit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "texto insight end": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "texto insight rod": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "texto insight baton": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "texto insight shaft": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "texto insight stick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "texto insight post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ventaja_bridgestone_delta__0_seg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ventaja Bridgestone (Delta >= 0 seg)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventaja bridgestone (delta >= 0 seg)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ventaja bridgestone": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ventaja_michelin_delta__0_seg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ventaja Michelin (Delta < 0 seg)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventaja michelin (delta < 0 seg)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ventaja michelin": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_delta_qualy_promedio_seg": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Delta Qualy Promedio Seg"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos delta qualy promedio seg": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_delta_qualy_promedio_seg_positivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Delta Qualy Promedio Seg Positivo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos delta qualy promedio seg positivo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_color_delta_qualy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Color Delta Qualy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos color delta qualy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_michelin_pts_por_auto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Michelin Pts Por Auto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos michelin pts por auto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuito michelin pt por car": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito michelin pt por vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito michelin pt por sedan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito michelin pt por automobile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "circuito michelin pt por van": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_bridgestone_pts_por_auto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Bridgestone Pts Por Auto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos bridgestone pts por auto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuito bridgestone pt por car": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito bridgestone pt por vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito bridgestone pt por sedan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito bridgestone pt por automobile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "circuito bridgestone pt por van": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_delta_pts_por_auto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Delta Pts Por Auto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos delta pts por auto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuito delta pt por car": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito delta pt por vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito delta pt por sedan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito delta pt por automobile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "circuito delta pt por van": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_ratio_pts_por_auto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Ratio Pts Por Auto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos ratio pts por auto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuito ratio pt por car": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito ratio pt por vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito ratio pt por sedan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "circuito ratio pt por automobile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "circuito ratio pt por van": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_qualy_poles_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Qualy Poles Michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos qualy poles michelin": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_qualy_poles_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Qualy Poles Bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos qualy poles bridgestone": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_poles_card_texto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Poles Card Texto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos poles card texto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.circuitos_pts_norm_card_texto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Circuitos Pts Norm Card Texto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuitos pts norm card texto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ventaja_michelin_qualy_circuitos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ventaja Michelin Qualy Circuitos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventaja michelin qualy circuitos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ventaja_bridgestone_qualy_circuitos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ventaja Bridgestone Qualy Circuitos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ventaja bridgestone qualy circuitos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_temporadas_proveedor_marca.tipo_alianza": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_temporadas_proveedor_marca",
+			          "ConceptualProperty": "Tipo_Alianza"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo alianza": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo_Alianza": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera.orden_cronologico": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras",
+			          "ConceptualProperty": "orden_cronologico"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "orden cronologico": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "orden_cronologico": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_corta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras",
+			          "ConceptualProperty": "carrera_corta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carrera corta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "carrera_corta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_rotulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras",
+			          "ConceptualProperty": "carrera_rotulo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carrera rotulo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "carrera_rotulo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera.proveedor_ganador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras",
+			          "ConceptualProperty": "Proveedor_Ganador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "proveedor ganador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Proveedor_Ganador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "formula1 v_analisis_rendimiento_circuito": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.race_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "race_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "race id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "race_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "race": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "race identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "race identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "race identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "race credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "rivalry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pursuit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "battle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "duel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.round": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "round"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "round": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "overweight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "plump": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "smooth-edged": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.grand_prix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "grand_prix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "grand prix": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "grand_prix": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.circuit_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "circuit_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuit id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuit_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "circuit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "circuit identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "circuit identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "circuit identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "circuit credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "route": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "journey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "path": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "course": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.circuit_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "circuit_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "circuit name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "circuit_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "circuit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "circuit nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "circuit title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "circuit label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "circuit tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "trip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "route": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "journey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "path": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "course": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.tipo_circuito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "tipo_circuito"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo circuito": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_circuito": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.carrera_rotulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "carrera_rotulo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carrera rotulo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "carrera_rotulo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.piloto_id_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "piloto_id_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "piloto id michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "piloto_id_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "piloto identification michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto identity michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto identifier michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto credential michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.piloto_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "piloto_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "piloto michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "piloto_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.equipo_id_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "equipo_id_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo id michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "equipo_id_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "equipo identification michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo identity michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo identifier michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo credential michelin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.equipo_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "equipo_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "equipo_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_michelin_sec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "tiempo_qualy_michelin_sec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tiempo qualy michelin sec": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tiempo_qualy_michelin_sec": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.piloto_id_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "piloto_id_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "piloto id bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "piloto_id_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "piloto identification bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto identity bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto identifier bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "piloto credential bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.piloto_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "piloto_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "piloto bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "piloto_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.equipo_id_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "equipo_id_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo id bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "equipo_id_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "equipo identification bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo identity bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo identifier bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "equipo credential bridgestone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.equipo_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "equipo_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "equipo bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "equipo_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_bridgestone_sec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "tiempo_qualy_bridgestone_sec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tiempo qualy bridgestone sec": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tiempo_qualy_bridgestone_sec": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "delta_qualy_sec"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta qualy sec": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta_qualy_sec": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec_abs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "delta_qualy_sec_abs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta qualy sec abs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta_qualy_sec_abs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.delta_qualy_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "delta_qualy_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta qualy pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta_qualy_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.ganador_qualy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "ganador_qualy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ganador qualy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ganador_qualy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.rotulo_comparacion_qualy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "rotulo_comparacion_qualy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rotulo comparacion qualy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rotulo_comparacion_qualy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.autos_grilla_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "autos_grilla_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "autos grilla michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "auto grilla michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "autos_grilla_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.puntos_totales_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "puntos_totales_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntos totales michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punto totale michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "puntos_totales_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "puntos_por_auto_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntos por auto michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punto por auto michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "puntos_por_auto_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.autos_grilla_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "autos_grilla_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "autos grilla bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "auto grilla bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "autos_grilla_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.puntos_totales_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "puntos_totales_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntos totales bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punto totale bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "puntos_totales_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "puntos_por_auto_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "puntos por auto bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punto por auto bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "puntos_por_auto_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "delta_puntos_por_auto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta puntos por auto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta punto por auto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "delta_puntos_por_auto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "delta punto por car": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "delta punto por vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "delta punto por sedan": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "delta punto por automobile": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "delta punto por van": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto_abs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "delta_puntos_por_auto_abs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "delta puntos por auto abs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delta punto por auto abs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "delta_puntos_por_auto_abs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.ganador_puntos_normalizado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "ganador_puntos_normalizados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ganador puntos normalizado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ganador punto normalizado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "ganador_puntos_normalizados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.victorias_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "victorias_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victorias michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victoria michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "victorias_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "michelin": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.victorias_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "victorias_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victorias bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victoria bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "victorias_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bridgestone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.podios_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "podios_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "podios michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "podio michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "podios_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.podios_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "podios_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "podios bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "podio bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "podios_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.dnf_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "dnf_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dnf michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dnf_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.dnf_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "dnf_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dnf bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dnf_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "dnf_neumaticos_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dnf neumaticos michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dnf neumatico michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "dnf_neumaticos_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "dnf_neumaticos_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dnf neumaticos bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dnf neumatico bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "dnf_neumaticos_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.tasa_dnf_michelin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "tasa_dnf_michelin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasa dnf michelin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tasa_dnf_michelin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito.tasa_dnf_bridgestone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos",
+			          "ConceptualProperty": "tasa_dnf_bridgestone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasa dnf bridgestone": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tasa_dnf_bridgestone": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_dim_segmento_estrategico": {
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_delta_qualy_promedio_seg": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_delta_qualy_promedio_seg": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_delta_qualy_promedio_seg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_delta_qualy_promedio_seg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_delta_qualy_promedio_seg"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_entity__medida_ventaja_michelin_delta__0_seg": {
 			      "Binding": {
 			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
 			      },
@@ -9202,9 +12000,9 @@ cultureInfo es-ES
 			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
 			          }
 			        },
-			        "dim_segmento_estrategico": {
+			        "entity__medida.ventaja_michelin_delta__0_seg": {
 			          "Target": {
-			            "Entity": "dim_segmento_estrategico"
+			            "Entity": "entity__medida.ventaja_michelin_delta__0_seg"
 			          }
 			        }
 			      },
@@ -9215,95 +12013,62 @@ cultureInfo es-ES
 			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
 			            },
 			            "Object": {
-			              "Role": "dim_segmento_estrategico"
+			              "Role": "entity__medida.ventaja_michelin_delta__0_seg"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_dim_segmento_estrategicos"
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_ventaja_michelin_delta__0_seg"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_entity__medida_ventaja_bridgestone_delta__0_seg": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
 			        },
+			        "entity__medida.ventaja_bridgestone_delta__0_seg": {
+			          "Target": {
+			            "Entity": "entity__medida.ventaja_bridgestone_delta__0_seg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_segmento_estrategico"
-			            },
-			            "Object": {
 			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ventaja_bridgestone_delta__0_seg"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_rendimiento_lluvia_carreras"
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_ventaja_bridgestone_delta__0_seg"
 			        }
 			      ]
 			    },
-			    "formula1_v_analisis_fiabilidad_neumatico_has_formula1_constructor": {
+			    "formula1_v_acumulacion_poles_carrera_has_entity__medida_texto_insight_poles": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_fiabilidad_neumaticos"
+			        "ConceptualEntity": "formula1 v_acumulacion_poles_carreras"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_analisis_fiabilidad_neumatico": {
+			        "formula1_v_acumulacion_poles_carrera": {
 			          "Target": {
-			            "Entity": "formula1_v_analisis_fiabilidad_neumatico"
+			            "Entity": "formula1_v_acumulacion_poles_carrera"
 			          }
 			        },
-			        "formula1_constructor": {
+			        "entity__medida.texto_insight_poles": {
 			          "Target": {
-			            "Entity": "formula1_constructor"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            },
-			            "Object": {
-			              "Role": "formula1_constructor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_fiabilidad_neumaticos_have_formula1_constructors"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_constructor"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_constructors_have_formula1_v_analisis_fiabilidad_neumaticos"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_asimetria_marca_has_dim_segmento_estrategico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_asimetria_marca": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_asimetria_marca"
-			          }
-			        },
-			        "dim_segmento_estrategico": {
-			          "Target": {
-			            "Entity": "dim_segmento_estrategico"
+			            "Entity": "entity__medida.texto_insight_poles"
 			          }
 			        }
 			      },
@@ -9311,98 +12076,32 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
+			              "Role": "formula1_v_acumulacion_poles_carrera"
 			            },
 			            "Object": {
-			              "Role": "dim_segmento_estrategico"
+			              "Role": "entity__medida.texto_insight_poles"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_asimetria_marcas_have_dim_segmento_estrategicos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_segmento_estrategico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_asimetria_marcas"
+			          "ID": "formula1_v_acumulacion_poles_carreras_have_texto_insight_poles"
 			        }
 			      ]
 			    },
-			    "formula1_v_analisis_asimetria_marca_has_formula1_constructor": {
+			    "formula1_v_temporadas_proveedor_marca_has_entity__medida_texto_insight_escuderias": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			        "ConceptualEntity": "formula1 v_temporadas_proveedor_marca"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_analisis_asimetria_marca": {
+			        "formula1_v_temporadas_proveedor_marca": {
 			          "Target": {
-			            "Entity": "formula1_v_analisis_asimetria_marca"
+			            "Entity": "formula1_v_temporadas_proveedor_marca"
 			          }
 			        },
-			        "formula1_constructor": {
+			        "entity__medida.texto_insight_escuderias": {
 			          "Target": {
-			            "Entity": "formula1_constructor"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
-			            },
-			            "Object": {
-			              "Role": "formula1_constructor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_asimetria_marcas_have_formula1_constructors"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_constructor"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_asimetria_marca"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_constructors_have_formula1_v_analisis_asimetria_marcas"
-			        }
-			      ]
-			    },
-			    "formula1_v_analisis_rendimiento_anual_has_dim_segmento_estrategico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_analisis_rendimiento_anual": {
-			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_anual"
-			          }
-			        },
-			        "dim_segmento_estrategico": {
-			          "Target": {
-			            "Entity": "dim_segmento_estrategico"
+			            "Entity": "entity__medida.texto_insight_escuderias"
 			          }
 			        }
 			      },
@@ -9410,98 +12109,32 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
+			              "Role": "formula1_v_temporadas_proveedor_marca"
 			            },
 			            "Object": {
-			              "Role": "dim_segmento_estrategico"
+			              "Role": "entity__medida.texto_insight_escuderias"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_anuals_have_dim_segmento_estrategicos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_segmento_estrategico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_rendimiento_anuals"
+			          "ID": "formula1_v_temporadas_proveedor_marcas_have_texto_insight_escuderias"
 			        }
 			      ]
 			    },
-			    "formula1_v_analisis_rendimiento_anual_has_formula1_constructor": {
+			    "formula1_v_acumulacion_poles_carrera_has_entity__medida_poles_michelin_pct": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
+			        "ConceptualEntity": "formula1 v_acumulacion_poles_carreras"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_analisis_rendimiento_anual": {
+			        "formula1_v_acumulacion_poles_carrera": {
 			          "Target": {
-			            "Entity": "formula1_v_analisis_rendimiento_anual"
+			            "Entity": "formula1_v_acumulacion_poles_carrera"
 			          }
 			        },
-			        "formula1_constructor": {
+			        "entity__medida.poles_michelin_pct": {
 			          "Target": {
-			            "Entity": "formula1_constructor"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            },
-			            "Object": {
-			              "Role": "formula1_constructor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_analisis_rendimiento_anuals_have_formula1_constructors"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_constructor"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_analisis_rendimiento_anual"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_constructors_have_formula1_v_analisis_rendimiento_anuals"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_race_granular_has_dim_segmento_estrategico": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_race_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_race_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_race_granular"
-			          }
-			        },
-			        "dim_segmento_estrategico": {
-			          "Target": {
-			            "Entity": "dim_segmento_estrategico"
+			            "Entity": "entity__medida.poles_michelin_pct"
 			          }
 			        }
 			      },
@@ -9509,98 +12142,32 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_f1_race_granular"
+			              "Role": "formula1_v_acumulacion_poles_carrera"
 			            },
 			            "Object": {
-			              "Role": "dim_segmento_estrategico"
+			              "Role": "entity__medida.poles_michelin_pct"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_dim_segmento_estrategicos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_segmento_estrategico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_race_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_segmento_estrategicos_have_formula1_v_f1_race_granulars"
+			          "ID": "formula1_v_acumulacion_poles_carreras_have_poles_michelin_pct"
 			        }
 			      ]
 			    },
-			    "formula1_v_f1_race_granular_has_formula1_constructor": {
+			    "formula1_v_acumulacion_poles_carrera_has_entity__medida_poles_win_ratio_texto": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			        "ConceptualEntity": "formula1 v_acumulacion_poles_carreras"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_f1_race_granular": {
+			        "formula1_v_acumulacion_poles_carrera": {
 			          "Target": {
-			            "Entity": "formula1_v_f1_race_granular"
+			            "Entity": "formula1_v_acumulacion_poles_carrera"
 			          }
 			        },
-			        "formula1_constructor": {
+			        "entity__medida.poles_win_ratio_texto": {
 			          "Target": {
-			            "Entity": "formula1_constructor"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_race_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_constructor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_formula1_constructors"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_constructor"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_race_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_constructors_have_formula1_v_f1_race_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_race_granular_has_formula1_race": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_race_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_race_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_race_granular"
-			          }
-			        },
-			        "formula1_race": {
-			          "Target": {
-			            "Entity": "formula1_race"
+			            "Entity": "entity__medida.poles_win_ratio_texto"
 			          }
 			        }
 			      },
@@ -9608,45 +12175,32 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_f1_race_granular"
+			              "Role": "formula1_v_acumulacion_poles_carrera"
 			            },
 			            "Object": {
-			              "Role": "formula1_race"
+			              "Role": "entity__medida.poles_win_ratio_texto"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_race_granulars_have_formula1_races"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_race"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_race_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_races_have_formula1_v_f1_race_granulars"
+			          "ID": "formula1_v_acumulacion_poles_carreras_have_poles_win_ratio_texto"
 			        }
 			      ]
 			    },
-			    "formula1_v_f1_qualy_granular_has_dim_segmento_estrategico": {
+			    "formula1_v_acumulacion_poles_carrera_has_entity__medida_total_poles_bridgestone": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			        "ConceptualEntity": "formula1 v_acumulacion_poles_carreras"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
+			        "formula1_v_acumulacion_poles_carrera": {
 			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
+			            "Entity": "formula1_v_acumulacion_poles_carrera"
 			          }
 			        },
-			        "dim_segmento_estrategico": {
+			        "entity__medida.total_poles_bridgestone": {
 			          "Target": {
-			            "Entity": "dim_segmento_estrategico"
+			            "Entity": "entity__medida.total_poles_bridgestone"
 			          }
 			        }
 			      },
@@ -9654,98 +12208,32 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
+			              "Role": "formula1_v_acumulacion_poles_carrera"
 			            },
 			            "Object": {
-			              "Role": "dim_segmento_estrategico"
+			              "Role": "entity__medida.total_poles_bridgestone"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_dim_segmento_estrategicos"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_segmento_estrategico"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_segmento_estrategicos_have_formula1_v_f1_qualy_granulars"
+			          "ID": "formula1_v_acumulacion_poles_carreras_have_total_poles_bridgestone"
 			        }
 			      ]
 			    },
-			    "formula1_v_f1_qualy_granular_has_formula1_constructor": {
+			    "formula1_v_acumulacion_poles_carrera_has_entity__medida_total_poles_michelin": {
 			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			        "ConceptualEntity": "formula1 v_acumulacion_poles_carreras"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
+			        "formula1_v_acumulacion_poles_carrera": {
 			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
+			            "Entity": "formula1_v_acumulacion_poles_carrera"
 			          }
 			        },
-			        "formula1_constructor": {
+			        "entity__medida.total_poles_michelin": {
 			          "Target": {
-			            "Entity": "formula1_constructor"
-			          },
-			          "Nouns": [
-			            {
-			              "constructor": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            },
-			            "Object": {
-			              "Role": "formula1_constructor"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_constructors"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "formula1_constructor"
-			            },
-			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "formula1_constructors_have_formula1_v_f1_qualy_granulars"
-			        }
-			      ]
-			    },
-			    "formula1_v_f1_qualy_granular_has_formula1_race": {
-			      "Binding": {
-			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "formula1_v_f1_qualy_granular": {
-			          "Target": {
-			            "Entity": "formula1_v_f1_qualy_granular"
-			          }
-			        },
-			        "formula1_race": {
-			          "Target": {
-			            "Entity": "formula1_race"
+			            "Entity": "entity__medida.total_poles_michelin"
 			          }
 			        }
 			      },
@@ -9753,28 +12241,180 @@ cultureInfo es-ES
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_v_f1_qualy_granular"
+			              "Role": "formula1_v_acumulacion_poles_carrera"
 			            },
 			            "Object": {
-			              "Role": "formula1_race"
+			              "Role": "entity__medida.total_poles_michelin"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_races"
+			          "ID": "formula1_v_acumulacion_poles_carreras_have_total_poles_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_cuota_parrilla_anual_neumatico_has_entity__medida_equipos_bridgestone_2005_count": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_cuota_parrilla_anual_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
+			          }
 			        },
+			        "entity__medida.equipos_bridgestone_2005_count": {
+			          "Target": {
+			            "Entity": "entity__medida.equipos_bridgestone_2005_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "formula1_race"
+			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
 			            },
 			            "Object": {
-			              "Role": "formula1_v_f1_qualy_granular"
+			              "Role": "entity__medida.equipos_bridgestone_2005_count"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "formula1_races_have_formula1_v_f1_qualy_granulars"
+			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_equipos_bridgestone_2005_count"
+			        }
+			      ]
+			    },
+			    "formula1_v_cuota_parrilla_anual_neumatico_has_entity__medida_equipos_michelin_2005_count": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_cuota_parrilla_anual_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
+			          }
+			        },
+			        "entity__medida.equipos_michelin_2005_count": {
+			          "Target": {
+			            "Entity": "entity__medida.equipos_michelin_2005_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.equipos_michelin_2005_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_equipos_michelin_2005_count"
+			        }
+			      ]
+			    },
+			    "formula1_v_temporadas_proveedor_marca_has_entity__medida_total_equipos_grid": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_temporadas_proveedor_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_temporadas_proveedor_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_temporadas_proveedor_marca"
+			          }
+			        },
+			        "entity__medida.total_equipos_grid": {
+			          "Target": {
+			            "Entity": "entity__medida.total_equipos_grid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_temporadas_proveedor_marca"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.total_equipos_grid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_temporadas_proveedor_marcas_have_total_equipos_grid"
+			        }
+			      ]
+			    },
+			    "formula1_v_cuota_parrilla_anual_neumatico_has_entity__medida_cuota_bridgestone_2005_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_cuota_parrilla_anual_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
+			          }
+			        },
+			        "entity__medida.cuota_bridgestone_2005_pct": {
+			          "Target": {
+			            "Entity": "entity__medida.cuota_bridgestone_2005_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cuota_bridgestone_2005_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_cuota_bridgestone_2005_pct"
+			        }
+			      ]
+			    },
+			    "formula1_v_cuota_parrilla_anual_neumatico_has_entity__medida_cuota_michelin_2005_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_cuota_parrilla_anual_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_cuota_parrilla_anual_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_cuota_parrilla_anual_neumatico"
+			          }
+			        },
+			        "entity__medida.cuota_michelin_2005_pct": {
+			          "Target": {
+			            "Entity": "entity__medida.cuota_michelin_2005_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_cuota_parrilla_anual_neumatico"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cuota_michelin_2005_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_cuota_parrilla_anual_neumaticos_have_cuota_michelin_2005_pct"
 			        }
 			      ]
 			    },
@@ -14925,6 +17565,2540 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_formula1_v_f1_race_granulars_are_finished_formula1_v_f1_race_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_delta_qualy_promedio_seg_positivo": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_delta_qualy_promedio_seg_positivo": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_delta_qualy_promedio_seg_positivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_delta_qualy_promedio_seg_positivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_delta_qualy_promedio_seg_positivo"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_color_delta_qualy": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_color_delta_qualy": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_color_delta_qualy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_color_delta_qualy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_color_delta_qualy"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_michelin_pts_por_auto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_michelin_pts_por_auto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_michelin_pts_por_auto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_michelin_pts_por_auto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_michelin_pts_por_auto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_bridgestone_pts_por_auto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_bridgestone_pts_por_auto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_bridgestone_pts_por_auto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_bridgestone_pts_por_auto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_bridgestone_pts_por_auto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_delta_pts_por_auto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_delta_pts_por_auto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_delta_pts_por_auto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_delta_pts_por_auto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_delta_pts_por_auto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_ratio_pts_por_auto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_ratio_pts_por_auto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_ratio_pts_por_auto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_ratio_pts_por_auto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_ratio_pts_por_auto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_qualy_poles_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_qualy_poles_michelin": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_qualy_poles_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_qualy_poles_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_qualy_poles_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_qualy_poles_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_qualy_poles_bridgestone": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_qualy_poles_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_qualy_poles_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_qualy_poles_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_poles_card_texto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_poles_card_texto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_poles_card_texto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_poles_card_texto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_poles_card_texto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_circuitos_pts_norm_card_texto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.circuitos_pts_norm_card_texto": {
+			          "Target": {
+			            "Entity": "entity__medida.circuitos_pts_norm_card_texto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.circuitos_pts_norm_card_texto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuitos_pts_norm_card_texto"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_ventaja_michelin_qualy_circuitos": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.ventaja_michelin_qualy_circuitos": {
+			          "Target": {
+			            "Entity": "entity__medida.ventaja_michelin_qualy_circuitos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ventaja_michelin_qualy_circuitos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_ventaja_michelin_qualy_circuitos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_entity__medida_ventaja_bridgestone_qualy_circuitos": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "entity__medida.ventaja_bridgestone_qualy_circuitos": {
+			          "Target": {
+			            "Entity": "entity__medida.ventaja_bridgestone_qualy_circuitos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ventaja_bridgestone_qualy_circuitos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_ventaja_bridgestone_qualy_circuitos"
+			        }
+			      ]
+			    },
+			    "formula1_v_temporadas_proveedor_marca_has_tipo_alianza": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_temporadas_proveedor_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_temporadas_proveedor_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_temporadas_proveedor_marca"
+			          }
+			        },
+			        "formula1_v_temporadas_proveedor_marca.tipo_alianza": {
+			          "Target": {
+			            "Entity": "formula1_v_temporadas_proveedor_marca.tipo_alianza"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_temporadas_proveedor_marca"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_temporadas_proveedor_marca.tipo_alianza"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_temporadas_proveedor_marcas_have_tipo_alianzas"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_orden_cronologico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.orden_cronologico": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.orden_cronologico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.orden_cronologico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_orden_cronologicos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_carrera_corta": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_corta": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_corta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_corta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_carrera_cortas"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_carrera_rotulo": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_rotulo": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_rotulo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.carrera_rotulo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_carrera_rotulos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_proveedor_ganador": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_lluvia_carrera.proveedor_ganador": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera.proveedor_ganador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera.proveedor_ganador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_proveedor_ganadors"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_race_id": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.race_id": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.race_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.race_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_race_ids"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.year": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_years"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_round": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.round": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.round"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.round"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_round"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_grand_prix": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.grand_prix": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.grand_prix"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.grand_prix"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_grand_prix"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_circuit_id": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.circuit_id": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.circuit_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.circuit_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuit_ids"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_circuit_name": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.circuit_name": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.circuit_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.circuit_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_circuit_names"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_tipo_circuito": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.tipo_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.tipo_circuito"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.tipo_circuito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_tipo_circuitos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_carrera_rotulo": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.carrera_rotulo": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.carrera_rotulo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.carrera_rotulo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_carrera_rotulos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_piloto_id_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.piloto_id_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.piloto_id_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.piloto_id_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_piloto_id_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_piloto_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.piloto_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.piloto_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.piloto_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_piloto_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_equipo_id_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.equipo_id_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.equipo_id_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.equipo_id_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_equipo_id_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_equipo_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.equipo_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.equipo_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.equipo_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_equipo_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_tiempo_qualy_michelin_sec": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_michelin_sec": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_michelin_sec"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_michelin_sec"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_tiempo_qualy_michelin_sec"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_piloto_id_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.piloto_id_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.piloto_id_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.piloto_id_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_piloto_id_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_piloto_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.piloto_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.piloto_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.piloto_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_piloto_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_equipo_id_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.equipo_id_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.equipo_id_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.equipo_id_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_equipo_id_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_equipo_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.equipo_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.equipo_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.equipo_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_equipo_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_tiempo_qualy_bridgestone_sec": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_bridgestone_sec": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_bridgestone_sec"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.tiempo_qualy_bridgestone_sec"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_tiempo_qualy_bridgestone_sec"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_delta_qualy_sec": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_delta_qualy_sec"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_delta_qualy_sec_abs": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec_abs": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec_abs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.delta_qualy_sec_abs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_delta_qualy_sec_abs"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_delta_qualy_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.delta_qualy_pct": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.delta_qualy_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.delta_qualy_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_delta_qualy_pcts"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_ganador_qualy": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.ganador_qualy": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.ganador_qualy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.ganador_qualy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_ganador_qualies"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_rotulo_comparacion_qualy": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.rotulo_comparacion_qualy": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.rotulo_comparacion_qualy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.rotulo_comparacion_qualy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_rotulo_comparacion_qualies"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_autos_grilla_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.autos_grilla_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.autos_grilla_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.autos_grilla_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_autos_grilla_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_puntos_totales_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.puntos_totales_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.puntos_totales_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.puntos_totales_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_puntos_totales_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_puntos_por_auto_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_puntos_por_auto_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_autos_grilla_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.autos_grilla_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.autos_grilla_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.autos_grilla_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_autos_grilla_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_puntos_totales_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.puntos_totales_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.puntos_totales_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.puntos_totales_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_puntos_totales_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_puntos_por_auto_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.puntos_por_auto_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_puntos_por_auto_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_delta_puntos_por_auto": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_delta_puntos_por_autos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_delta_puntos_por_auto_abs": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto_abs": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto_abs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.delta_puntos_por_auto_abs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_delta_puntos_por_auto_abs"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_ganador_puntos_normalizado": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.ganador_puntos_normalizado": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.ganador_puntos_normalizado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.ganador_puntos_normalizado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_ganador_puntos_normalizados"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_victorias_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.victorias_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.victorias_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.victorias_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_victorias_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_victorias_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.victorias_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.victorias_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.victorias_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_victorias_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_podios_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.podios_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.podios_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.podios_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_podios_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_podios_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.podios_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.podios_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.podios_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_podios_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_dnf_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.dnf_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.dnf_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.dnf_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_dnf_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_dnf_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.dnf_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.dnf_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.dnf_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_dnf_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_dnf_neumaticos_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_dnf_neumaticos_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_dnf_neumaticos_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.dnf_neumaticos_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_dnf_neumaticos_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_tasa_dnf_michelin": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.tasa_dnf_michelin": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.tasa_dnf_michelin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.tasa_dnf_michelin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_tasa_dnf_michelin"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_circuito_has_tasa_dnf_bridgestone": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_circuitos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_circuito": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito"
+			          }
+			        },
+			        "formula1_v_analisis_rendimiento_circuito.tasa_dnf_bridgestone": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_circuito.tasa_dnf_bridgestone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_circuito.tasa_dnf_bridgestone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_circuitos_have_tasa_dnf_bridgestone"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_qualy_granular_has_formula1_race": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_qualy_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_qualy_granular"
+			          }
+			        },
+			        "formula1_race": {
+			          "Target": {
+			            "Entity": "formula1_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_races"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_race"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_races_have_formula1_v_f1_qualy_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_qualy_granular_has_formula1_constructor": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_qualy_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_qualy_granular"
+			          }
+			        },
+			        "formula1_constructor": {
+			          "Target": {
+			            "Entity": "formula1_constructor"
+			          },
+			          "Nouns": [
+			            {
+			              "constructor": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_constructor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_qualy_granulars_have_formula1_constructors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_constructor"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_constructors_have_formula1_v_f1_qualy_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_qualy_granular_has_dim_segmento_estrategico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_qualy_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_qualy_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_qualy_granular"
+			          }
+			        },
+			        "dim_segmento_estrategico": {
+			          "Target": {
+			            "Entity": "dim_segmento_estrategico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            },
+			            "Object": {
+			              "Role": "dim_segmento_estrategico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_qualy_granulars_have_dim_segmento_estrategicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_segmento_estrategico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_qualy_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_f1_qualy_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_formula1_race": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "formula1_race": {
+			          "Target": {
+			            "Entity": "formula1_race"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_race"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_formula1_races"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_race"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_race_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_races_have_formula1_v_f1_race_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_formula1_constructor": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "formula1_constructor": {
+			          "Target": {
+			            "Entity": "formula1_constructor"
+			          },
+			          "Nouns": [
+			            {
+			              "constructor": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "formula1_constructor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_formula1_constructors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_constructor"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_race_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_constructors_have_formula1_v_f1_race_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_f1_race_granular_has_dim_segmento_estrategico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_f1_race_granular"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_f1_race_granular": {
+			          "Target": {
+			            "Entity": "formula1_v_f1_race_granular"
+			          }
+			        },
+			        "dim_segmento_estrategico": {
+			          "Target": {
+			            "Entity": "dim_segmento_estrategico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_f1_race_granular"
+			            },
+			            "Object": {
+			              "Role": "dim_segmento_estrategico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_f1_race_granulars_have_dim_segmento_estrategicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_segmento_estrategico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_f1_race_granular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_f1_race_granulars"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_anual_has_formula1_constructor": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_anual": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_anual"
+			          }
+			        },
+			        "formula1_constructor": {
+			          "Target": {
+			            "Entity": "formula1_constructor"
+			          },
+			          "Nouns": [
+			            {
+			              "constructor": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_anual"
+			            },
+			            "Object": {
+			              "Role": "formula1_constructor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_anuals_have_formula1_constructors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_constructor"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_constructors_have_formula1_v_analisis_rendimiento_anuals"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_anual_has_dim_segmento_estrategico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_anual"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_anual": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_anual"
+			          }
+			        },
+			        "dim_segmento_estrategico": {
+			          "Target": {
+			            "Entity": "dim_segmento_estrategico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_anual"
+			            },
+			            "Object": {
+			              "Role": "dim_segmento_estrategico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_anuals_have_dim_segmento_estrategicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_segmento_estrategico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_anual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_rendimiento_anuals"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca_has_formula1_constructor": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_asimetria_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca"
+			          }
+			        },
+			        "formula1_constructor": {
+			          "Target": {
+			            "Entity": "formula1_constructor"
+			          },
+			          "Nouns": [
+			            {
+			              "constructor": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            },
+			            "Object": {
+			              "Role": "formula1_constructor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_formula1_constructors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_constructor"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_constructors_have_formula1_v_analisis_asimetria_marcas"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_asimetria_marca_has_dim_segmento_estrategico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_asimetria_marca"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_asimetria_marca": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_asimetria_marca"
+			          }
+			        },
+			        "dim_segmento_estrategico": {
+			          "Target": {
+			            "Entity": "dim_segmento_estrategico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            },
+			            "Object": {
+			              "Role": "dim_segmento_estrategico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_asimetria_marcas_have_dim_segmento_estrategicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_segmento_estrategico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_asimetria_marca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_asimetria_marcas"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_fiabilidad_neumatico_has_formula1_constructor": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_fiabilidad_neumaticos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_fiabilidad_neumatico": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_fiabilidad_neumatico"
+			          }
+			        },
+			        "formula1_constructor": {
+			          "Target": {
+			            "Entity": "formula1_constructor"
+			          },
+			          "Nouns": [
+			            {
+			              "constructor": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
+			            },
+			            "Object": {
+			              "Role": "formula1_constructor"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_fiabilidad_neumaticos_have_formula1_constructors"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_constructor"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_fiabilidad_neumatico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_constructors_have_formula1_v_analisis_fiabilidad_neumaticos"
+			        }
+			      ]
+			    },
+			    "formula1_v_analisis_rendimiento_lluvia_carrera_has_dim_segmento_estrategico": {
+			      "Binding": {
+			        "ConceptualEntity": "formula1 v_analisis_rendimiento_lluvia_carreras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "formula1_v_analisis_rendimiento_lluvia_carrera": {
+			          "Target": {
+			            "Entity": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			          }
+			        },
+			        "dim_segmento_estrategico": {
+			          "Target": {
+			            "Entity": "dim_segmento_estrategico"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            },
+			            "Object": {
+			              "Role": "dim_segmento_estrategico"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "formula1_v_analisis_rendimiento_lluvia_carreras_have_dim_segmento_estrategicos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_segmento_estrategico"
+			            },
+			            "Object": {
+			              "Role": "formula1_v_analisis_rendimiento_lluvia_carrera"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_segmento_estrategicos_have_formula1_v_analisis_rendimiento_lluvia_carreras"
 			        }
 			      ]
 			    },

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "03a1b2c3d4e5f6070803",
   "position": {
-    "x": 30,
-    "y": 205,
-    "z": 2000,
-    "height": 845,
-    "width": 1450,
-    "tabOrder": 2000
+    "x": 539.99999999999977,
+    "y": 249.33334350585943,
+    "z": 3000,
+    "height": 750,
+    "width": 1261.6666666666667,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "columnChart",
@@ -32,24 +32,6 @@
             }
           ]
         },
-        "Series": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "formula1 v_analisis_rendimiento_lluvia_carreras"
-                    }
-                  },
-                  "Property": "Proveedor_Ganador"
-                }
-              },
-              "queryRef": "formula1 v_analisis_rendimiento_lluvia_carreras.Proveedor_Ganador",
-              "nativeQueryRef": "Proveedor con Mejor Ritmo"
-            }
-          ]
-        },
         "Y": {
           "projections": [
             {
@@ -60,11 +42,25 @@
                       "Entity": "_Medidas"
                     }
                   },
-                  "Property": "Lluvia Delta Promedio Seg"
+                  "Property": "Ventaja Michelin (Delta < 0 seg)"
                 }
               },
-              "queryRef": "_Medidas.Lluvia Delta Promedio Seg",
-              "nativeQueryRef": "Delta de Ritmo (segundos)"
+              "queryRef": "_Medidas.Ventaja Michelin (Delta < 0 seg)",
+              "nativeQueryRef": "Ventaja Michelin (Azul / Delta < 0s)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Ventaja Bridgestone (Delta >= 0 seg)"
+                }
+              },
+              "queryRef": "_Medidas.Ventaja Bridgestone (Delta >= 0 seg)",
+              "nativeQueryRef": "Ventaja Bridgestone (Rojo / Delta >= 0s)"
             }
           ]
         }
@@ -84,45 +80,10 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {
-      "legend": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "position": {
-              "expr": {
-                "Literal": {
-                  "Value": "'TopCenter'"
-                }
-              }
-            },
-            "titleText": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Proveedor con Mejor Ritmo en Mojado'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "11D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "dataPoint": [
         {
           "properties": {
@@ -139,30 +100,7 @@
             }
           },
           "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "formula1 v_analisis_rendimiento_lluvia_carreras"
-                          }
-                        },
-                        "Property": "Proveedor_Ganador"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'Michelin'"
-                      }
-                    }
-                  }
-                }
-              }
-            ]
+            "metadata": "_Medidas.Ventaja Michelin (Delta < 0 seg)"
           }
         },
         {
@@ -172,7 +110,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FF2022'"
+                      "Value": "'#E10600'"
                     }
                   }
                 }
@@ -180,30 +118,107 @@
             }
           },
           "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "formula1 v_analisis_rendimiento_lluvia_carreras"
-                          }
-                        },
-                        "Property": "Proveedor_Ganador"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'Bridgestone'"
-                      }
+            "metadata": "_Medidas.Ventaja Bridgestone (Delta >= 0 seg)"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Proveedor con Ventaja de Ritmo'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "y1AxisReferenceLine": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#475569'"
                     }
                   }
                 }
               }
-            ]
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "style": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dashed'"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'front'"
+                }
+              }
+            },
+            "displayName": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Paridad Técnica (0.0 seg)'"
+                }
+              }
+            }
           }
         }
       ],
@@ -227,7 +242,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10.5D"
+                  "Value": "10D"
                 }
               }
             }
@@ -296,7 +311,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Rendimiento en Lluvia: Brecha de Ritmo por Gran Premio (2001-2005)'"
+                  "Value": "'Evolución del Ritmo en Lluvia: Brecha Michelin vs Bridgestone (2001-2005)'"
                 }
               }
             },
@@ -316,7 +331,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Orden cronológico temporal. Barra negativa en Azul = Michelin más veloz | Barra positiva en Rojo = Bridgestone más veloz'"
+                  "Value": "'Línea cronológica por proveedor. Azul (< 0) = Ventaja Michelin | Rojo (>= 0) = Ventaja Bridgestone | Línea discontinua 0 = Paridad técnica'"
                 }
               }
             },
