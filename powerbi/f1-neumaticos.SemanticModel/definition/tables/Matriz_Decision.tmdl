@@ -118,7 +118,7 @@ table Matriz_Decision
 				            "Favorable. El retorno de paradas reactiva la ventaja de compuestos hiperblandos y tandas al sprint.",
 				            "Crítico. Un candidato al título no puede tolerar la pérdida total de puntos por inviabilidad estructural (caso Indianápolis).",
 				            "Riesgo de estatus. Solo viable si la escudería tiene el peso político para no quedar subordinada al desarrollo centrado en Ferrari.",
-				            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Además, una escudería que pelea el campeonato no puede arriesgarse a un colapso de seguridad como el de EE.UU., donde Michelin dejó a su flota con cero puntos. Si el equipo tiene la escala para exigir paridad técnica frente a Ferrari, Bridgestone garantiza el compuesto con mayor techo de velocidad y solidez de carcasa ante cargas extremas."
+				            "El retorno de las paradas en boxes restituye el terreno histórico de Bridgestone. Además, con Michelin confirmando su retirada definitiva de la F1 para finales de 2006, firmar con Bridgestone otorga un año de ventaja en desarrollo y adaptación de chasis antes del monopolio reglamentario de 2007. Para un equipo con escala y peso político, es la apuesta indispensable para maximizar techo de velocidad y asegurar continuidad técnica."
 				        },
 				        {
 				            "2. Midfield", 
@@ -130,7 +130,7 @@ table Matriz_Decision
 				            "Controlado. Menor sensibilidad a paradas al sprint; la prioridad es la estabilidad de ritmo sobre tandas constantes.",
 				            "Evento aislado. El incidente de Indianápolis fue extraordinario; en el resto del calendario Michelin mantuvo una tasa de rotura ordinaria baja (0.38).",
 				            "Riesgo de asimetría nulo. En Bridgestone el déficit de cliente promedia +11 puestos; en Michelin se garantiza compuesto idéntico al líder.",
-				            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Aunque Indianápolis expuso una debilidad de diseño específica, en condiciones normales Michelin ofrece una plataforma probada que democratiza el rendimiento y maximiza la captura regular de puntos."
+				            "Firmar con Bridgestone en el pelotón medio es una condena estadística: la brecha frente al monoplaza oficial supera los 10 puestos en clasificación. Aunque Michelin se retire al concluir 2006, recurrir a ellos garantiza paridad inmediata y captura regular de puntos durante este año de transición, postergando el cambio a Bridgestone hasta 2007 cuando el suministro sea neutral y unificado por reglamento."
 				        },
 				        {
 				            "3. Fondo de Grilla", 
@@ -142,7 +142,7 @@ table Matriz_Decision
 				            "Bajo impacto relativo. Las paradas no compensan un déficit aerodinámico; la clave es la fiabilidad mecánica en carrera (0.38 vs 0.51).",
 				            "Prioridad mecánica. La probabilidad de finalizar carreras en el pelotón trasero es mayor con la goma francesa que con las fallas cliente de Bridgestone.",
 				            "Riesgo de aislamiento evitado. En Bridgestone la brecha cliente trepa a +16 puestos (Minardi 16.1); Michelin garantiza compuesto estándar probado.",
-				            "Para una escudería de fondo de grilla, el objetivo prioritario es maximizar la tasa de finalización y aprovechar abandonos ajenos. Apostar a Bridgestone implica asumir el compuesto diseñado exclusivamente para el chasis de Ferrari, penalizando la adherencia en autos con poca carga y sufriendo mayor tasa de fallas en carrera (0.51). Michelin garantiza paridad técnica y menor tasa de roturas mecánicas ordinarias."
+				            "Para una escudería de fondo de grilla, el objetivo prioritario es maximizar la tasa de finalización y aprovechar abandonos ajenos. Pese a que Michelin transita su última temporada en la categoría, su plataforma probada evita el aislamiento y la falta de soporte que sufren los clientes satélite de Bridgestone (+16 puestos de brecha). Michelin asegura paridad técnica y confiabilidad para sobrevivir la temporada 2006."
 				        }
 				    }
 				)
