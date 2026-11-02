@@ -60,34 +60,24 @@
                     "value": "Eje Metodológico:",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " Toda la auditoría se estratifica en 3 arquetipos de escudería (",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontSize": "14pt"
                     }
                   },
                   {
                     "value": "Top Tier, Midfield y Fondo de Grilla",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
                       "fontSize": "14pt"
                     }
                   },
                   {
-                    "value": ") para evaluar el impacto según los recursos y objetivos de cada equipo.",
-                    "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "14pt"
-                    }
-                  },
-                  {
-                    "value": " ",
+                    "value": ") para evaluar el impacto según los recursos y objetivos de cada equipo. ",
                     "textStyle": {
                       "fontSize": "14pt"
                     }
@@ -140,7 +130,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Acto II: Compromisos Técnicos y Sensibilidad Operativa:",
+                    "value": "Acto II: Rendimiento en Carrera:",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "14pt"
@@ -151,15 +141,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Conversión en Carrera y Puntos:",
+                    "value": "Brecha entre Escuderías del Mismo Fabricante",
                     "textStyle": {
                       "fontStyle": "italic",
-                      "fontSize": "14pt"
-                    }
-                  },
-                  {
-                    "value": " Eficacia frente a la clasificación y porcentaje de puntos capturados por fabricante",
-                    "textStyle": {
                       "fontSize": "14pt"
                     }
                   }
@@ -169,17 +153,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Personalización vs. Estandarización:",
+                    "value": "Conversión Real de Puntos",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "14pt"
-                    }
-                  },
-                  {
-                    "value": " El desarrollo exclusivo para Ferrari frente a los compuestos generalistas de Michelin. ",
-                    "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontSize": "14pt"
                     }
                   }
@@ -189,17 +165,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Sensibilidad al Entorno:",
+                    "value": "Rendimiento según Circuitos",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "14pt"
-                    }
-                  },
-                  {
-                    "value": " Comportamiento según el clima (temperatura/lluvia) y tipología de circuito.",
-                    "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontSize": "14pt"
                     }
                   }
@@ -209,17 +177,27 @@
               {
                 "textRuns": [
                   {
-                    "value": "Fiabilidad Operativa: ",
+                    "value": "Carreras en Lluvia",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
+                      "fontStyle": "italic",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fiabilidad y Riesgo Operativo",
+                    "textStyle": {
                       "fontStyle": "italic",
                       "fontSize": "14pt"
                     }
                   },
                   {
-                    "value": "Abandonos por fallas de neumáticos ",
+                    "value": " ",
                     "textStyle": {
-                      "fontFamily": "Google Sans Text, sans-serif",
                       "fontSize": "14pt"
                     }
                   }

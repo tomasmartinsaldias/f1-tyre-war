@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "1ef70d8f50594e12d59b",
   "position": {
-    "x": 1525,
-    "y": 267.5,
+    "x": 1524.0472449677457,
+    "y": 268.01426960684648,
     "z": 2000,
-    "height": 187.5,
-    "width": 327.5,
+    "height": 193.06112641171143,
+    "width": 329.33956858468423,
     "tabOrder": 2000
   },
   "visual": {
@@ -82,10 +82,41 @@
                   "Value": "2L"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
             "metadata": "_Medidas.Delta_Shock_Bridgestone"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -98,10 +129,59 @@
                   "Value": "'DELTA SHOCK 2005 (BRIDGESTONE)'"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           },
           "selector": {
             "metadata": "_Medidas.Delta_Shock_Bridgestone"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Aumento Bridgestone (2005)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            }
           }
         }
       ]

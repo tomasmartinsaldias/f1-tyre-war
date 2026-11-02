@@ -147,12 +147,7 @@ table _Medidas
 			
 			
 			
-			        "En 2005, la prohibición de cambios de neumáticos invirtió la jerarquía técnica. Bridgestone perdió competitividad estructural en todos los estratos de la grilla." & UNICHAR(10) & UNICHAR(10) &
-			
-			
-			
-			        "INSTRUCCIÓN: Seleccione un segmento en la cabecera (Top Tier, Midfield o Fondo) para auditar el comportamiento de cada estrato."
-			
+			        "En 2005, la prohibición de cambios de neumáticos invirtió la jerarquía técnica. Bridgestone perdió competitividad estructural en todos los estratos de la grilla."
 			
 			
 			    )
@@ -527,12 +522,6 @@ table _Medidas
 		lineageTag: af847b21-5cd4-4065-c223-eedf66271543
 
 	measure Gap_Lider_Marca_Pos =
-			
-			
-			
-			
-			
-			
 			
 			AVERAGE('formula1 v_analisis_asimetria_marca'[avg_gap_to_brand_leader])
 		lineageTag: 8dc6d7b1-0155-4e3e-913d-7b98ef9bd0d3
