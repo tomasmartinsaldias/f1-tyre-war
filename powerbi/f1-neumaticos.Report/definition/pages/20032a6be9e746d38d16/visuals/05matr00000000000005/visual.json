@@ -73,6 +73,80 @@
                   "Value": "true"
                 }
               }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "_Medidas"
+                                    }
+                                  },
+                                  "Property": "Veredicto_Proveedor"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'BRIDGESTONE'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#FF2022'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "_Medidas"
+                                    }
+                                  },
+                                  "Property": "Veredicto_Proveedor"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "'MICHELIN'"
+                                }
+                              }
+                            },
+                            "Annotations": {
+                              "PowerBI.SQExprEvaluationKind": 1,
+                              "PowerBI.SQExprTextOperatorOption": 2
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#004F9F'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
             }
           },
           "selector": {
@@ -103,20 +177,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              },
-              "bold": {
-                "expr": {
-                  "Literal": {
-                    "Value": "true"
-                  }
-                }
-              },
-              "alignment": {
-                "expr": {
-                  "Literal": {
-                    "Value": "'center'"
-                  }
                 }
               }
             }
