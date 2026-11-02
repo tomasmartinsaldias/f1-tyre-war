@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "1e12231eb5e87340b45e",
   "position": {
-    "x": 1002.5,
-    "y": 325,
+    "x": 1001.2409076779608,
+    "y": 324.43643145788,
     "z": 7000,
-    "height": 525,
-    "width": 520,
+    "height": 571.52377991917933,
+    "width": 704.73608952440156,
     "tabOrder": 7000
   },
   "visual": {
@@ -22,9 +22,16 @@
                     "value": "02 | ESTRUCTURA DE LA AUDITORÍA",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "12pt",
+                      "fontSize": "14pt",
                       "color": "#6b7280"
                     }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
                   }
                 ]
               },
@@ -34,7 +41,7 @@
                     "value": "Ruta Analítica para la Decisión Técnica 2006",
                     "textStyle": {
                       "fontFamily": "Segoe (Bold)",
-                      "fontSize": "16pt",
+                      "fontSize": "18pt",
                       "color": "#111827"
                     }
                   }
@@ -54,14 +61,14 @@
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " Toda la auditoría se estratifica en 3 arquetipos de escudería (",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
@@ -69,20 +76,20 @@
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": ") para evaluar el impacto según los recursos y objetivos de cada equipo.",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " ",
                     "textStyle": {
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -100,7 +107,7 @@
                     "value": "Acto I: Ritmo Puro a una Vuelta (Shock Qualy):",
                     "textStyle": {
                       "fontFamily": "Segoe (Bold)",
-                      "fontSize": "12pt",
+                      "fontSize": "14pt",
                       "color": "#1f2937"
                     }
                   }
@@ -112,13 +119,13 @@
                     "value": "Auditoría de la brecha porcentual a la pole position (2001–2005) ",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": "para aislar la pérdida de grip tras el cambio reglamentario.",
                     "textStyle": {
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -136,7 +143,7 @@
                     "value": "Acto II: Compromisos Técnicos y Sensibilidad Operativa:",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -147,13 +154,13 @@
                     "value": "Conversión en Carrera y Puntos:",
                     "textStyle": {
                       "fontStyle": "italic",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " Eficacia frente a la clasificación y porcentaje de puntos capturados por fabricante",
                     "textStyle": {
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ],
@@ -166,14 +173,14 @@
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " El desarrollo exclusivo para Ferrari frente a los compuestos generalistas de Michelin. ",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ],
@@ -186,14 +193,14 @@
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": " Comportamiento según el clima (temperatura/lluvia) y tipología de circuito.",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ],
@@ -206,14 +213,14 @@
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
                       "fontStyle": "italic",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   },
                   {
                     "value": "Abandonos por fallas de neumáticos ",
                     "textStyle": {
                       "fontFamily": "Google Sans Text, sans-serif",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ],
@@ -232,7 +239,7 @@
                     "value": "Acto III: Matriz de Decisión Contractual 2006",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ]
@@ -242,7 +249,7 @@
                   {
                     "value": "Veredicto y recomendación estratégica adaptada a los objetivos de cada arquetipo ante el retorno de los pit stops y la salida programada de Michelin.",
                     "textStyle": {
-                      "fontSize": "12pt"
+                      "fontSize": "14pt"
                     }
                   }
                 ]

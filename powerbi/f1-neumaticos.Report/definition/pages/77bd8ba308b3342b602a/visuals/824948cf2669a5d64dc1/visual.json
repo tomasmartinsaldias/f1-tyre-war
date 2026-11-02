@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "824948cf2669a5d64dc1",
   "position": {
-    "x": 77.349082996580663,
-    "y": 272.87037612682622,
+    "x": 48.618729305928653,
+    "y": 245.652527019429,
     "z": 1000,
-    "height": 685.39881877525647,
-    "width": 1175.2763444202674,
+    "height": 790.69407134378707,
+    "width": 1105.4363715874304,
     "tabOrder": 1000
   },
   "visual": {
@@ -112,7 +112,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#FF2022'"
+                              "Value": "'#004F9F'"
                             }
                           }
                         },
@@ -148,7 +148,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#004F9F'"
+                              "Value": "'#FF2022'"
                             }
                           }
                         }
@@ -186,6 +186,53 @@
                   "Value": "50L"
                 }
               }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -210,7 +257,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "22D"
+                  "Value": "24D"
                 }
               }
             }
@@ -235,7 +282,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "18D"
+                  "Value": "19D"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

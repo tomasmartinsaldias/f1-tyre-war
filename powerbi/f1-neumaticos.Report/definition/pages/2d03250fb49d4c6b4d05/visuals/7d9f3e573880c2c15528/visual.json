@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "7d9f3e573880c2c15528",
   "position": {
-    "x": 52,
-    "y": 40,
+    "x": 52.240069499639567,
+    "y": 61.325298977837754,
     "z": 0,
-    "height": 52,
-    "width": 760,
+    "height": 31.79830317369365,
+    "width": 949.40648047171032,
     "tabOrder": 0
   },
   "visual": {
@@ -22,7 +22,7 @@
                     "value": "INFORME TÉCNICO ESTRATÉGICO | HORIZONTE DE DECISIÓN: PRETEMPORADA 2006",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "14pt",
+                      "fontSize": "16pt",
                       "color": "#6b7280"
                     }
                   }

@@ -89,6 +89,15 @@ table 'formula1 v_analisis_fiabilidad_neumaticos'
 
 		annotation SummarizationSetBy = Automatic
 
+	column indy_2005_withdrawals
+		dataType: int64
+		formatString: 0
+		lineageTag: 46d59056-f876-4a59-a47a-f0585610f8fb
+		summarizeBy: sum
+		sourceColumn: indy_2005_withdrawals
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'formula1 v_analisis_fiabilidad_neumaticos' = m
 		mode: import
 		source =

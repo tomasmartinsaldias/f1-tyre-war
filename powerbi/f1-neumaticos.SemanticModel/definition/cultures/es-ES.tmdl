@@ -3791,37 +3791,11 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "entity__medida.avg_posicion_llegada": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Avg Posicion Llegada"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "avg posicion llegada": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "average posicion llegada": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ]
-			    },
 			    "entity__medida.tyre_failures_per_1k_laps": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Tyre Failures per 1k Laps"
+			          "ConceptualProperty": "Tasa_Fallas_Por_1000_Vueltas"
 			        }
 			      },
 			      "State": "Generated",
@@ -3929,45 +3903,6 @@ cultureInfo es-ES
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.494
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.tyre_to_accident_ratio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Tyre to Accident Ratio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "tyre to accident ratio": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.share_puntos_pct": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Share_Puntos_Pct"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "share puntos pct": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Share_Puntos_Pct": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -4349,185 +4284,6 @@ cultureInfo es-ES
 			              "Agent": "PowerBI.VisualColumnRename"
 			            },
 			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.avg_posiciones_ganadas": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Avg_Posiciones_Ganadas"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "avg posiciones ganadas": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Avg_Posiciones_Ganadas": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "average posicione ganada": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.tasa_conversion_puntos": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Tasa_Conversion_Puntos"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "tasa conversion puntos": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Tasa_Conversion_Puntos": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.avg_delta_conversion": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Avg_Delta_Conversion"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "avg delta conversion": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Avg_Delta_Conversion": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "average delta conversion": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "avg delta adaptation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta alteration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta translation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta renovation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta transformation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta transfiguration": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "avg delta change": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "avg delta exchange": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "avg delta changeover": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.482
 			          }
 			        }
 			      ]
@@ -9304,52 +9060,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "Puntos_Por_Escuderia": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.flota_michelin": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Flota_Michelin"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "flota michelin": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Flota_Michelin": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "entity__medida.flota_bridgestone": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Medidas",
-			          "ConceptualProperty": "Flota_Bridgestone"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "flota bridgestone": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Flota_Bridgestone": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99

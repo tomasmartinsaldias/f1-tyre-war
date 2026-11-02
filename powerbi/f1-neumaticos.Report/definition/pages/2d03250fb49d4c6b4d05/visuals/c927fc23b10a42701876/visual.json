@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c927fc23b10a42701876",
   "position": {
-    "x": 52,
-    "y": 152,
+    "x": 52.240069499639567,
+    "y": 202.14635588990961,
     "z": 2000,
-    "height": 70,
-    "width": 670,
+    "height": 36.34091791279274,
+    "width": 1394.5827249034214,
     "tabOrder": 2000
   },
   "visual": {
@@ -21,7 +21,7 @@
                   {
                     "value": "Evaluación del impacto del neumático único para la selección de proveedor técnico (Michelin vs. Bridgestone).",
                     "textStyle": {
-                      "fontSize": "16pt",
+                      "fontSize": "18pt",
                       "color": "#4b5563"
                     }
                   }
