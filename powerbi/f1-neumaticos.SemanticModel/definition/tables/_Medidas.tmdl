@@ -20,15 +20,6 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Avg Posicion Llegada' =
-			
-			CALCULATE(
-			    AVERAGE('formula1 v_f1_race_granular'[finish_position]),
-			    'formula1 v_f1_race_granular'[is_finished] = TRUE()
-			)
-		formatString: 0.00
-		lineageTag: 1f05b90b-404e-401a-85b7-ea5b0a242749
-
 	measure Tasa_Fallas_Por_1000_Vueltas =
 			
 			DIVIDE(
@@ -39,29 +30,6 @@ table _Medidas
 		lineageTag: b272e92b-ec68-4ff7-aad3-486220be700d
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Tasa_Riesgo_Total_Por_1000 =
-			
-			DIVIDE(
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]) + SUM('formula1 v_analisis_fiabilidad_neumaticos'[withdrawal_dnfs]),
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[total_laps_completed]),
-			    0
-			) * 1000
-		lineageTag: e3128af6-9083-4959-8340-502bc1745f5e
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Share_Puntos_Pct = ```
-			
-			VAR PuntosTotalesTemporada = 
-			    CALCULATE(
-			        [Puntos_Totales],
-			        ALLSELECTED('formula1 v_f1_race_granular'[tyre_manufacturer_id])
-			    )
-			RETURN
-			    DIVIDE([Puntos_Totales], PuntosTotalesTemporada, 0)
-			```
-		lineageTag: 70b088f0-55c6-4b84-8c57-32d394308268
 
 	measure Texto_Insight_Dinamico = ```
 			
@@ -244,31 +212,6 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure Avg_Posiciones_Ganadas =
-			
-			AVERAGE('formula1 v_f1_race_granular'[positions_gained])
-		lineageTag: 7a760417-bdd2-4c82-9800-eda240666420
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Tasa_Conversion_Puntos =
-			
-			DIVIDE(
-			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[points] > 0),
-			    CALCULATE(COUNTROWS('formula1 v_f1_race_granular'), 'formula1 v_f1_race_granular'[is_finished] = TRUE()),
-			    0
-			)
-		lineageTag: 99412b1b-09ae-4034-8645-9bbc00fece60
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure Avg_Delta_Conversion =
-			
-			AVERAGE('formula1 v_f1_race_granular'[grid_position_number]) - AVERAGE('formula1 v_f1_race_granular'[finish_position])
-		lineageTag: f6518f92-de9b-4615-96f4-c72355e62f50
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	measure Titulo_Asimetria_Dinamico = ```
 			
 			VAR Anio = SELECTEDVALUE('formula1 v_analisis_asimetria_marca'[year])
@@ -363,24 +306,6 @@ table _Medidas
 		formatString: 0.0
 		lineageTag: b30b2b0e-af35-4f99-93f9-fe71869162c8
 
-	measure Flota_Michelin =
-			
-			CALCULATE(
-			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
-			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "michelin"
-			)
-		formatString: 0
-		lineageTag: aea88fe4-1dea-45a3-a6a6-3d139a89234f
-
-	measure Flota_Bridgestone =
-			
-			CALCULATE(
-			    DISTINCTCOUNT('formula1 v_analisis_asimetria_marca'[constructor_id]),
-			    'formula1 v_analisis_asimetria_marca'[tyre_manufacturer_id] = "bridgestone"
-			)
-		formatString: 0
-		lineageTag: f053257a-b74b-4b23-9715-eedb4a40aeac
-
 	measure KPI_Puntos_Promedio_Michelin =
 			
 			AVERAGEX(
@@ -423,26 +348,6 @@ table _Medidas
 		formatString: 0.0%
 		lineageTag: 71a01102-1b2c-4d3e-8f5a-9a01b2c3d4e2
 
-	measure Total_Equipos_Grid = DISTINCTCOUNT('formula1 v_temporadas_proveedor_marca'[constructor_id])
-		formatString: 0
-		lineageTag: 71a01103-1b2c-4d3e-8f5a-9a01b2c3d4e3
-
-	measure Equipos_Michelin_2005_Count =
-			CALCULATE(
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_michelin]),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0
-		lineageTag: 71a01104-1b2c-4d3e-8f5a-9a01b2c3d4e4
-
-	measure Equipos_Bridgestone_2005_Count =
-			CALCULATE(
-			    MAX('formula1 v_cuota_parrilla_anual_neumaticos'[equipos_bridgestone]),
-			    'formula1 v_cuota_parrilla_anual_neumaticos'[year] = 2005
-			)
-		formatString: 0
-		lineageTag: 71a01105-1b2c-4d3e-8f5a-9a01b2c3d4e5
-
 	measure Total_Poles_Michelin =
 			CALCULATE(
 			    COUNTROWS('formula1 v_acumulacion_poles_carreras'),
@@ -465,14 +370,6 @@ table _Medidas
 			RETURN
 			    FORMAT(COALESCE(M, 0), "0") & " Michelin  -  " & FORMAT(COALESCE(B, 0), "0") & " Bridgestone"
 		lineageTag: 71a01108-1b2c-4d3e-8f5a-9a01b2c3d4e8
-
-	measure Poles_Michelin_Pct =
-			VAR M = [Total_Poles_Michelin]
-			VAR B = [Total_Poles_Bridgestone]
-			RETURN
-			    DIVIDE(M, M + B)
-		formatString: 0.0%
-		lineageTag: 71a01109-1b2c-4d3e-8f5a-9a01b2c3d4e9
 
 	measure Texto_Insight_Escuderias = ```
 			VAR SelFidelidad = SELECTEDVALUE('formula1 v_temporadas_proveedor_marca'[Tipo_Alianza], "todos")
@@ -531,17 +428,6 @@ table _Medidas
 			)
 			```
 		lineageTag: 71a0110b-1b2c-4d3e-8f5a-9a01b2c3d4eb
-
-	measure Ratio_Neumatico_Accidente =
-			
-			DIVIDE(
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[tyre_dnfs]),
-			    SUM('formula1 v_analisis_fiabilidad_neumaticos'[accident_dnfs]),
-			    0
-			)
-		lineageTag: ddd9da60-3f22-42f4-86d3-5b25b5411da4
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure Retiros_Preventivos_Indy = ```
 			
@@ -614,13 +500,6 @@ table _Medidas
 			    "Seleccione un Arquetipo"
 			)
 		lineageTag: c4d8e001-1b2c-4d3e-8f5a-9a01b2c3d401
-
-	measure Color_Veredicto_HEX =
-			SELECTEDVALUE(
-			    'Matriz_Decision'[Color_HEX],
-			    "#1A1A1A"
-			)
-		lineageTag: c4d8e002-1b2c-4d3e-8f5a-9a01b2c3d402
 
 	measure Veredicto_Titulo =
 			SELECTEDVALUE(
