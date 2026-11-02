@@ -61,26 +61,6 @@
           }
         }
       ],
-      "grid": [
-        {
-          "properties": {
-            "rows": {
-              "expr": {
-                "Literal": {
-                  "Value": "1L"
-                }
-              }
-            },
-            "columns": {
-              "expr": {
-                "Literal": {
-                  "Value": "3L"
-                }
-              }
-            }
-          }
-        }
-      ],
       "items": [
         {
           "properties": {
@@ -101,13 +81,6 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "title": {
-              "expr": {
-                "Literal": {
-                  "Value": "'ARQUETIPO DE ESCUDERÍA'"
                 }
               }
             },

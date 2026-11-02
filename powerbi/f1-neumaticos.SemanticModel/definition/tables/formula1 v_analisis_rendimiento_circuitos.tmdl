@@ -371,3 +371,4 @@ table 'formula1 v_analisis_rendimiento_circuitos'
 				    formula1_v_analisis_rendimiento_circuitos = Origen{[Schema="formula1",Item="v_analisis_rendimiento_circuitos"]}[Data]
 				in
 				    formula1_v_analisis_rendimiento_circuitos
+

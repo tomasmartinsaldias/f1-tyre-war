@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "03a1b2c3d4e5f6070803",
   "position": {
-    "x": 30,
-    "y": 195,
-    "z": 2000,
-    "height": 855,
-    "width": 1450,
-    "tabOrder": 2000
+    "x": 539.99999999999977,
+    "y": 249.33334350585943,
+    "z": 3000,
+    "height": 750,
+    "width": 1261.6666666666667,
+    "tabOrder": 3000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "columnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -80,8 +80,7 @@
             },
             "direction": "Ascending"
           }
-        ],
-        "isDefaultSort": true
+        ]
       }
     },
     "objects": {
@@ -217,53 +216,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Paridad Técnica (0.0 seg)'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "markers": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "lineStyles": [
-        {
-          "properties": {
-            "showMarker": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "markerSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "markerShape": {
-              "expr": {
-                "Literal": {
-                  "Value": "'circle'"
-                }
-              }
-            },
-            "strokeWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "3D"
                 }
               }
             }

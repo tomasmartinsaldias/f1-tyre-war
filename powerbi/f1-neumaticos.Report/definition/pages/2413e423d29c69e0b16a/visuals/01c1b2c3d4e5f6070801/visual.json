@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "01c1b2c3d4e5f6070801",
   "position": {
-    "x": 30.0,
-    "y": 20.0,
+    "x": 30,
+    "y": 20,
     "z": 0,
-    "height": 145.0,
-    "width": 1860.0,
+    "height": 145,
+    "width": 1860,
     "tabOrder": 0
   },
   "visual": {
@@ -22,14 +22,14 @@
                     "value": "Rendimiento según Circuitos: ",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "20pt",
+                      "fontSize": "24pt",
                       "color": "#111827"
                     }
                   },
                   {
                     "value": "Trazados Rápidos (Spa y Suzuka) vs. Lentos (Mónaco y Hungaroring) [2001-2005]",
                     "textStyle": {
-                      "fontSize": "17pt",
+                      "fontSize": "18pt",
                       "color": "#4b5563"
                     }
                   }
@@ -38,9 +38,9 @@
               {
                 "textRuns": [
                   {
-                    "value": "Evaluación del ritmo a una vuelta en clasificación (usando el monoplaza más rápido de cada proveedor en la sesión definitiva) y conversión en carrera mediante puntos normalizados por la cantidad de autos en grilla. En circuitos lentos (Mónaco y Hungaroring), Michelin dominó en tracción mecánica a baja velocidad (4 de 5 poles en Mónaco con -1.03s de brecha y +0.58 pts/auto en lentos). En circuitos veloces de alta carga lateral (Spa y Suzuka), Bridgestone defendió una mayor consistencia y eficiencia en carrera (1.66 pts/auto vs 1.49 pts/auto global), contrarrestando la velocidad pura a una vuelta de Michelin.",
+                    "value": "Evaluación del ritmo a una vuelta en clasificación (usando el monoplaza más rápido de cada proveedor en la sesión definitiva) y conversión en carrera mediante puntos normalizados por la cantidad de autos en grilla. Podemos ver el desempeño a una vuelta de cada proveedor de neumático con su auto más veloz. Increíblemente vemos que inclusive en temporadas de poderío de Ferrari, Michelin conseguía mejores resultados a la hora de dar la vuelta más rápida.",
                     "textStyle": {
-                      "fontSize": "13pt",
+                      "fontSize": "14pt",
                       "color": "#374151"
                     }
                   }

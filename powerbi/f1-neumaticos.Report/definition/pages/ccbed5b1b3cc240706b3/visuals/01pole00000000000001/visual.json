@@ -5,8 +5,8 @@
     "x": 60,
     "y": 35,
     "z": 0,
-    "height": 110,
-    "width": 520,
+    "height": 140,
+    "width": 1353.3333333333335,
     "tabOrder": 0
   },
   "visual": {
@@ -19,19 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "ACTO I: RITMO A UNA VUELTA (QUALY 2001 - 2005)",
-                    "textStyle": {
-                      "fontWeight": "bold",
-                      "fontSize": "9pt",
-                      "color": "#6B7280"
-                    }
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "Acumulación de Poles: El 'Sorpasso'",
+                    "value": "Acumulación de Poles: Análisis de Rachas de cada proveedor",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "18pt",
@@ -46,7 +34,33 @@
                     "value": "Trayectoria carrera a carrera. Hegemonía Ferrari-Bridgestone y quiebre en 2005.",
                     "textStyle": {
                       "fontSize": "10pt",
-                      "color": "#4B5563"
+                      "color": "#4b5563"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Lo que nos enfocamos acá es ver como cada proveedor fue acumulando poles position en las clasificaciones. Vemos periodos de rachas de Michelin, como también de Bridgestone, inclusive temporadas donde salen empatados en cantidad de ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#4b5563"
+                    }
+                  },
+                  {
+                    "value": "Poles",
+                    "textStyle": {
+                      "fontStyle": "italic",
+                      "fontSize": "14pt",
+                      "color": "#4b5563"
+                    }
+                  },
+                  {
+                    "value": ". Es importante tenerlo presente ya que es una manera de contextualizar que neumáticos llevaba el equipo que llevaba la delantera en la parrilla de F1.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#4b5563"
                     }
                   }
                 ]

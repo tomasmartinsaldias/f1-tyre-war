@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "02pole00000000000002",
   "position": {
-    "x": 610,
-    "y": 35,
+    "x": 448.33333333333337,
+    "y": 888.33333333333337,
     "z": 1000,
-    "height": 110,
-    "width": 530,
+    "height": 86.666666666666671,
+    "width": 1215,
     "tabOrder": 1000
   },
   "visual": {
@@ -57,6 +57,47 @@
                   "Value": "1D"
                 }
               }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "formula1 v_acumulacion_poles_carreras",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "year"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "2005L"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
             }
           }
         }
@@ -80,7 +121,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -88,26 +129,6 @@
               "expr": {
                 "Literal": {
                   "Value": "9.5D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "rows": {
-              "expr": {
-                "Literal": {
-                  "Value": "1L"
-                }
-              }
-            },
-            "columns": {
-              "expr": {
-                "Literal": {
-                  "Value": "5L"
                 }
               }
             }

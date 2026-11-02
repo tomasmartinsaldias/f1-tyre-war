@@ -4,10 +4,10 @@
   "position": {
     "x": 60,
     "y": 175,
-    "z": 1004,
-    "height": 865,
+    "z": 4000,
+    "height": 691.66666666666674,
     "width": 885,
-    "tabOrder": 1004
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "columnChart",
@@ -27,7 +27,7 @@
                 }
               },
               "queryRef": "formula1 v_temporadas_proveedor_marca.constructor_name",
-              "nativeQueryRef": "Escuder\u00eda",
+              "nativeQueryRef": "Escudería",
               "active": true
             }
           ]
@@ -51,7 +51,7 @@
                 }
               },
               "queryRef": "Sum(formula1 v_temporadas_proveedor_marca.temporadas_michelin)",
-              "nativeQueryRef": "A\u00f1os con Michelin"
+              "nativeQueryRef": "Años con Michelin"
             },
             {
               "field": {
@@ -70,7 +70,7 @@
                 }
               },
               "queryRef": "Sum(formula1 v_temporadas_proveedor_marca.temporadas_bridgestone)",
-              "nativeQueryRef": "A\u00f1os con Bridgestone"
+              "nativeQueryRef": "Años con Bridgestone"
             }
           ]
         }
@@ -119,7 +119,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Temporadas por Proveedor seg\u00fan Escuder\u00eda (2001-2005)'"
+                  "Value": "'Temporadas por Proveedor según Escudería (2001-2005)'"
                 }
               }
             },
@@ -139,7 +139,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'A\u00f1os totales equipados con Michelin vs Bridgestone por cada constructor.'"
+                  "Value": "'Años totales equipados con Michelin vs Bridgestone por cada constructor.'"
                 }
               }
             },
