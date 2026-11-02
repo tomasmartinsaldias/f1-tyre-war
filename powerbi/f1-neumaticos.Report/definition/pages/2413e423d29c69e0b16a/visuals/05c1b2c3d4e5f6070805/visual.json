@@ -176,7 +176,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -189,7 +196,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -252,7 +259,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "18D"
                 }
               }
             }
@@ -272,7 +279,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10.5D"
+                  "Value": "14D"
                 }
               }
             },
